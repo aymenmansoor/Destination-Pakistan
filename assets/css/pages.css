@@ -105,13 +105,6 @@
 .team .card-title {
   font-size: 1.25rem;
 }
-.content-note {
-  font-size: 0.9rem;
-  padding: 18px;
-  background: var(--sand);
-  border-radius: 8px;
-  margin: 24px 0;
-}
 .about-introduction {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
@@ -136,14 +129,6 @@
 }
 .team .card-body {
   padding: 16px 0;
-}
-.guide-lead {
-  font-size: 1.15rem;
-  color: var(--ink) !important;
-}
-.article-copy h2 {
-  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
-  margin: 32px 0 16px;
 }
 .guide-related {
   border-top: 1px solid var(--line);

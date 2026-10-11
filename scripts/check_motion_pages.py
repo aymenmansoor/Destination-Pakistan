@@ -27,7 +27,7 @@ def main():
         page.goto(args.base_url+'/gallery.html')
         for label in ['Desert','Mountains','Sea side','All photos']:
             page.get_by_role('button',name=label,exact=True).click()
-        page.wait_for_timeout(500)
+        page.wait_for_function("document.querySelector('.photo-gallery').getAnimations().length === 0", timeout=5000)
         assert page.locator('.photo-gallery figure:visible').count()==24
         assert page.locator('.photo-gallery').evaluate('e=>e.getAnimations().length')==0
         results.append('Rapid gallery filters end with all images and no stale grid animation')
