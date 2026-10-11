@@ -31,14 +31,18 @@ def main():
                 page.goto(args.base_url+'/'+quote(path.name), wait_until='load')
                 page.evaluate("async()=>{await Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode().catch(()=>{});}));}")
                 if path in guides:
-                    data = page.evaluate("""()=>{const frame=document.querySelector('.guide-visual'),image=frame.querySelector('img'),heading=document.querySelector('.page-heading'),sidebar=document.querySelector('.article-sidebar');return {width:frame.clientWidth,ratio:image.clientWidth/image.clientHeight,complete:frame.classList.contains('guide-visual-complete'),background:getComputedStyle(heading).backgroundColor,label:heading.querySelector('.eyebrow').textContent.trim(),intro:heading.querySelector('p').textContent,columns:getComputedStyle(document.querySelector('.article-layout')).gridTemplateColumns.split(' ').length,sidebar:getComputedStyle(sidebar).backgroundColor};}""")
+                    data = page.evaluate("""()=>{const frame=document.querySelector('.guide-visual'),image=frame.querySelector('img'),heading=document.querySelector('.page-heading'),sidebar=document.querySelector('.article-sidebar');return {width:frame.clientWidth,ratio:image.clientWidth/image.clientHeight,complete:frame.classList.contains('guide-visual-complete'),originalLink:frame.querySelector('a').getAttribute('href')===image.getAttribute('src'),background:getComputedStyle(heading).backgroundColor,label:heading.querySelector('.eyebrow').textContent.trim(),intro:heading.querySelector('p').textContent,columns:getComputedStyle(document.querySelector('.article-layout')).gridTemplateColumns.split(' ').length,sidebar:getComputedStyle(sidebar).backgroundColor};}""")
                     assert data['background']=='rgb(238, 233, 221)' and data['label']=='Destination guide', (path.name,data)
+                    assert data['originalLink'] and not data['complete'], (path.name,data)
                     assert data['columns']==(2 if width>=768 else 1), (path.name,data)
                     assert data['sidebar']=='rgb(238, 226, 207)',(path.name,data)
                     if width>=1440:
                         assert 1000<=data['width']<=1050, (path.name,data)
                         if not data['complete']: assert 2.39<=data['ratio']<=2.8,(path.name,data)
                 else:
+                    assert page.locator('.page-heading').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(238, 233, 221)'
+                    assert page.locator('.page-heading .eyebrow').is_visible()
+                    assert page.locator('.price-note').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(238, 226, 207)'
                     data = page.evaluate("""()=>{const grid=document.querySelector('.row.g-4'),cards=[...grid.querySelectorAll('.card')];return {columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,heights:cards.map(c=>c.getBoundingClientRect().height),tops:cards.map(c=>Math.round(c.getBoundingClientRect().top)),images:cards.map(c=>c.querySelector('img').clientHeight),buttons:cards.map(c=>Math.round(c.querySelector('.btn').getBoundingClientRect().bottom))};}""")
                     assert data['columns']==(3 if width>=1200 else 2 if width>=768 else 1),(path.name,data)
                     assert all(190<=n<=210 for n in data['images']),(path.name,data)
@@ -52,6 +56,8 @@ def main():
                     page.screenshot(path=str(out/f'{path.stem}-{width}.png'),full_page=True,animations='disabled')
             for name in ['tour.html','destination.html']:
                 page.goto(args.base_url+'/'+name)
+                assert page.locator('.page-heading').evaluate('e=>getComputedStyle(e).backgroundColor')=='rgb(238, 233, 221)'
+                assert page.locator('.page-heading .eyebrow').is_visible()
                 data=page.evaluate("""()=>{const frame=document.querySelector('.cinema-band'),image=frame.querySelector('.carousel-item.active img'),next=frame.nextElementSibling;return {width:frame.clientWidth,height:image.clientHeight,radius:getComputedStyle(frame).borderRadius,gap:next.querySelector(".card").getBoundingClientRect().top-frame.getBoundingClientRect().bottom,caption:getComputedStyle(frame.querySelector('.slide-caption a')).fontSize};}""")
                 assert data['radius']=='10px' and 25<=data['gap']<=35,(name,data)
                 if width>=1440:assert data['width']==1050 and 360<=data['height']<=390 and 30<=float(data['caption'][:-2])<=34,(name,data)

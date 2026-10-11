@@ -1,5 +1,6 @@
 /* Editorial package, homepage, gallery and contact layouts. */
 .package-page .page-heading {
+  background: var(--beige);
   border-bottom: 1px solid var(--line);
   margin-bottom: 28px;
 }
@@ -22,7 +23,7 @@
   flex-direction: column;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: white;
+  background: var(--cream);
   box-shadow: 0 3px 12px #24292708;
 }
 .package-page .card-img-top {
@@ -58,13 +59,13 @@
   }
 }
 .package-page .price-note {
-  background: transparent;
+  background: var(--sand);
   border-left: 2px solid var(--terra);
-  padding: 8px 18px;
+  padding: 15px 20px;
   margin: 0 0 28px;
 }
 .gallery .page-heading {
-  background: #e7eee7;
+  background: var(--beige);
   margin-bottom: 32px;
 }
 .about .page-heading {

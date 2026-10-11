@@ -1,6 +1,18 @@
 # Website audit and redesign record
 
-## Current requested design refinement
+## Current corrections against Images 1–8
+
+Both reference batches were reviewed before implementation on top of `94cd590`. The missing Tour/Destinations/category terracotta labels were caused by a shared `display: none` rule; page-specific shared rules restore them. Beige introductions, cream price notices and ivory package card bodies replace the overly plain treatment. Tour and Destination heading/slideshow/card edges now align without changing the approved three-column card layout or compact slider dimensions. Destinations opens with the existing autumn Hunza photo from Image 2; the previous dusk photo is retained as a fourth slide with its own indicator. No original photo files or destination/card links were removed.
+
+All twelve destination main frames now share 2.4:1 desktop and 16:9 mobile geometry, 10px rounding, article/sidebar proportions and background. The former natural-ratio exceptions produced inconsistent heights, particularly Khunjerab. Original images remain unmodified; intentional scenic crops can be opened as complete originals through accessible links. Subject-specific crop positions were visually reviewed. Main guide/photo width is now 1,050px, matching the directory slider axis. The article occupies two-thirds of the remaining width, with a smaller cream sidebar; phones stack it below the article. Khunjerab's extra lead styling and three repetitive article headings were removed, and the related navigation heading became an understated label. All guide paragraphs/photo-source sequences were compared with HEAD and are unchanged; all nine package HTML files are unchanged.
+
+Shared beige `#eee9dd` replaces pale green backgrounds in gallery introductions and soft homepage sections. The overview panel also uses the shared beige; ivory main backgrounds, cream enquiry panels, forest-green actions, terracotta labels and charcoal text are retained. No generic copy, fabricated geography, package edits, new photographs or animation dependencies were introduced. Existing image/content/licensing limitations documented below remain unresolved.
+
+Executed QA: 968 current local references; 252 route/width cases with no detected image/layout/heading, HTTP or JavaScript errors; 108 guide frame/title cases; 161 design cases; 14 actual interaction groups; 21 guide/category motion cases and two rapid/live-preference cases; 12 original-photo keyboard openings; 11 recording/motion cases; 56 stable axe scans plus four final palette/slide follow-ups with zero violations. Destinations received nine final viewport/four-indicator checks after its opening photograph was matched to the reference. All guides and pages were visually reviewed in phone/tablet/desktop sheets, with large-size review of the key reference pages.
+
+[Current visual comparison and executed browser evidence](docs/REFERENCES.md) includes desktop/tablet/mobile captures and all-guide sheets. The owner approved committing and pushing these changes to the existing development branch; no merge into `main` or deployment was performed. Prior results below are historical.
+
+## Previous requested design refinement
 
 Incremental changes on top of `77f3079`; no reset, revert or history rewrite. Both directory slideshows now share a 1,050px maximum width, 380px desktop height, 10px corners, 32px desktop captions and a 30px gap to the first cards. Their original timer, manual controls, focus/hover pauses, keyboard behavior and reduced-motion handling are preserved. Only the bottom overlay was lightened; no photograph was replaced.
 

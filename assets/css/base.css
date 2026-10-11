@@ -11,6 +11,7 @@
   --radius: 10px;
   --terra: #88452c;
   --sand: #eee2cf;
+  --beige: #eee9dd;
 }
 * {
   box-sizing: border-box;
@@ -94,7 +95,7 @@ main:focus {
   padding: 64px 0;
 }
 .section-soft {
-  background: #e9eee7;
+  background: var(--beige);
 }
 .eyebrow {
   display: block;

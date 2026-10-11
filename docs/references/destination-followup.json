@@ -1,0 +1,65 @@
+[
+  {
+    "width": 320,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 375,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 390,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 576,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 768,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 991,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 1024,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 1440,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  },
+  {
+    "width": 1920,
+    "slides": 4,
+    "all_indicators_passed": true,
+    "overflow": 0,
+    "autumn_first": true
+  }
+]

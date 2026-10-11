@@ -1,0 +1,2720 @@
+{
+  "cases": 161,
+  "preserved_package_pages": 9,
+  "hover": {
+    "transform": "matrix(1, 0, 0, 1, 0, -4)",
+    "shadow": "rgba(36, 41, 39, 0.08) 0px 10px 24px 0px",
+    "image": "matrix(1.025, 0, 0, 1.025, 0, 0)"
+  },
+  "results": [
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 280,
+      "ratio": 1.7721518987341771,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        557,
+        1089,
+        1670
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1056,
+        1623,
+        2203
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        546.703125,
+        581.234375
+      ],
+      "tops": [
+        574,
+        1100,
+        1671
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1073,
+        1624,
+        2229
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        556.7030639648438,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        499,
+        1064,
+        1645
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1033,
+        1598,
+        2178
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        581.234375,
+        581.234375,
+        556.703125
+      ],
+      "tops": [
+        528,
+        1115,
+        1720
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1086,
+        1673,
+        2254
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        527,
+        1090,
+        1671
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1061,
+        1624,
+        2205
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        497.640625,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        499,
+        1005,
+        1551
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        974,
+        1504,
+        2085
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        528,
+        1056,
+        1602
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1027,
+        1555,
+        2136
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        546.703125,
+        556.703125
+      ],
+      "tops": [
+        535,
+        1063,
+        1633
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1034,
+        1586,
+        2167
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 320,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        527,
+        1056,
+        1602
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1026,
+        1555,
+        2136
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 320,
+      "width": 296,
+      "height": 250,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "24px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 320,
+      "width": 296,
+      "height": 250,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "24px"
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 335,
+      "ratio": 1.7819148936170213,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        497.640625,
+        532.171875,
+        556.703125
+      ],
+      "tops": [
+        475,
+        982,
+        1538
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        950,
+        1491,
+        2072
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        475,
+        1006,
+        1552
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        974,
+        1505,
+        2086
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        532.171875,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        476,
+        1016,
+        1597
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        985,
+        1550,
+        2131
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        474,
+        1041,
+        1622
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1008,
+        1575,
+        2155
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        532.1719360351562,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        506,
+        1043,
+        1623
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1015,
+        1576,
+        2157
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        479,
+        982,
+        1503
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        954,
+        1456,
+        2013
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        497.6406555175781,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        475,
+        982,
+        1503
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        950,
+        1456,
+        2013
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        479,
+        1006,
+        1552
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        979,
+        1505,
+        2086
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 375,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        481,
+        1006,
+        1528
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        980,
+        1481,
+        2037
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 375,
+      "width": 351,
+      "height": 263,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "24px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 375,
+      "width": 351,
+      "height": 263,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "24px"
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 350,
+      "ratio": 1.7766497461928934,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 1,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        497.640625,
+        532.171875,
+        556.703125
+      ],
+      "tops": [
+        479,
+        982,
+        1538
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        954,
+        1491,
+        2072
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        478,
+        1006,
+        1552
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        978,
+        1505,
+        2086
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        532.171875,
+        532.171875,
+        556.703125
+      ],
+      "tops": [
+        479,
+        1016,
+        1572
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        989,
+        1525,
+        2106
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        479,
+        1041,
+        1622
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1013,
+        1575,
+        2155
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        532.171875,
+        556.703125,
+        532.171875
+      ],
+      "tops": [
+        479,
+        1016,
+        1597
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        989,
+        1550,
+        2106
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        497.6406555175781,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        475,
+        982,
+        1503
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        950,
+        1456,
+        2013
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        479,
+        982,
+        1503
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        954,
+        1456,
+        2013
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        497.6406555175781,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        481,
+        982,
+        1528
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        955,
+        1481,
+        2062
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 390,
+      "columns": 1,
+      "heights": [
+        522.171875,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        479,
+        1006,
+        1528
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        979,
+        1481,
+        2037
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 390,
+      "width": 366,
+      "height": 273,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "24px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 390,
+      "width": 366,
+      "height": 273,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "24px"
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 720,
+      "ratio": 2.4,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        532.171875,
+        532.171875,
+        556.703125
+      ],
+      "tops": [
+        477,
+        477,
+        1015
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        986,
+        986,
+        1549
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        451,
+        451,
+        979
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        950,
+        950,
+        1512
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        532.171875,
+        532.171875,
+        556.703125
+      ],
+      "tops": [
+        450,
+        450,
+        989
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        959,
+        959,
+        1522
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        479,
+        479,
+        1040
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1013,
+        1013,
+        1573
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        556.703125,
+        556.703125,
+        532.171875
+      ],
+      "tops": [
+        475,
+        475,
+        1040
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1009,
+        1009,
+        1549
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        497.6405944824219,
+        497.6405944824219,
+        532.171875
+      ],
+      "tops": [
+        448,
+        448,
+        954
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        922,
+        922,
+        1463
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        450,
+        450,
+        954
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        924,
+        924,
+        1463
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        522.171875,
+        522.171875,
+        556.703125
+      ],
+      "tops": [
+        450,
+        450,
+        979
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        949,
+        949,
+        1512
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 768,
+      "columns": 2,
+      "heights": [
+        522.171875,
+        522.171875,
+        532.171875
+      ],
+      "tops": [
+        476,
+        476,
+        1005
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        975,
+        975,
+        1514
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 768,
+      "width": 720,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "25.6px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 768,
+      "width": 720,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "25.6px"
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 976,
+      "ratio": 2.398034398034398,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        462,
+        462,
+        999
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        971,
+        971,
+        1508
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        436,
+        436,
+        938
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        910,
+        910,
+        1447
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        425,
+        425,
+        972
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        934,
+        934,
+        1482
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        459,
+        459,
+        999
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        968,
+        968,
+        1508
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        458,
+        458,
+        999
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        967,
+        967,
+        1508
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        433,
+        433,
+        938
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        908,
+        908,
+        1447
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        436,
+        436,
+        938
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        910,
+        910,
+        1447
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        497.6406555175781,
+        497.6406555175781,
+        532.171875
+      ],
+      "tops": [
+        436,
+        436,
+        938
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        910,
+        910,
+        1447
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 1024,
+      "columns": 2,
+      "heights": [
+        497.640625,
+        497.640625,
+        532.171875
+      ],
+      "tops": [
+        461,
+        461,
+        964
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        936,
+        936,
+        1473
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 1024,
+      "width": 976,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "25.6px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 1024,
+      "width": 976,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "25.6px"
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        473,
+        473,
+        473
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        982,
+        982,
+        982
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        456,
+        456,
+        456
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        989,
+        989,
+        989
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        456,
+        456,
+        456
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        965,
+        965,
+        965
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        479,
+        479,
+        479
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1013,
+        1013,
+        1013
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        481,
+        481,
+        481
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        990,
+        990,
+        990
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        453,
+        453,
+        453
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        962,
+        962,
+        962
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        453,
+        453,
+        453
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        962,
+        962,
+        962
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        454,
+        454,
+        454
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        963,
+        963,
+        963
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 1440,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        480,
+        480,
+        480
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        989,
+        989,
+        989
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 1440,
+      "width": 1050,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "32px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 1440,
+      "width": 1050,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "32px"
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Riverside settlements, green valleys and mountain views invite a\n            closer look.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Fairy.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Forest, open meadows and snow-covered peaks frame this mountain\n            escape.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Hunza.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain villages and valley views set the scene for a journey\n            through Hunza.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Kalash.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Explore the valleys and cultural traditions featured in our Kalash\n            and Chitral guide.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Woodland paths and open meadows lead into a guide to a hilltop walk.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Meadows and mountain scenery offer a changing landscape across the\n            seasons.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "SWAT.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Rivers, forested slopes and mountain valleys shape this journey\n            through Swat.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Lakeside views and mountain reflections offer a quiet starting point\n            for exploring Shangrila.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Follow the Karakoram Highway toward mountain scenery at the\n            Pakistan\u2013China border.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Tents, forest and mountain scenery frame this guide to a base-camp\n            journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "saral.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Mountain lakes, alpine meadows and reflections set the scene for a\n            walking journey.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 1050,
+      "ratio": 2.3972602739726026,
+      "complete": false,
+      "originalLink": true,
+      "background": "rgb(238, 233, 221)",
+      "label": "Destination guide",
+      "intro": "\n            Open hilltop views and lakeside scenery bring together two places to\n            explore.\n          ",
+      "columns": 2,
+      "sidebar": "rgb(238, 226, 207)"
+    },
+    {
+      "page": "Overland Adventure.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        480,
+        480,
+        480
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        990,
+        990,
+        990
+      ]
+    },
+    {
+      "page": "Special Interest Adventure.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        456,
+        456,
+        456
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        990,
+        990,
+        990
+      ]
+    },
+    {
+      "page": "bike.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        447,
+        447,
+        447
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        956,
+        956,
+        956
+      ]
+    },
+    {
+      "page": "culture.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        556.703125,
+        556.703125,
+        556.703125
+      ],
+      "tops": [
+        477,
+        477,
+        477
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        1011,
+        1011,
+        1011
+      ]
+    },
+    {
+      "page": "festivals.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        478,
+        478,
+        478
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        987,
+        987,
+        987
+      ]
+    },
+    {
+      "page": "safarie.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        448,
+        448,
+        448
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        957,
+        957,
+        957
+      ]
+    },
+    {
+      "page": "ski.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        452,
+        452,
+        452
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        961,
+        961,
+        961
+      ]
+    },
+    {
+      "page": "treking.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        449,
+        449,
+        449
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        958,
+        958,
+        958
+      ]
+    },
+    {
+      "page": "wild.html",
+      "width": 1920,
+      "columns": 3,
+      "heights": [
+        532.171875,
+        532.171875,
+        532.171875
+      ],
+      "tops": [
+        476,
+        476,
+        476
+      ],
+      "images": [
+        200,
+        200,
+        200
+      ],
+      "buttons": [
+        986,
+        986,
+        986
+      ]
+    },
+    {
+      "page": "tour.html",
+      "viewport": 1920,
+      "width": 1050,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "32px"
+    },
+    {
+      "page": "destination.html",
+      "viewport": 1920,
+      "width": 1050,
+      "height": 380,
+      "radius": "10px",
+      "gap": 30,
+      "caption": "32px"
+    }
+  ]
+}

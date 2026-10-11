@@ -12,9 +12,6 @@
 .page-heading h1 {
   margin-bottom: 12px;
 }
-.destination-guide .page-heading h1 {
-  margin-bottom: 0;
-}
 .breadcrumbs {
   margin-bottom: 24px;
 }
@@ -29,17 +26,11 @@
   width: 100%;
   height: auto;
   max-height: none;
-  aspect-ratio: var(--scenic-ratio, 2.5);
+  aspect-ratio: 2.4;
   object-fit: cover;
   object-position: var(--scenic-position, 50% 50%);
   border-radius: 0;
   margin: 0;
-}
-.guide-visual-complete {
-  max-width: none;
-}
-.guide-visual-complete .article-hero {
-  aspect-ratio: auto;
 }
 .article-layout {
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
@@ -140,11 +131,13 @@
 }
 
 /* Shared guide heading, photograph and copy align on the same content axis. */
-.destination-guide main .container {
-  max-width: 1074px;
+.destination-guide main .container,
+.tour main .container,
+.destination main .container {
+  max-width: 1098px;
 }
 .destination-guide .page-heading {
-  background: #eee9dd;
+  background: var(--beige);
   padding: 28px 0;
   margin-bottom: 22px;
 }
@@ -168,7 +161,33 @@
   .cinema-band {
     width: calc(100% - 24px);
   }
-  .guide-visual:not(.guide-visual-complete) .article-hero {
+  .guide-visual .article-hero {
     aspect-ratio: 16 / 9;
   }
+}
+
+.tour .page-heading,
+.destination .page-heading {
+  background: var(--beige);
+  margin-bottom: 26px;
+}
+.tour .page-heading .eyebrow,
+.destination .page-heading .eyebrow,
+.package-page .page-heading .eyebrow {
+  display: block;
+}
+.tour .page-heading p,
+.destination .page-heading p {
+  max-width: 65ch;
+}
+.guide-visual a {
+  display: block;
+}
+.guide-visual:focus-within {
+  outline: 3px solid #bb7b23;
+  outline-offset: 4px;
+}
+.article-sidebar a {
+  display: block;
+  margin-right: 0;
 }

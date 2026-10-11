@@ -59,7 +59,8 @@ Destination-Pakistan/
 ├── style2.css                  # Legacy gallery stylesheet compatibility path
 ├── AUDIT.md                    # Findings, content issues, and review notes
 ├── scripts/                    # Optional Python/Playwright QA tools
-├── docs/DESIGN.md               # Current design review and browser evidence
+├── docs/REFERENCES.md           # Current eight-reference corrections and evidence
+├── docs/DESIGN.md               # Previous design review and browser evidence
 ├── docs/FINAL.md                # Previous refinement evidence
 ├── docs/PREMIUM.md              # Previous refinement evidence
 ├── docs/REFINEMENT.md           # Earlier refinement review
@@ -94,23 +95,23 @@ Without a configured email app, copy the enquiry into an email manually. Without
 - Destination descriptions contain inherited historical, seasonal, access, and safety claims. They need editorial review before being relied on for current travel decisions.
 - Social account ownership, responses from the listed email address, actual email delivery, and the rights to original photographs have not been verified.
 
-## Current design refinement
+## Current reference corrections
 
-Both directory sliders share a centered 1,050px maximum width, 380px desktop height, 10px corners, lower-left 32px captions and a 30px gap before the cards. Their five-second autoplay, arrows, indicators, keyboard handling and reduced-motion behavior are preserved.
+Both batches of reference screenshots were applied together. Tour Packages and Destinations now have warm beige introduction sections, visible terracotta labels and aligned text/slideshow/card edges. The matching rounded sliders retain their 1,050px maximum width, 380px desktop height, automatic playback and manual controls. Destinations opens with the existing autumn Hunza photograph shown in the reference; its original dusk photograph remains as a fourth slide.
 
-All twelve guides now share warm-ivory headings, breadcrumbs, a destination label and a concise introduction. Their main photographs span the 1,050px content area without filler bands. Seven scenic photographs use a 2.4–2.5:1 desktop frame; five subject-sensitive photographs keep their natural ratio to protect people, livestock and tents. Phones use a gentler landscape crop. Main copy and the compact beige enquiry card split two-thirds/one-third above the mobile breakpoint. Existing low-resolution files remain a quality limitation; see the photo review in [AUDIT.md](AUDIT.md).
+All nine package categories retain their three/two/one-column grids and unchanged information, with beige introductions, ivory card bodies and cream confirmation notices. All twelve guides share 1,050px-wide, rounded 2.4:1 desktop photographs (16:9 on phones), a larger left article and a smaller cream enquiry panel that stacks below on mobile. Subject-aware crop positions preserve the visible subjects; click or keyboard-open a main photo to view the complete original. Khunjerab uses this same composition and ordinary paragraph typography. Its three repetitive section headings were removed while all five paragraphs, travel cautions, photographs and related links were preserved.
 
-All nine package categories use three-column card grids on large desktops, two columns on tablets and one on phones. Cards have 200px photographs, aligned enquiry buttons and restrained hover lift/shadow/zoom. Original descriptions, durations, prices and discounts are unchanged and remain subject to confirmation. The homepage hero, gallery filters/lightbox and About content are preserved. The homepage gallery preview uses equal landscape frames. Contact retains its clean form/email/guidance layout, white form and green active navigation button, with tighter field spacing.
-
-Existing hero stagger, content reveals, menu transitions, slider captions, gallery interpolation and lightbox fades continue to work. Large guide photographs do not animate. Content remains visible without JavaScript and motion preferences suppress effects. [Review screenshots, recordings, modified files and remaining limitations](docs/DESIGN.md).
+Pale green section/header backgrounds were replaced with shared beige `#eee9dd`; main backgrounds remain ivory, with green controls, terracotta labels and charcoal text. The homepage overview uses that same beige. Homepage hero, navigation, existing content, reduced-motion support, gallery filters/lightbox, enquiry draft/copy behavior and animations remain. [Review against Images 1–8, screenshots and exact modified files](docs/REFERENCES.md).
 
 ## Validation
 
-The current refinement passed **954 local references and 252 Chromium page/width cases**: all 28 pages at 320, 375, 390, 576, 768, 991, 1024, 1440 and 1920px. No detected broken/distorted images, clipped headings, horizontal overflow, HTTP errors or JavaScript/console errors. All twelve guide frames/title positions passed at all nine widths (108 checks). Additional landscape, viewport-equivalent 200% zoom reflow and representative doubled-text checks passed.
+The current refinement passed **968 local references and 252 Chromium page/width cases**: all 28 pages at 320, 375, 390, 576, 768, 991, 1024, 1440 and 1920px. No detected broken/distorted images, clipped headings, horizontal overflow, HTTP errors or JavaScript/console errors. All twelve guide frames/title positions passed at all nine widths (108 checks). Additional landscape, viewport-equivalent 200% zoom reflow and representative doubled-text checks passed.
 
-The design-specific script passed **161 cases** across the seven requested widths, verifying all twelve guide headings, photo widths and content splits, all nine category grids/image heights/button alignment, both compact sliders and unchanged package text. It also checked equal homepage gallery heights, clean Contact headings and actual card-hover/reduced-motion behavior. Interaction scripts passed 14 groups, 21 guide/category reveal checks and two rapid-filter/live-preference checks. Real desktop/mobile recordings demonstrate hero/scroll/menu/hover/gallery motion and repeated automatic/manual slide transitions. Axe-core 4.10.3 found zero WCAG 2/2.1 A/AA violations in 56 stable page/width scans; this does not establish full accessibility conformance.
+The design-specific script passed **161 cases**, including the restored introduction colors/labels and full-photo links, across seven widths, verifying all twelve guide headings, photo widths and content splits, all nine category grids/image heights/button alignment, both compact sliders and unchanged package text. It also checked equal homepage gallery heights, clean Contact headings and actual card-hover/reduced-motion behavior. Interaction scripts passed 14 groups, 21 guide/category reveal checks and two rapid-filter/live-preference checks. Real desktop/mobile recordings demonstrate hero/scroll/menu/hover/gallery motion and repeated automatic/manual slide transitions. Axe-core 4.10.3 found zero WCAG 2/2.1 A/AA violations in 56 stable page/width scans; this does not establish full accessibility conformance.
 
-[Current screenshots, recordings and results](docs/DESIGN.md) include phone/tablet/desktop comparisons, every guide/category in visual review sheets and the changed-file list. Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery and social-account ownership remain untested.
+The complete original-photo links were opened by keyboard on all twelve guides. The final autumn-first Destinations slideshow passed all four indicators at all nine widths. Two additional homepage and two Destinations accessibility follow-ups found zero violations. The main layout matrix preceded those final color/photo adjustments; their affected checks and captures were repeated.
+
+[Current screenshots, recordings and results](docs/REFERENCES.md) include phone/tablet/desktop comparisons, every guide/category in visual review sheets and the changed-file list. Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery and social-account ownership remain untested.
 
 To reproduce the browser checks, use a separate QA environment, keep the local server running, and run:
 
@@ -128,7 +129,7 @@ Scripts use installed system Chromium when available. Results go to ignored `.qa
 
 ## Upload to GitHub
 
-The newest design refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. Download this development branch for the refined website, screenshots and browser evidence. `main` is unchanged; nothing has been deployed.
+The owner approved committing and pushing the reference corrections to `codex/destination-pakistan-redesign`. The branch ZIP includes these corrections and their browser evidence. `main` is unchanged; nothing has been deployed.
 
 To download from GitHub, select that branch on the repository page, then choose **Code → Download ZIP**. Extract the archive and follow the local run instructions above.
 

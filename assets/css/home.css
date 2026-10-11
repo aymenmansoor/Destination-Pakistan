@@ -136,7 +136,7 @@
   color: white;
 }
 .home #overview {
-  background: #efe2cd;
+  background: var(--beige);
 }
 .home .cta-panel .eyebrow {
   color: var(--terra);
