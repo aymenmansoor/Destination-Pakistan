@@ -93,7 +93,3 @@ Edit page content directly in the HTML files. Shared styles load through `assets
 ### Gallery
 
 ![Interactive photograph gallery](screenshots/gallery.png)
-
-## Contact
-
-For travel enquiries: [destinationpakistan@gmail.com](mailto:destinationpakistan@gmail.com).
