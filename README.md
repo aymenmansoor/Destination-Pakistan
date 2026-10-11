@@ -2,6 +2,12 @@
 
 Explore Pakistan’s mountain trails, quiet lakes, cultural landmarks, and coastal landscapes. Destination Pakistan is a responsive tourism website showcasing destinations and travel experiences across the country.
 
+## Live Demo
+
+Explore Destination Pakistan online:
+
+[**Visit Destination Pakistan**](https://aymenmansoor.github.io/Destination-Pakistan/)
+
 ## Overview
 
 Discover places to visit, read individual destination guides, and browse tour packages spanning culture, trekking, wildlife, and other adventures. Photographs and practical travel information help visitors explore their options and prepare an enquiry.
