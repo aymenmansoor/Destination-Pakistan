@@ -2,14 +2,35 @@
 document.documentElement.classList.add("js");
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
-function closeMenu() {
-  navigation?.classList.remove("is-open");
-  menuButton?.setAttribute("aria-expanded", "false");
+let menuAnimation;
+function setMenu(open) {
+  menuAnimation?.cancel();
+  const wasOpen = navigation?.classList.contains("is-open");
+  menuButton?.setAttribute("aria-expanded", String(open));
+  if (!navigation || (!open && !wasOpen)) return;
+  if (open) navigation.classList.add("is-open");
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    navigation.classList.toggle("is-open", open);
+    return;
+  }
+  const frames = [
+    { opacity: 0, transform: "translateY(-8px)" },
+    { opacity: 1, transform: "translateY(0)" },
+  ];
+  menuAnimation = navigation.animate(open ? frames : frames.reverse(), {
+    duration: 200,
+    easing: "ease-out",
+  });
+  menuAnimation.onfinish = () => {
+    if (!open) navigation.classList.remove("is-open");
+  };
 }
-menuButton?.addEventListener("click", () => {
-  const open = navigation.classList.toggle("is-open");
-  menuButton.setAttribute("aria-expanded", String(open));
-});
+function closeMenu() {
+  setMenu(false);
+}
+menuButton?.addEventListener("click", () =>
+  setMenu(menuButton.getAttribute("aria-expanded") !== "true"),
+);
 document.addEventListener("keydown", (event) => {
   if (
     event.key === "Escape" &&
@@ -20,6 +41,17 @@ document.addEventListener("keydown", (event) => {
   }
 });
 window.matchMedia("(min-width: 1200px)").addEventListener("change", closeMenu);
+window
+  .matchMedia("(prefers-reduced-motion: reduce)")
+  .addEventListener("change", (event) => {
+    if (event.matches) {
+      menuAnimation?.cancel();
+      navigation?.classList.toggle(
+        "is-open",
+        menuButton?.getAttribute("aria-expanded") === "true",
+      );
+    }
+  });
 navigation
   ?.querySelectorAll("a")
   .forEach((link) => link.addEventListener("click", closeMenu));
@@ -28,6 +60,7 @@ const galleryItems = [...document.querySelectorAll("[data-category]")];
 document.querySelectorAll(".gallery-filter").forEach((button) => {
   button.addEventListener("click", () => {
     const category = button.dataset.filter;
+    const before = window.captureGallery?.();
     document
       .querySelectorAll(".gallery-filter")
       .forEach((item) =>
@@ -38,7 +71,10 @@ document.querySelectorAll(".gallery-filter").forEach((button) => {
     });
     document.querySelector(".gallery-status").textContent =
       `${button.textContent.trim()} selected.`;
-    window.revealGallery?.(galleryItems.filter((item) => !item.hidden));
+    window.revealGallery?.(
+      galleryItems.filter((item) => !item.hidden),
+      before,
+    );
   });
 });
 

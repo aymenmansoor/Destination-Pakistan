@@ -1,6 +1,20 @@
 # Website audit and redesign record
 
-## Latest premium refinement
+## Current final refinement
+
+Before changing code, README/AUDIT, the current modules, all 28 page inventories, 108 used image sources, and commits `6368d4f`/`026535a` were reviewed. The later 760px sliders and 520px grey `contain` frames were confirmed regressions. Prior package proportions were more compact, and motion observation covered only a few headings/frames.
+
+Both directory sliders are now capped at 520px (about 32% shorter at desktop). Shared destination frames have no filler background and fit their images: 16:9 cover for suitable scenic images, natural ratios for the Khunjerab/Kalash groups, Mushkpuri livestock, Rakaposhi tents and Tolipeer foreground visitors. Source-width limits avoid artificial enlargement. All twelve titles appear consistently above their photographs. Category image columns are smaller and no longer reserve a 280px minimum; metadata, descriptions and buttons remain attached in compact rows. Contact's night photograph was removed; the existing email precedes practical enquiry guidance.
+
+Visible motion now includes a three-part hero fade/rise stagger, selected scroll reveals across all guides and categories, team/photo entrances, navigation underline/menu transitions, gentle hover and field feedback, moving slide captions, gallery position/height interpolation, and a lightbox fade. Destination hero photographs do not animate. Reduced-motion and no-JavaScript behavior remain supported. Rapid filters cancel prior geometry animations; live motion-preference changes cancel menu motion without losing state.
+
+Actual checks passed: 954 local references; 252 route/width cases; **108 grey-band/title checks covering every one of twelve guides at all nine widths**; 14 interaction groups; 11 recording/motion/proportion checks; 21 guide/category reveal checks plus two rapid/preference checks; and 56 stable axe WCAG 2/2.1 A/AA scans with zero violations. Landscape/reflow/doubled-text checks passed too. A final Contact information-order refinement was checked and recaptured at 375/768/1440px. All 28 layouts were visually reviewed in phone/tablet/desktop contact sheets, and seven mandatory comparison pages have full before/after captures at all three widths. Real-time recordings last 68s desktop and 21s mobile. See [final evidence](docs/FINAL.md).
+
+Photo audit: original files are unchanged, but source resolution, attribution and provenance remain limits. Pakistan Travel Places/photographer watermarks remain in originals. `tour/china.jpg` depicts the Great Wall; it belongs to the inherited Overland presentation and must not be treated as a Pakistani location. Desert gallery cacti, red-rock mesas and Joshua-tree scenes may come from outside Pakistan; exact locations/rights are unverified. Some team portraits may be stock images: identity matches to inherited profile names need owner confirmation. No unverified place labels or unrelated replacement stock imagery were added.
+
+This iteration is provided on the existing development branch with explicit owner approval to commit and push. No merge into `main` or deployment was performed. Historical records below refer to earlier iterations.
+
+## Previous premium refinement
 
 The existing implementation was refined incrementally on the same development branch. Before changes, real Chromium checks observed **zero transitions over 11.5 seconds** when a desktop pointer remained over a slideshow and when a touch visitor tapped its image. Whole-region mouseenter handling produced a sticky touch hover; focus retained after touching an arrow also kept the pause active. Passive-image hover no longer pauses playback, actionable controls still pause on hover, and focus pauses follow visible keyboard interaction. Single timers, hidden-tab handling, and reduced-motion behavior remain.
 
@@ -63,7 +77,7 @@ Every page loads local Bootstrap CSS, the shared site CSS, local Bootstrap JavaS
 
 No testimonials, customer counts, verified ratings, new tour offerings, or new contact details were invented. No backend, payment provider, analytics service, or third-party booking integration was introduced.
 
-## Review and testing
+## Previous premium review and testing
 
 The latest refinement passed 955 local references and 252 browser page/width combinations (28 pages × nine requested widths). All heading levels were measured for clipping/wrapping; images, footers, HTTP responses, JavaScript errors, and horizontal overflow were checked. A final frame-height adjustment passed 36 follow-up guide/viewport checks and refreshed captures. Additional runs passed 28 landscape layouts, 28 layouts equivalent to 200% zoom reflow, and eight representative 200% text-size layouts. Native browser zoom was not automated.
 
@@ -73,6 +87,6 @@ All 28 rendered pages were visually reviewed in phone/tablet/desktop contact she
 
 External mail applications and actual sending, external social pages, physical devices, screen-reader operation, native browser-zoom controls, and non-Chromium browsers remain untested. Automated accessibility scans do not prove conformance. Original source-photo resolution and uncertain locations limit image quality and specificity; no new geographic claims were added.
 
-## Review scope and publishing
+## Previous premium publishing record
 
 The premium refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. The before screenshots represent the preceding approved commit `6368d4f`. No merge into `main`, deployment, or cloud-environment publication was performed. The review includes source changes, reproducible browser checks, updated documentation, and representative before/after screenshots.

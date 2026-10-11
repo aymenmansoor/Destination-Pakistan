@@ -10,7 +10,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 WIDTHS = [320, 375, 390, 576, 768, 991, 1024, 1440, 1920]
 REPRESENTATIVE = ['index.html', 'destination.html', 'tour.html', 'Fairy.html',
-                  'gallery.html', 'about.html', 'culture.html', 'contact.html', 'Mushkpuri.html', 'khunjerab.html']
+                  'gallery.html', 'about.html', 'culture.html', 'contact.html', 'Mushkpuri.html', 'khunjerab.html', 'treking.html']
 
 class Inventory(HTMLParser):
     def __init__(self):
@@ -53,12 +53,14 @@ METRICS = """() => {
     return {text:h.textContent.trim(), tag:h.tagName, lines:lines.size,
       clipped:h.scrollWidth>h.clientWidth+1, font:getComputedStyle(h).fontSize};
   });
+  const frame = document.querySelector('.guide-visual');
+  const guide = frame ? (()=>{ const image=frame.querySelector('img'); const a=frame.getBoundingClientRect(), b=image.getBoundingClientRect(); return {width:a.width,height:a.height,imageWidth:b.width,imageHeight:b.height,background:getComputedStyle(frame).backgroundColor,fit:getComputedStyle(image).objectFit,titleBeforeImage:document.querySelector('h1').getBoundingClientRect().bottom <= a.top}; })():null;
   const nav = document.querySelector('.nav-inner').getBoundingClientRect();
   const footer = document.querySelector('footer').getBoundingClientRect();
   return {overflow:document.documentElement.scrollWidth-innerWidth,
     broken:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),
     distorted:[...document.images].filter(i=>i.clientWidth&&i.clientHeight&&getComputedStyle(i).objectFit==='fill'&&Math.abs(i.clientWidth/i.clientHeight-i.naturalWidth/i.naturalHeight)>.03).map(i=>i.src),
-    headings, navHeight:nav.height, footerWidth:footer.width,
+    headings, guide, navHeight:nav.height, footerWidth:footer.width,
     group:document.querySelector('.feature-image') ? {
       width:document.querySelector('.feature-image').clientWidth,
       height:document.querySelector('.feature-image').clientHeight,
@@ -98,6 +100,9 @@ def main():
                 metrics = page.evaluate(METRICS)
                 result = {'page': path.name, 'width': width, **metrics}
                 results.append(result)
+                guide=metrics['guide']
+                if guide and (abs(guide['width']-guide['imageWidth'])>1 or abs(guide['height']-guide['imageHeight'])>1 or guide['background']!='rgba(0, 0, 0, 0)' or not guide['titleBeforeImage']):
+                    failures.append({'page':path.name,'width':width,'reason':'guide frame bands or title placement','guide':guide})
                 if metrics['overflow'] > 1 or metrics['broken'] or metrics['distorted'] or any(h['clipped'] for h in metrics['headings']):
                     failures.append(result)
                 if width >= 1440 and path.name not in ['index.html', 'front.html']:

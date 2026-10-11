@@ -1,0 +1,259 @@
+[
+  {
+    "hero_sample": {
+      "opacity": "0.21942",
+      "transform": "matrix(1, 0, 0, 1, 0, 14.0504)"
+    },
+    "staggered_hero_events": [
+      {
+        "name": "hero-arrival",
+        "tag": "H1",
+        "class": "hero-enter",
+        "time": 1120.9000000022352
+      },
+      {
+        "name": "hero-arrival",
+        "tag": "P",
+        "class": "hero-enter",
+        "time": 1238.199999999255
+      },
+      {
+        "name": "hero-arrival",
+        "tag": "DIV",
+        "class": "hero-actions hero-enter",
+        "time": 1319.5
+      }
+    ]
+  },
+  {
+    "home_scroll_events": [
+      {
+        "name": "section-arrival",
+        "tag": "DIV",
+        "class": "section-heading is-arriving",
+        "time": 1164.6000000014901
+      },
+      {
+        "name": "section-arrival",
+        "tag": "A",
+        "class": "destination-card is-arriving",
+        "time": 2547.199999999255
+      },
+      {
+        "name": "section-arrival",
+        "tag": "A",
+        "class": "destination-card is-arriving",
+        "time": 2547.199999999255
+      },
+      {
+        "name": "section-arrival",
+        "tag": "A",
+        "class": "destination-card is-arriving",
+        "time": 2547.199999999255
+      },
+      {
+        "name": "section-arrival",
+        "tag": "DIV",
+        "class": "section-heading is-arriving",
+        "time": 5757.800000000745
+      },
+      {
+        "name": "section-arrival",
+        "tag": "IMG",
+        "class": "is-arriving",
+        "time": 5757.900000002235
+      },
+      {
+        "name": "section-arrival",
+        "tag": "IMG",
+        "class": "is-arriving",
+        "time": 5758
+      },
+      {
+        "name": "section-arrival",
+        "tag": "IMG",
+        "class": "is-arriving",
+        "time": 5758
+      }
+    ]
+  },
+  {
+    "slideshow": "tour.html",
+    "events": [
+      {
+        "to": 1,
+        "time": 5865.199999999255
+      },
+      {
+        "to": 2,
+        "time": 11624.699999999255
+      },
+      {
+        "to": 3,
+        "time": 17388.300000000745
+      },
+      {
+        "to": 4,
+        "time": 18449.800000000745
+      },
+      {
+        "to": 5,
+        "time": 24523.89999999851
+      },
+      {
+        "to": 0,
+        "time": 25457.300000000745
+      }
+    ],
+    "height": 518
+  },
+  {
+    "slideshow": "destination.html",
+    "events": [
+      {
+        "to": 1,
+        "time": 5859.199999999255
+      },
+      {
+        "to": 2,
+        "time": 11617.60000000149
+      },
+      {
+        "to": 0,
+        "time": 17379.699999999255
+      },
+      {
+        "to": 1,
+        "time": 18603.300000000745
+      },
+      {
+        "to": 2,
+        "time": 24711.199999999255
+      },
+      {
+        "to": 0,
+        "time": 25580.699999999255
+      }
+    ],
+    "height": 518
+  },
+  "Gallery height/position interpolation and lightbox fade verified",
+  {
+    "motion_page": "Mushkpuri.html",
+    "events": [
+      {
+        "name": "section-arrival",
+        "tag": "H1",
+        "class": "article-title is-arriving",
+        "time": 374.5
+      },
+      {
+        "name": "section-arrival",
+        "tag": "P",
+        "class": "is-arriving",
+        "time": 374.6000000014901
+      },
+      {
+        "name": "section-arrival",
+        "tag": "FIGURE",
+        "class": "is-arriving",
+        "time": 727
+      }
+    ]
+  },
+  {
+    "motion_page": "treking.html",
+    "events": [
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 156.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 156.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 368.0999999977648
+      }
+    ]
+  },
+  {
+    "motion_page": "about.html",
+    "events": [
+      {
+        "name": "section-arrival",
+        "tag": "DIV",
+        "class": "about-introduction is-arriving",
+        "time": 145.5
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ARTICLE",
+        "class": "card is-arriving",
+        "time": 462.19999999925494
+      }
+    ]
+  },
+  {
+    "motion_page": "contact.html",
+    "events": [
+      {
+        "name": "section-arrival",
+        "tag": "FORM",
+        "class": "contact-form is-arriving",
+        "time": 143.30000000074506
+      },
+      {
+        "name": "section-arrival",
+        "tag": "ASIDE",
+        "class": "contact-info is-arriving",
+        "time": 143.40000000223517
+      }
+    ]
+  },
+  "Touch autoplay, arrow recovery and animated mobile menu open/close passed",
+  "Reduced motion disables entrances and menu animations"
+]

@@ -59,7 +59,8 @@ Destination-Pakistan/
 ├── style2.css                  # Legacy gallery stylesheet compatibility path
 ├── AUDIT.md                    # Findings, content issues, and review notes
 ├── scripts/                    # Optional Python/Playwright QA tools
-├── docs/PREMIUM.md              # Current before/after evidence
+├── docs/FINAL.md                # Current screenshots, videos and QA evidence
+├── docs/PREMIUM.md              # Previous refinement evidence
 ├── docs/REFINEMENT.md           # Earlier refinement review
 └── .gitignore
 ```
@@ -92,35 +93,36 @@ Without a configured email app, copy the enquiry into an email manually. Without
 - Destination descriptions contain inherited historical, seasonal, access, and safety claims. They need editorial review before being relied on for current travel decisions.
 - Social account ownership, responses from the listed email address, actual email delivery, and the rights to original photographs have not been verified.
 
-## Premium refinement
+## Final refinement
 
-The homepage preview uses an equal-height photographic triptych across phone/tablet/desktop. Directory slideshows occupy a wider cinematic band, with larger original photographs substituted where needed. All destination guides use the same prominent opening frame, including Mushkpuri, while source-width limits avoid enlarging low-resolution images. Package categories use image-led editorial rows; repeated beige headings/sidebar boxes were removed. Contact has one clear active indicator, a scenic image, and a professional email-draft workflow.
+Both directory sliders remain wide but now have a 520px maximum height, approximately one-third shorter than the previous 760px design. Destination photos fill their intended containers without grey side bands; safe landscapes use 16:9 cropping, while subject-sensitive photos retain their natural ratio. All twelve guides share a title-before-image structure and source-width limits. Package categories use compact editorial rows with a smaller image share and prominent prices/durations. Contact uses the form alongside email and useful enquiry guidance; its filler photograph was removed.
 
-Selected section reveals, photograph hover zoom, and filter arrivals use CSS/vanilla JavaScript. Text remains at full opacity for contrast; content is visible before or without JavaScript; reduced motion suppresses animations. Gallery counts are no longer displayed, while a screen-reader status announces the selected category.
+The existing homepage hero and palette are preserved. Hero heading/subtitle/actions now fade and rise with 90ms staggering. Selected destination content, featured images, packages, team profiles and Contact blocks reveal on scroll. Navigation has animated underlines and mobile opening/closing; gallery changes interpolate positions and grid height, and the lightbox fades in. Hover/field/button feedback is restrained. Large destination hero photographs do not move. Content remains visible without JavaScript; reduced-motion changes cancel effects safely.
 
 ## Validation
 
-The current refinement passed **955 local link/asset checks** and **252 Chromium page/width cases**: all 28 routes at 320, 375, 390, 576, 768, 991, 1024, 1440, and 1920 pixels. Checks include all heading levels, image loading/proportions, footer reachability, HTTP/JavaScript failures, and horizontal overflow. A final frame-height adjustment was followed by 36 guide-frame checks and refreshed captures. Additional checks cover 28 landscape layouts, 28 layouts with a viewport equivalent to 200% zoom reflow, and eight representative pages with 200% text size. This is not a test of Chromium's native browser-zoom UI.
+The current refinement passed **954 local link/asset checks** and **252 Chromium page/width cases**: all 28 routes at 320, 375, 390, 576, 768, 991, 1024, 1440, and 1920 pixels. Checks include all heading levels, image loading/proportions, footer reachability, HTTP/JavaScript failures, and horizontal overflow. Every destination guide passed frame-filling/background/title-position checks at every width: 108 checks across twelve routes. Additional checks cover 28 landscape layouts, 28 layouts with a viewport equivalent to 200% zoom reflow, and eight representative pages with 200% text size. This is not a test of Chromium's native browser-zoom UI.
 
-Multiple-transition tests now observe three automatic transitions and two resumed transitions after manual navigation on both directories at phone, tablet, and desktop sizes, including real touch emulation. Additional checks cover equal-height previews, repeated initialization, active navigation, and normal/reduced-motion animations. Fourteen interaction groups passed, including real five-second autoplay at phone/tablet/desktop sizes, manual navigation, hover/focus pause and resume, reduced motion, mobile navigation, filters, dialog keyboard behavior, validation, clipboard copying, and prepared email links. Separate checks verified duplicate initialization does not create duplicate slide transitions, dialog focus/scroll containment, and the prepared enquiry state. Axe-core 4.10.3 reported zero WCAG 2/2.1 A/AA violations in 56 page/width cases; automated accessibility checks do not establish full accessibility conformance.
+Real-time recordings observe three automatic transitions on both desktop directories, manual arrows/indicators and automatic recovery; mobile checks observe repeated touch autoplay and recovery after tapping an arrow. Additional checks cover equal-height previews, repeated initialization, active navigation, and normal/reduced-motion animations. Fourteen interaction groups passed, including real five-second autoplay at phone/tablet/desktop sizes, manual navigation, hover/focus pause and resume, reduced motion, mobile navigation, filters, dialog keyboard behavior, validation, clipboard copying, and prepared email links. Eleven additional recording/motion/proportion checks passed, plus 21 guide/category animation checks and two rapid-filter/live-preference checks. Desktop and mobile WebM recordings, actual animation events and before/after screenshots are included in `docs/final/`. Axe-core 4.10.3 reported zero WCAG 2/2.1 A/AA violations in 56 page/width cases; automated accessibility checks do not establish full accessibility conformance.
 
-Visual review used rendered phone, tablet, and desktop captures of all pages, with representative full-page inspection and before/after evidence in [the premium refinement review](docs/PREMIUM.md). Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery, and social-account ownership remain untested.
+Visual review used rendered phone, tablet, and desktop captures of all pages, with representative full-page inspection and before/after evidence in [the final refinement review](docs/FINAL.md). Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery, and social-account ownership remain untested.
 
 To reproduce the browser checks, install Playwright in a separate development environment (not required to run the website), keep the local server running, and use:
 
 ```sh
 python3 -m pip install playwright
-python3 -m playwright install chromium
+python3 -m playwright install chromium ffmpeg
 python3 scripts/check_pages.py
 python3 scripts/check_interactions.py
-python3 scripts/check_premium.py
+python3 scripts/check_final.py
+python3 scripts/check_motion_pages.py
 ```
 
-The scripts use installed system Chromium when available, otherwise Playwright's browser. Results and screenshots go to ignored `.qa-output/`; `--base-url` and `--output` can override defaults. The axe scan was a separate QA run, not a runtime dependency.
+The scripts use installed system Chromium when available, otherwise Playwright's browser. Results and screenshots go to ignored `.qa-output/`; `--base-url` and `--output` can override defaults. The recording check requires Playwright FFmpeg; this environment used the installed system FFmpeg through a QA-only cache. The axe scan was a separate QA run, not a runtime dependency. Static screenshots disable animation to capture completed layouts; the recordings and motion scripts verify normal animation and reduced motion separately.
 
 ## Upload to GitHub
 
-The latest premium refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. Download that branch for the updated project and review evidence. `main` is unchanged; no deployment has been performed.
+The final refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. Download this development branch to obtain the refined site and review evidence. `main` is unchanged; no deployment has been performed.
 
 To download from GitHub, select that branch on the repository page, then choose **Code → Download ZIP**. Extract the archive and follow the local run instructions above.
 

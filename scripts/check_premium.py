@@ -69,7 +69,7 @@ def main():
         assert page.locator('.gallery-count').count()==0
         page.get_by_role('button',name='Desert',exact=True).click()
         assert page.locator('.photo-gallery figure:visible').count()==8
-        assert page.locator('.filter-arriving').first.evaluate('e=>getComputedStyle(e).animationName')=='photograph-arrival'
+        assert page.locator('.photo-gallery').evaluate('e=>e.getAnimations().length') > 0
         page.wait_for_timeout(500)
         assert page.locator('.filter-arriving').count()==0
         page.goto(args.base_url+'/index.html')

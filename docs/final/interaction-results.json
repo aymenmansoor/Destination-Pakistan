@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "destination.html 375px: timed autoplay, next arrow and automatic resume",
+    "tour.html 375px: timed autoplay, next arrow and automatic resume",
+    "destination.html 768px: timed autoplay, next arrow and automatic resume",
+    "tour.html 768px: timed autoplay, next arrow and automatic resume",
+    "destination.html 1440px: timed autoplay, next arrow and automatic resume",
+    "tour.html 1440px: timed autoplay, next arrow and automatic resume",
+    "Control-hover/focus pause, left keyboard arrow, and resume after both interactions",
+    "destination.html: reduced motion blocks autoplay; manual control and live preference resume work",
+    "tour.html: reduced motion blocks autoplay; manual control and live preference resume work",
+    "Single-slide fixture hides redundant controls",
+    "Mobile menu, Escape key, and keyboard skip link",
+    "All gallery filters; category-scoped lightbox; keyboard arrows, focus containment and focus return",
+    "Enquiry subject, invalid/valid fields, encoded draft, clipboard and stale-draft reset",
+    "No-JS navigation, full gallery/direct image links and direct-email fallback"
+  ],
+  "errors": []
+}

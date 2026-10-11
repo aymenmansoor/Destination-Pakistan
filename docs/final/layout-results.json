@@ -1,0 +1,1441 @@
+{
+  "page_cases": 252,
+  "widths": [
+    320,
+    375,
+    390,
+    576,
+    768,
+    991,
+    1024,
+    1440,
+    1920
+  ],
+  "local_references": 954,
+  "guide_cases": 108,
+  "guide_routes": [
+    "AZAD KASHMIR.html",
+    "Fairy.html",
+    "Hunza.html",
+    "Kalash.html",
+    "Mushkpuri.html",
+    "SIRI PAYE.html",
+    "SWAT.html",
+    "Shangrila.html",
+    "khunjerab.html",
+    "rakaposhi.html",
+    "saral.html",
+    "tolipeer.html"
+  ],
+  "guide_checks": [
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 210,
+        "imageWidth": 280,
+        "imageHeight": 210,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 207.5625,
+        "imageWidth": 280,
+        "imageHeight": 207.5625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 186.65625,
+        "imageWidth": 280,
+        "imageHeight": 186.65625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 186.21875,
+        "imageWidth": 280,
+        "imageHeight": 186.21875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 157.5,
+        "imageWidth": 280,
+        "imageHeight": 157.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 320,
+      "guide": {
+        "width": 280,
+        "height": 186.21875,
+        "imageWidth": 280,
+        "imageHeight": 186.21875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 251.25,
+        "imageWidth": 335,
+        "imageHeight": 251.25,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 248.328125,
+        "imageWidth": 335,
+        "imageHeight": 248.328125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 223.328125,
+        "imageWidth": 335,
+        "imageHeight": 223.328125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 222.796875,
+        "imageWidth": 335,
+        "imageHeight": 222.796875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 188.4375,
+        "imageWidth": 335,
+        "imageHeight": 188.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 375,
+      "guide": {
+        "width": 335,
+        "height": 222.796875,
+        "imageWidth": 335,
+        "imageHeight": 222.796875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 262.5,
+        "imageWidth": 350,
+        "imageHeight": 262.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 259.453125,
+        "imageWidth": 350,
+        "imageHeight": 259.453125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 233.328125,
+        "imageWidth": 350,
+        "imageHeight": 233.328125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 232.78125,
+        "imageWidth": 350,
+        "imageHeight": 232.78125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 196.875,
+        "imageWidth": 350,
+        "imageHeight": 196.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 390,
+      "guide": {
+        "width": 350,
+        "height": 232.78125,
+        "imageWidth": 350,
+        "imageHeight": 232.78125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 402,
+        "imageWidth": 536,
+        "imageHeight": 402,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 397.328125,
+        "imageWidth": 536,
+        "imageHeight": 397.328125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 357.328125,
+        "imageWidth": 536,
+        "imageHeight": 357.328125,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 356.484375,
+        "imageWidth": 536,
+        "imageHeight": 356.484375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 301.5,
+        "imageWidth": 536,
+        "imageHeight": 301.5,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 576,
+      "guide": {
+        "width": 536,
+        "height": 356.484375,
+        "imageWidth": 536,
+        "imageHeight": 356.484375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 540,
+        "imageWidth": 720,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 768,
+      "guide": {
+        "width": 719,
+        "height": 533,
+        "imageWidth": 719,
+        "imageHeight": 533,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 480,
+        "imageWidth": 720,
+        "imageHeight": 480,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 478.875,
+        "imageWidth": 720,
+        "imageHeight": 478.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 405,
+        "imageWidth": 720,
+        "imageHeight": 405,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 768,
+      "guide": {
+        "width": 720,
+        "height": 478.875,
+        "imageWidth": 720,
+        "imageHeight": 478.875,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 991,
+      "guide": {
+        "width": 943,
+        "height": 530.4375,
+        "imageWidth": 943,
+        "imageHeight": 530.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 991,
+      "guide": {
+        "width": 943,
+        "height": 530.4375,
+        "imageWidth": 943,
+        "imageHeight": 530.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 991,
+      "guide": {
+        "width": 800,
+        "height": 450,
+        "imageWidth": 800,
+        "imageHeight": 450,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 991,
+      "guide": {
+        "width": 820,
+        "height": 615,
+        "imageWidth": 820,
+        "imageHeight": 615,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 991,
+      "guide": {
+        "width": 719,
+        "height": 533,
+        "imageWidth": 719,
+        "imageHeight": 533,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 991,
+      "guide": {
+        "width": 943,
+        "height": 530.4375,
+        "imageWidth": 943,
+        "imageHeight": 530.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 991,
+      "guide": {
+        "width": 801,
+        "height": 450.5625,
+        "imageWidth": 801,
+        "imageHeight": 450.5625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 991,
+      "guide": {
+        "width": 943,
+        "height": 530.4375,
+        "imageWidth": 943,
+        "imageHeight": 530.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 991,
+      "guide": {
+        "width": 820,
+        "height": 546.65625,
+        "imageWidth": 820,
+        "imageHeight": 546.65625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 991,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 991,
+      "guide": {
+        "width": 943,
+        "height": 530.4375,
+        "imageWidth": 943,
+        "imageHeight": 530.4375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 991,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 1024,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 1024,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 1024,
+      "guide": {
+        "width": 800,
+        "height": 450,
+        "imageWidth": 800,
+        "imageHeight": 450,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 1024,
+      "guide": {
+        "width": 820,
+        "height": 615,
+        "imageWidth": 820,
+        "imageHeight": 615,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 1024,
+      "guide": {
+        "width": 719,
+        "height": 533,
+        "imageWidth": 719,
+        "imageHeight": 533,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 1024,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 1024,
+      "guide": {
+        "width": 801,
+        "height": 450.5625,
+        "imageWidth": 801,
+        "imageHeight": 450.5625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 1024,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 1024,
+      "guide": {
+        "width": 820,
+        "height": 546.65625,
+        "imageWidth": 820,
+        "imageHeight": 546.65625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 1024,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 1024,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 1024,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 1440,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 1440,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 1440,
+      "guide": {
+        "width": 800,
+        "height": 450,
+        "imageWidth": 800,
+        "imageHeight": 450,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 1440,
+      "guide": {
+        "width": 820,
+        "height": 615,
+        "imageWidth": 820,
+        "imageHeight": 615,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 1440,
+      "guide": {
+        "width": 719,
+        "height": 533,
+        "imageWidth": 719,
+        "imageHeight": 533,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 1440,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 1440,
+      "guide": {
+        "width": 801,
+        "height": 450.5625,
+        "imageWidth": 801,
+        "imageHeight": 450.5625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 1440,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 1440,
+      "guide": {
+        "width": 820,
+        "height": 546.65625,
+        "imageWidth": 820,
+        "imageHeight": 546.65625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 1440,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 1440,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 1440,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "AZAD KASHMIR.html",
+      "width": 1920,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Fairy.html",
+      "width": 1920,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Hunza.html",
+      "width": 1920,
+      "guide": {
+        "width": 800,
+        "height": 450,
+        "imageWidth": 800,
+        "imageHeight": 450,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Kalash.html",
+      "width": 1920,
+      "guide": {
+        "width": 820,
+        "height": 615,
+        "imageWidth": 820,
+        "imageHeight": 615,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Mushkpuri.html",
+      "width": 1920,
+      "guide": {
+        "width": 719,
+        "height": 533,
+        "imageWidth": 719,
+        "imageHeight": 533,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SIRI PAYE.html",
+      "width": 1920,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "SWAT.html",
+      "width": 1920,
+      "guide": {
+        "width": 801,
+        "height": 450.5625,
+        "imageWidth": 801,
+        "imageHeight": 450.5625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "Shangrila.html",
+      "width": 1920,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "khunjerab.html",
+      "width": 1920,
+      "guide": {
+        "width": 820,
+        "height": 546.65625,
+        "imageWidth": 820,
+        "imageHeight": 546.65625,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "rakaposhi.html",
+      "width": 1920,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "saral.html",
+      "width": 1920,
+      "guide": {
+        "width": 960,
+        "height": 540,
+        "imageWidth": 960,
+        "imageHeight": 540,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    },
+    {
+      "page": "tolipeer.html",
+      "width": 1920,
+      "guide": {
+        "width": 820,
+        "height": 545.375,
+        "imageWidth": 820,
+        "imageHeight": 545.375,
+        "background": "rgba(0, 0, 0, 0)",
+        "fit": "cover",
+        "titleBeforeImage": true
+      }
+    }
+  ],
+  "failures": [],
+  "http_errors": [],
+  "javascript_errors": [],
+  "landscape_cases": 28,
+  "zoom_reflow_cases": 28
+}
