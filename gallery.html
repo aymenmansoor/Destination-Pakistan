@@ -1,121 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styleh.css">
-    <link rel="stylesheet" href="style2.css">
-    <style>
-        body {
-       background-color:white;
-       background-size: 100%;
-          
-   }
-   
-               
-    </style>
-</head>
-<link rel="stylesheet" href="styleh.css">
-<body>
-    <header> 
-        <a href="#" class="logo" style="font-family: Broadway;font-size: 18px;">  Destination Pakistan. </a>
-   <nav>
-<a href="front.html">HOME</a>
-<a href="tour.html">TOUR PACKAGES</a>
-<a href="destination.html">DESTINATION</a>
-<a href="gallery.html">GALLERY</a>
-<a href="about.html">ABOUT US</a>
-<a href="contact.html">CONTACT US</a>
-    </nav>
-</header>
-<input type="radio" name="photos" id="check1" checked>
-<input type="radio" name="photos" id="check2">
-<input type="radio" name="photos" id="check3">
-<input type="radio" name="photos" id="check4">
-<div class="">
-<center><h1>OUR PHOTO GALLERY</h1></center>
-<div class="top-content">
-<h3>Photo Gallery</h3>
-<label for="check1">All Photos</label>
-<label for="check1">Mountains</label>
-<label for="check1">Desert</label>
-<label for="check1">Sea Side</label>
-</div>
-<div class="photo-gallery">
-    <div class="pic Mountain">
-    <img src="kashmir/k1.jpg">
-</div> 
-   <div class="pic Sea Side">
-   <img src="Sea Side/s1.jpg">
-</div> 
-   <div class="pic Desert">
-                <img src="desert/d1.jpg">
-            </div> 
-
-            <div class="pic Mountain">
-                <img src="kashmir/k2.jpg">
-            </div> 
-                  <div class="pic Sea Side">
-                    <img src="Sea Side/s2.jpg">
-                </div> 
-                           <div class="pic Desert">
-                        <img src="desert/d2.jpg">
-                    </div> 
-                    <div class="pic Mountain">
-                        <img src="kashmir/k3.jpg">
-                    </div> 
-                          <div class="pic Sea Side">
-                            <img src="Sea Side/s3.jpg">
-                        </div> 
-                                   <div class="pic Desert">
-                                <img src="desert/d3.jpg">
-                            </div> 
-                            <div class="pic Mountain">
-                                <img src="kashmir/k4.jpg">
-                            </div> 
-                                  <div class="pic Sea Side">
-                                    <img src="Sea Side/s4.jpg">
-                                </div> 
-                                           <div class="pic Desert">
-                                        <img src="desert/d4.jpg">
-                                    </div> 
-          <div class="pic Mountain">
-        <img src="kashmir/k5.jpg">
-    </div> 
-          <div class="pic Sea Side">
-            <img src="Sea Side/s5.jpg">
-        </div> 
-                   <div class="pic Desert">
-                <img src="desert/d5.jpg">
-            </div>   <div class="pic Mountain">
-                <img src="kashmir/k6.jpg">
-            </div> 
-                  <div class="pic Sea Side">
-                    <img src="Sea Side/s6.jpg">
-                </div> 
-                           <div class="pic Desert">
-                        <img src="desert/d6.jpg">
-                    </div> 
-                    <div class="pic Mountain">
-                        <img src="kashmir/k7.jpg">
-                    </div> 
-                          <div class="pic Sea Side">
-                            <img src="Sea Side/s7.jpg">
-                        </div> 
-                                   <div class="pic Desert">
-                                <img src="desert/d7.jpg">
-                            </div>   <div class="pic Mountain">
-                                <img src="kashmir/k8.jpg">
-                            </div> 
-                                  <div class="pic Sea Side">
-                                    <img src="Sea Side/s8.jpg">
-                                </div> 
-                                           <div class="pic Desert">
-                                        <img src="desert/d8.jpg">
-                                    </div> 
-</div>
-</div>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore 24 original photographs of mountains, deserts, and coastal scenery."
+    />
+    <meta name="theme-color" content="#173f35" />
+    <title>Photo gallery | Destination Pakistan</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Destination Pakistan home"
+          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path
+              d="M3 36 19 10l8 13 6-9 12 22H3Z"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+              stroke="currentColor"
+              stroke-width="2"
+            /></svg
+          ><span class="brand-name"
+            >Destination Pakistan<small
+              >Explore. Experience. Remember.</small
+            ></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="tour.html">Tour packages</a
+          ><a href="destination.html">Destinations</a
+          ><a href="gallery.html" aria-current="page">Gallery</a
+          ><a href="about.html">About us</a
+          ><a href="contact.html" class="nav-contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="page-heading">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span
+            ><span aria-current="page">A window into Pakistan.</span>
+          </nav>
+          <span class="eyebrow">The photo journal</span>
+          <h1 class="article-title">A window into Pakistan.</h1>
+          <p>
+            Mountains, desert landscapes, and coastal views from our original
+            photo collection.
+          </p>
+        </div>
+      </div>
+      <div class="container page-content">
+        <div
+          class="gallery-filters"
+          role="group"
+          aria-label="Filter photographs"
+        >
+          <button
+            class="gallery-filter"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All photos</button
+          ><button
+            class="gallery-filter"
+            type="button"
+            data-filter="mountains"
+            aria-pressed="false"
+          >
+            Mountains</button
+          ><button
+            class="gallery-filter"
+            type="button"
+            data-filter="desert"
+            aria-pressed="false"
+          >
+            Desert</button
+          ><button
+            class="gallery-filter"
+            type="button"
+            data-filter="coast"
+            aria-pressed="false"
+          >
+            Sea side
+          </button>
+          <p class="visually-hidden">
+            Filters require JavaScript. Without it, all photographs remain
+            visible.
+          </p>
+        </div>
+        <p class="gallery-count" aria-live="polite">24 photographs</p>
+        <div class="photo-gallery">
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k1.jpg"
+              alt="Mountain scenery from the original gallery, photograph 1"
+              width="5680"
+              height="3787"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 01</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s1.jpg"
+              alt="Coastal scenery from the original gallery, photograph 1"
+              width="5184"
+              height="3456"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 01</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d1.jpg"
+              alt="Desert landscape from the original gallery, photograph 1"
+              width="4016"
+              height="6016"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 01</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k2.jpg"
+              alt="Mountain scenery from the original gallery, photograph 2"
+              width="5184"
+              height="2916"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 02</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s2.jpg"
+              alt="Coastal scenery from the original gallery, photograph 2"
+              width="3684"
+              height="2456"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 02</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d2.jpg"
+              alt="Desert landscape from the original gallery, photograph 2"
+              width="4500"
+              height="3000"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 02</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k3.jpg"
+              alt="Mountain scenery from the original gallery, photograph 3"
+              width="5184"
+              height="2916"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 03</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s3.jpg"
+              alt="Coastal scenery from the original gallery, photograph 3"
+              width="4928"
+              height="3280"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 03</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d3.jpg"
+              alt="Desert landscape from the original gallery, photograph 3"
+              width="4032"
+              height="3024"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 03</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k4.jpg"
+              alt="Mountain scenery from the original gallery, photograph 4"
+              width="5184"
+              height="3456"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 04</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s4.jpg"
+              alt="Coastal scenery from the original gallery, photograph 4"
+              width="3840"
+              height="2160"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 04</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d4.jpg"
+              alt="Desert landscape from the original gallery, photograph 4"
+              width="6000"
+              height="4000"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 04</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k5.jpg"
+              alt="Mountain scenery from the original gallery, photograph 5"
+              width="5184"
+              height="3456"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 05</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s5.jpg"
+              alt="Coastal scenery from the original gallery, photograph 5"
+              width="2048"
+              height="1536"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 05</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d5.jpg"
+              alt="Desert landscape from the original gallery, photograph 5"
+              width="4928"
+              height="3264"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 05</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k6.jpg"
+              alt="Mountain scenery from the original gallery, photograph 6"
+              width="5184"
+              height="3215"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 06</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s6.jpg"
+              alt="Coastal scenery from the original gallery, photograph 6"
+              width="3840"
+              height="2160"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 06</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d6.jpg"
+              alt="Desert landscape from the original gallery, photograph 6"
+              width="3160"
+              height="4740"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 06</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k7.jpg"
+              alt="Mountain scenery from the original gallery, photograph 7"
+              width="3240"
+              height="2160"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 07</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s7.jpg"
+              alt="Coastal scenery from the original gallery, photograph 7"
+              width="6000"
+              height="4000"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 07</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d7.jpg"
+              alt="Desert landscape from the original gallery, photograph 7"
+              width="6000"
+              height="4000"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 07</figcaption>
+          </figure>
+          <figure data-category="mountains">
+            <img
+              src="kashmir/k8.jpg"
+              alt="Mountain scenery from the original gallery, photograph 8"
+              width="4000"
+              height="6000"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Mountain scenery · 08</figcaption>
+          </figure>
+          <figure data-category="coast">
+            <img
+              src="Sea Side/s8.jpg"
+              alt="Coastal scenery from the original gallery, photograph 8"
+              width="3542"
+              height="4428"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Coastal scenery · 08</figcaption>
+          </figure>
+          <figure data-category="desert">
+            <img
+              src="desert/d8.jpg"
+              alt="Desert landscape from the original gallery, photograph 8"
+              width="6000"
+              height="4000"
+              class=""
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Desert landscape · 08</figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a
+              class="brand"
+              href="index.html"
+              aria-label="Destination Pakistan home"
+              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path
+                  d="M3 36 19 10l8 13 6-9 12 22H3Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+                  stroke="currentColor"
+                  stroke-width="2"
+                /></svg
+              ><span class="brand-name"
+                >Destination Pakistan<small
+                  >Explore. Experience. Remember.</small
+                ></span
+              ></a
+            >
+            <p>
+              Discover Pakistan’s landscapes, cultural heritage, and the places
+              that make every journey memorable.
+            </p>
+          </div>
+          <div>
+            <h2>Explore Pakistan</h2>
+            <div class="footer-links">
+              <a href="destination.html">All destinations</a
+              ><a href="tour.html">Tour packages</a
+              ><a href="gallery.html">Photo gallery</a
+              ><a href="about.html">Our story &amp; team</a>
+            </div>
+          </div>
+          <div>
+            <h2>Let’s talk travel</h2>
+            <div class="footer-links">
+              <a href="contact.html"
+                >Make an enquiry
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg></a
+              ><a href="mailto:destinationpakistan@gmail.com"
+                >destinationpakistan@gmail.com</a
+              ><a
+                href="https://www.instagram.com/destinationpakistan/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg></a
+              ><a
+                href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Destination Pakistan. All rights reserved.</span
+          ><span>Mountains. Culture. Adventure.</span
+          ><a href="#main"
+            >Back to top
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 14 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 12V2M2 7l5-5 5 5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

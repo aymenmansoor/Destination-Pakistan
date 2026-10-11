@@ -1,81 +1,330 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ski Tours</title>
-    <link rel="stylesheet" href="styleh.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        .card-img-top {
-            height: 300px; 
-            object-fit: cover;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-        .card-title {
-            font-weight: bold;
-        }
-      
-    </style>
-</head>
-<body>
-    <header> 
-        <a href="#" class="logo">Destination Pakistan</a>
-        <nav>
-            <a href="front.html">HOME</a>
-            <a href="tour.html">TOUR PACKAGES</a>
-            <a href="destination.html">DESTINATION</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="contact.html">CONTACT US</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover winter journeys, alpine landscapes, and family ski experiences."
+    />
+    <meta name="theme-color" content="#173f35" />
+    <title>Ski adventures | Destination Pakistan</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Destination Pakistan home"
+          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path
+              d="M3 36 19 10l8 13 6-9 12 22H3Z"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+              stroke="currentColor"
+              stroke-width="2"
+            /></svg
+          ><span class="brand-name"
+            >Destination Pakistan<small
+              >Explore. Experience. Remember.</small
+            ></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="tour.html" aria-current="page">Tour packages</a
+          ><a href="destination.html">Destinations</a
+          ><a href="gallery.html">Gallery</a><a href="about.html">About us</a
+          ><a href="contact.html" class="nav-contact">Contact</a>
         </nav>
+      </div>
     </header>
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Experience the Thrill of Skiing</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/snow.jpg" class="card-img-top" alt="Ski Tour 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Snowy Peaks Adventure</h5>
-                        <p class="card-text">Conquer the snowy peaks of the Himalayas with our expert ski guides.</p>
-                        <p class="card-text">Duration: 7 days</p>
-                        <p class="card-text">Price: Rs. 58,987</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/snow2.jpg" class="card-img-top" alt="Ski Tour 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Alpine Adventure</h5>
-                        <p class="card-text">Explore the picturesque alpine landscapes while skiing down thrilling slopes.</p>
-                        <p class="card-text">Duration: 5 days</p>
-                        <p class="card-text">Price: Rs. 45,987</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/snow3.webp" class="card-img-top" alt="Ski Tour 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Family Ski Retreat</h5>
-                        <p class="card-text">Enjoy a fun-filled family ski vacation in the scenic mountains of Pakistan.</p>
-                        <p class="card-text">Duration: 4 days</p>
-                        <p class="card-text">Discount: 25%</p>
-                        <p class="card-text">Price: Rs. 32,987</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
+    <main id="main" tabindex="-1">
+      <div class="page-heading">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span
+            ><a href="tour.html">Tour packages</a
+            ><span aria-hidden="true">/</span
+            ><span aria-current="page">Ski adventures</span>
+          </nav>
+          <span class="eyebrow">Find your adventure</span>
+          <h1 class="article-title">Ski adventures</h1>
+          <p>
+            Discover winter journeys, alpine landscapes, and family ski
+            experiences.
+          </p>
         </div>
-    </div>
-
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      </div>
+      <div class="container page-content">
+        <p class="price-note">
+          Prices, durations, and discounts are from the original website. Please
+          confirm current availability and rates before making travel plans.
+          Enquiries do not create a booking.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/snow.jpg"
+                alt="Snowy Peaks Adventure"
+                width="207"
+                height="244"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Snowy Peaks Adventure</h2>
+                <p class="package-description">
+                  Conquer the snowy peaks of the Himalayas with our expert ski
+                  guides.
+                </p>
+                <div class="package-meta">
+                  <p>Duration: 7 days</p>
+                  <p>Price: Rs. 58,987</p>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  href="contact.html?tour=Snowy%20Peaks%20Adventure"
+                  >Enquire about this trip<span class="visually-hidden"
+                    >: Snowy Peaks Adventure</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/snow2.jpg"
+                alt="Alpine Adventure"
+                width="259"
+                height="194"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Alpine Adventure</h2>
+                <p class="package-description">
+                  Explore the picturesque alpine landscapes while skiing down
+                  thrilling slopes.
+                </p>
+                <div class="package-meta">
+                  <p>Duration: 5 days</p>
+                  <p>Price: Rs. 45,987</p>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  href="contact.html?tour=Alpine%20Adventure"
+                  >Enquire about this trip<span class="visually-hidden"
+                    >: Alpine Adventure</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/snow3.webp"
+                alt="Family Ski Retreat"
+                width="600"
+                height="399"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Family Ski Retreat</h2>
+                <p class="package-description">
+                  Enjoy a fun-filled family ski vacation in the scenic mountains
+                  of Pakistan.
+                </p>
+                <div class="package-meta">
+                  <p>Duration: 4 days</p>
+                  <p>Discount: 25%</p>
+                  <p>Price: Rs. 32,987</p>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  href="contact.html?tour=Family%20Ski%20Retreat"
+                  >Enquire about this trip<span class="visually-hidden"
+                    >: Family Ski Retreat</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a
+              class="brand"
+              href="index.html"
+              aria-label="Destination Pakistan home"
+              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path
+                  d="M3 36 19 10l8 13 6-9 12 22H3Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+                  stroke="currentColor"
+                  stroke-width="2"
+                /></svg
+              ><span class="brand-name"
+                >Destination Pakistan<small
+                  >Explore. Experience. Remember.</small
+                ></span
+              ></a
+            >
+            <p>
+              Discover Pakistan’s landscapes, cultural heritage, and the places
+              that make every journey memorable.
+            </p>
+          </div>
+          <div>
+            <h2>Explore Pakistan</h2>
+            <div class="footer-links">
+              <a href="destination.html">All destinations</a
+              ><a href="tour.html">Tour packages</a
+              ><a href="gallery.html">Photo gallery</a
+              ><a href="about.html">Our story &amp; team</a>
+            </div>
+          </div>
+          <div>
+            <h2>Let’s talk travel</h2>
+            <div class="footer-links">
+              <a href="contact.html"
+                >Make an enquiry
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg></a
+              ><a href="mailto:destinationpakistan@gmail.com"
+                >destinationpakistan@gmail.com</a
+              ><a
+                href="https://www.instagram.com/destinationpakistan/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg></a
+              ><a
+                href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Destination Pakistan. All rights reserved.</span
+          ><span>Mountains. Culture. Adventure.</span
+          ><a href="#main"
+            >Back to top
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 14 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 12V2M2 7l5-5 5 5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

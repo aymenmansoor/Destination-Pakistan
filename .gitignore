@@ -1,0 +1,20 @@
+# Local secrets and environment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Local dependencies and generated test output
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+playwright-report/
+test-results/
+coverage/
+*.log

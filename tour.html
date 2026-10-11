@@ -1,169 +1,655 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Packages</title>
-    <link rel="stylesheet" href="styleh.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        .card-img-top {
-            height: 300px; 
-            object-fit: cover;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-        
-    </style>
-</head>
-<body>
-    <header> 
-        <a href="#" class="logo">Destination Pakistan</a>
-        <nav>
-            <a href="front.html">HOME</a>
-            <a href="tour.html">TOUR PACKAGES</a>
-            <a href="destination.html">DESTINATION</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="contact.html">CONTACT US</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Culture, mountain trails, wildlife, and open roads. Browse our collection of travel experiences."
+    />
+    <meta name="theme-color" content="#173f35" />
+    <title>Special Interest Adventure | Destination Pakistan</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Destination Pakistan home"
+          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path
+              d="M3 36 19 10l8 13 6-9 12 22H3Z"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path
+              d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+              stroke="currentColor"
+              stroke-width="2"
+            /></svg
+          ><span class="brand-name"
+            >Destination Pakistan<small
+              >Explore. Experience. Remember.</small
+            ></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="tour.html" aria-current="page">Tour packages</a
+          ><a href="destination.html">Destinations</a
+          ><a href="gallery.html">Gallery</a><a href="about.html">About us</a
+          ><a href="contact.html" class="nav-contact">Contact</a>
         </nav>
+      </div>
     </header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <main id="main" tabindex="-1">
+      <div class="page-heading">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span
+            ><span aria-current="page">Choose your adventure</span>
+          </nav>
+          <span class="eyebrow">Travel your way</span>
+          <h1 class="article-title">Choose your adventure</h1>
+          <p>
+            Culture, mountain trails, wildlife, and open roads. Browse our
+            collection of travel experiences.
+          </p>
         </div>
-        <div class="carousel-inner">
+      </div>
+      <div class="container page-content">
+        <div
+          id="landscape-carousel"
+          class="carousel slide"
+          aria-label="Pakistan travel showcase"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button
+            ><button
+              type="button"
+              data-bs-target="#landscape-carousel"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+          </div>
+          <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="tour/q1.png" class="d-block w-100" alt="Slide 1">
+              <img
+                src="tour/q1.png"
+                alt="Pakistan travel showcase, photograph 1"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                fetchpriority="high"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q2.jpg" class="d-block w-100" alt="Slide 2">
+              <img
+                src="tour/q2.jpg"
+                alt="Pakistan travel showcase, photograph 2"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q3.png" class="d-block w-100" alt="Slide 3">
+              <img
+                src="tour/q3.png"
+                alt="Pakistan travel showcase, photograph 3"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q4.png" class="d-block w-100" alt="Slide 4">
+              <img
+                src="tour/q4.png"
+                alt="Pakistan travel showcase, photograph 4"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q5.png" class="d-block w-100" alt="Slide 5">
+              <img
+                src="tour/q5.png"
+                alt="Pakistan travel showcase, photograph 5"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q6.png" class="d-block w-100" alt="Slide 6">
+              <img
+                src="tour/q6.png"
+                alt="Pakistan travel showcase, photograph 6"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q7.png" class="d-block w-100" alt="Slide 7">
+              <img
+                src="tour/q7.png"
+                alt="Pakistan travel showcase, photograph 7"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="carousel-item">
-                <img src="tour/q8.png" class="d-block w-100" alt="Slide 8">
+              <img
+                src="tour/q8.png"
+                alt="Pakistan travel showcase, photograph 8"
+                width="1920"
+                height="900"
+                class="d-block w-100"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#landscape-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span
+            ><span class="visually-hidden">Previous photograph</span></button
+          ><button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#landscape-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span
+            ><span class="visually-hidden">Next photograph</span></button
+          ><button class="carousel-pause" type="button" aria-pressed="false">
+            Play slideshow
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Choose Your Adventure</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/cultural.jpg" class="card-img-top" alt="Cultural Tour">
-                    <div class="card-body">
-                        <h5 class="card-title">Cultural Tours</h5>
-                        <a href="culture.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/treking.jpg" class="card-img-top" alt="Trekings">
-                    <div class="card-body">
-                        <h5 class="card-title">Trekings</h5>
-                        <a href="treking.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/safarie.jpg" class="card-img-top" alt="Safaries">
-                    <div class="card-body">
-                        <h5 class="card-title">Safaries</h5>
-                        <a href="safarie.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/festivals.jpg" class="card-img-top" alt="Festivals">
-                    <div class="card-body">
-                        <h5 class="card-title">Festivals</h5>
-                        <a href="festivals.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/bike.jpg" class="card-img-top" alt="Bike Tour">
-                    <div class="card-body">
-                        <h5 class="card-title">Bike Tours</h5>
-                        <a href="bike.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/wild.jpg" class="card-img-top" alt="Wildlife Tours">
-                    <div class="card-body">
-                        <h5 class="card-title">Wildlife Tours</h5>
-                        <a href="wild.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/ski.jpg" class="card-img-top" alt="Ski Tours">
-                    <div class="card-body">
-                        <h5 class="card-title">Ski Tours</h5>
-                        <a href="ski.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/china.jpg" class="card-img-top" alt="Overland Adventure">
-                    <div class="card-body">
-                        <h5 class="card-title">Overland Adventure</h5>
-                        <a href="Overland Adventure.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="tour/safarie.jpg" class="card-img-top" alt="Special Interest Adventure">
-                    <div class="card-body">
-                        <h5 class="card-title">Special Interest Adventure</h5>
-                        <a href="Special Interest Adventure.html" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/cultural.jpg"
+                alt="Cultural Tours"
+                width="286"
+                height="176"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Cultural Tours</h2>
+                <a class="btn btn-outline-primary" href="culture.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Cultural Tours</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/treking.jpg"
+                alt="Trekking"
+                width="1140"
+                height="530"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Trekking</h2>
+                <a class="btn btn-outline-primary" href="treking.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Trekking</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/safarie.jpg"
+                alt="Safaris"
+                width="249"
+                height="202"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Safaris</h2>
+                <a class="btn btn-outline-primary" href="safarie.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Safaris</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/festivals.jpg"
+                alt="Festivals"
+                width="1440"
+                height="625"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Festivals</h2>
+                <a class="btn btn-outline-primary" href="festivals.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Festivals</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/bike.jpg"
+                alt="Bike Tours"
+                width="600"
+                height="400"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Bike Tours</h2>
+                <a class="btn btn-outline-primary" href="bike.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Bike Tours</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/wild.jpg"
+                alt="Wildlife Tours"
+                width="1024"
+                height="640"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Wildlife Tours</h2>
+                <a class="btn btn-outline-primary" href="wild.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Wildlife Tours</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/ski.jpg"
+                alt="Ski Tours"
+                width="580"
+                height="400"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Ski Tours</h2>
+                <a class="btn btn-outline-primary" href="ski.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Ski Tours</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/china.jpg"
+                alt="Overland Adventure"
+                width="580"
+                height="400"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Overland Adventure</h2>
+                <a
+                  class="btn btn-outline-primary"
+                  href="Overland Adventure.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Overland Adventure</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card">
+              <img
+                src="tour/safarie.jpg"
+                alt="Special Interest Adventure"
+                width="249"
+                height="202"
+                class="card-img-top"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Special Interest Adventure</h2>
+                <a
+                  class="btn btn-outline-primary"
+                  href="Special Interest Adventure.html"
+                  >Explore packages<span class="visually-hidden"
+                    >: Special Interest Adventure</span
+                  >
+                  <svg
+                    class="arrow-icon"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 11 11 3M3 3h8v8"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
         </div>
-    </div>
-
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a
+              class="brand"
+              href="index.html"
+              aria-label="Destination Pakistan home"
+              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path
+                  d="M3 36 19 10l8 13 6-9 12 22H3Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+                  stroke="currentColor"
+                  stroke-width="2"
+                /></svg
+              ><span class="brand-name"
+                >Destination Pakistan<small
+                  >Explore. Experience. Remember.</small
+                ></span
+              ></a
+            >
+            <p>
+              Discover Pakistan’s landscapes, cultural heritage, and the places
+              that make every journey memorable.
+            </p>
+          </div>
+          <div>
+            <h2>Explore Pakistan</h2>
+            <div class="footer-links">
+              <a href="destination.html">All destinations</a
+              ><a href="tour.html">Tour packages</a
+              ><a href="gallery.html">Photo gallery</a
+              ><a href="about.html">Our story &amp; team</a>
+            </div>
+          </div>
+          <div>
+            <h2>Let’s talk travel</h2>
+            <div class="footer-links">
+              <a href="contact.html"
+                >Make an enquiry
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg></a
+              ><a href="mailto:destinationpakistan@gmail.com"
+                >destinationpakistan@gmail.com</a
+              ><a
+                href="https://www.instagram.com/destinationpakistan/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg></a
+              ><a
+                href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Destination Pakistan. All rights reserved.</span
+          ><span>Mountains. Culture. Adventure.</span
+          ><a href="#main"
+            >Back to top
+            <svg
+              class="arrow-icon"
+              viewBox="0 0 14 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 12V2M2 7l5-5 5 5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
