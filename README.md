@@ -59,7 +59,8 @@ Destination-Pakistan/
 ├── style2.css                  # Legacy gallery stylesheet compatibility path
 ├── AUDIT.md                    # Findings, content issues, and review notes
 ├── scripts/                    # Optional Python/Playwright QA tools
-├── docs/FINAL.md                # Current screenshots, videos and QA evidence
+├── docs/DESIGN.md               # Current design review and browser evidence
+├── docs/FINAL.md                # Previous refinement evidence
 ├── docs/PREMIUM.md              # Previous refinement evidence
 ├── docs/REFINEMENT.md           # Earlier refinement review
 └── .gitignore
@@ -69,7 +70,7 @@ Filenames containing spaces or capital letters remain unchanged to preserve exis
 
 ## Editing the website
 
-Edit HTML content directly. `assets/css/site.css` imports styles organized by responsibility: base, navigation, homepage, cards, pages, slideshows, gallery/contact, footer, and responsive layouts. Palette variables live in `assets/css/base.css`. `photography.css` controls cinematic directories and shared destination frames; `editorial.css` controls package rows, homepage details, and Contact; `motion.css` defines restrained animations. Common navigation and footer markup is present in each page so the site needs no templating runtime. When changing navigation, update every page consistently. Keep `index.html` and `front.html` synchronized.
+Edit HTML content directly. `assets/css/site.css` imports styles organized by responsibility: base, navigation, homepage, cards, pages, slideshows, gallery/contact, footer, and responsive layouts. Palette variables live in `assets/css/base.css`. `photography.css` controls cinematic directories and shared destination frames; `editorial.css` controls package grids, homepage details, and Contact; `motion.css` defines restrained animations. Common navigation and footer markup is present in each page so the site needs no templating runtime. When changing navigation, update every page consistently. Keep `index.html` and `front.html` synchronized.
 
 Bootstrap’s responsive `.row`, `.col-*`, and `.g-*` classes arrange cards. The shared CSS controls typography, image cropping, buttons, and page spacing. `assets/js/site.js` adds small interactions; ordinary links and all content remain available when JavaScript is disabled. Gallery filtering, the photo dialog, and clipboard copying require JavaScript. Without JavaScript, every gallery thumbnail links directly to its original photograph.
 
@@ -93,36 +94,41 @@ Without a configured email app, copy the enquiry into an email manually. Without
 - Destination descriptions contain inherited historical, seasonal, access, and safety claims. They need editorial review before being relied on for current travel decisions.
 - Social account ownership, responses from the listed email address, actual email delivery, and the rights to original photographs have not been verified.
 
-## Final refinement
+## Current design refinement
 
-Both directory sliders remain wide but now have a 520px maximum height, approximately one-third shorter than the previous 760px design. Destination photos fill their intended containers without grey side bands; safe landscapes use 16:9 cropping, while subject-sensitive photos retain their natural ratio. All twelve guides share a title-before-image structure and source-width limits. Package categories use compact editorial rows with a smaller image share and prominent prices/durations. Contact uses the form alongside email and useful enquiry guidance; its filler photograph was removed.
+Both directory sliders share a centered 1,050px maximum width, 380px desktop height, 10px corners, lower-left 32px captions and a 30px gap before the cards. Their five-second autoplay, arrows, indicators, keyboard handling and reduced-motion behavior are preserved.
 
-The existing homepage hero and palette are preserved. Hero heading/subtitle/actions now fade and rise with 90ms staggering. Selected destination content, featured images, packages, team profiles and Contact blocks reveal on scroll. Navigation has animated underlines and mobile opening/closing; gallery changes interpolate positions and grid height, and the lightbox fades in. Hover/field/button feedback is restrained. Large destination hero photographs do not move. Content remains visible without JavaScript; reduced-motion changes cancel effects safely.
+All twelve guides now share warm-ivory headings, breadcrumbs, a destination label and a concise introduction. Their main photographs span the 1,050px content area without filler bands. Seven scenic photographs use a 2.4–2.5:1 desktop frame; five subject-sensitive photographs keep their natural ratio to protect people, livestock and tents. Phones use a gentler landscape crop. Main copy and the compact beige enquiry card split two-thirds/one-third above the mobile breakpoint. Existing low-resolution files remain a quality limitation; see the photo review in [AUDIT.md](AUDIT.md).
+
+All nine package categories use three-column card grids on large desktops, two columns on tablets and one on phones. Cards have 200px photographs, aligned enquiry buttons and restrained hover lift/shadow/zoom. Original descriptions, durations, prices and discounts are unchanged and remain subject to confirmation. The homepage hero, gallery filters/lightbox and About content are preserved. The homepage gallery preview uses equal landscape frames. Contact retains its clean form/email/guidance layout, white form and green active navigation button, with tighter field spacing.
+
+Existing hero stagger, content reveals, menu transitions, slider captions, gallery interpolation and lightbox fades continue to work. Large guide photographs do not animate. Content remains visible without JavaScript and motion preferences suppress effects. [Review screenshots, recordings, modified files and remaining limitations](docs/DESIGN.md).
 
 ## Validation
 
-The current refinement passed **954 local link/asset checks** and **252 Chromium page/width cases**: all 28 routes at 320, 375, 390, 576, 768, 991, 1024, 1440, and 1920 pixels. Checks include all heading levels, image loading/proportions, footer reachability, HTTP/JavaScript failures, and horizontal overflow. Every destination guide passed frame-filling/background/title-position checks at every width: 108 checks across twelve routes. Additional checks cover 28 landscape layouts, 28 layouts with a viewport equivalent to 200% zoom reflow, and eight representative pages with 200% text size. This is not a test of Chromium's native browser-zoom UI.
+The current refinement passed **954 local references and 252 Chromium page/width cases**: all 28 pages at 320, 375, 390, 576, 768, 991, 1024, 1440 and 1920px. No detected broken/distorted images, clipped headings, horizontal overflow, HTTP errors or JavaScript/console errors. All twelve guide frames/title positions passed at all nine widths (108 checks). Additional landscape, viewport-equivalent 200% zoom reflow and representative doubled-text checks passed.
 
-Real-time recordings observe three automatic transitions on both desktop directories, manual arrows/indicators and automatic recovery; mobile checks observe repeated touch autoplay and recovery after tapping an arrow. Additional checks cover equal-height previews, repeated initialization, active navigation, and normal/reduced-motion animations. Fourteen interaction groups passed, including real five-second autoplay at phone/tablet/desktop sizes, manual navigation, hover/focus pause and resume, reduced motion, mobile navigation, filters, dialog keyboard behavior, validation, clipboard copying, and prepared email links. Eleven additional recording/motion/proportion checks passed, plus 21 guide/category animation checks and two rapid-filter/live-preference checks. Desktop and mobile WebM recordings, actual animation events and before/after screenshots are included in `docs/final/`. Axe-core 4.10.3 reported zero WCAG 2/2.1 A/AA violations in 56 page/width cases; automated accessibility checks do not establish full accessibility conformance.
+The design-specific script passed **161 cases** across the seven requested widths, verifying all twelve guide headings, photo widths and content splits, all nine category grids/image heights/button alignment, both compact sliders and unchanged package text. It also checked equal homepage gallery heights, clean Contact headings and actual card-hover/reduced-motion behavior. Interaction scripts passed 14 groups, 21 guide/category reveal checks and two rapid-filter/live-preference checks. Real desktop/mobile recordings demonstrate hero/scroll/menu/hover/gallery motion and repeated automatic/manual slide transitions. Axe-core 4.10.3 found zero WCAG 2/2.1 A/AA violations in 56 stable page/width scans; this does not establish full accessibility conformance.
 
-Visual review used rendered phone, tablet, and desktop captures of all pages, with representative full-page inspection and before/after evidence in [the final refinement review](docs/FINAL.md). Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery, and social-account ownership remain untested.
+[Current screenshots, recordings and results](docs/DESIGN.md) include phone/tablet/desktop comparisons, every guide/category in visual review sheets and the changed-file list. Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery and social-account ownership remain untested.
 
-To reproduce the browser checks, install Playwright in a separate development environment (not required to run the website), keep the local server running, and use:
+To reproduce the browser checks, use a separate QA environment, keep the local server running, and run:
 
 ```sh
-python3 -m pip install playwright
+python3 -m pip install playwright lxml
 python3 -m playwright install chromium ffmpeg
 python3 scripts/check_pages.py
 python3 scripts/check_interactions.py
+python3 scripts/check_design.py
 python3 scripts/check_final.py
 python3 scripts/check_motion_pages.py
 ```
 
-The scripts use installed system Chromium when available, otherwise Playwright's browser. Results and screenshots go to ignored `.qa-output/`; `--base-url` and `--output` can override defaults. The recording check requires Playwright FFmpeg; this environment used the installed system FFmpeg through a QA-only cache. The axe scan was a separate QA run, not a runtime dependency. Static screenshots disable animation to capture completed layouts; the recordings and motion scripts verify normal animation and reduced motion separately.
+Scripts use installed system Chromium when available. Results go to ignored `.qa-output/`; `--base-url` and `--output` can override defaults. Recording requires Playwright FFmpeg; this environment used system FFmpeg through a QA-only cache. Axe was a separate QA run, not a runtime dependency. Static screenshots capture completed layouts; recordings and motion scripts test normal motion and reduced motion separately.
 
 ## Upload to GitHub
 
-The final refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. Download this development branch to obtain the refined site and review evidence. `main` is unchanged; no deployment has been performed.
+The newest design refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. Download this development branch for the refined website, screenshots and browser evidence. `main` is unchanged; nothing has been deployed.
 
 To download from GitHub, select that branch on the repository page, then choose **Code → Download ZIP**. Extract the archive and follow the local run instructions above.
 

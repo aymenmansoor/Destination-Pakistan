@@ -1,6 +1,22 @@
 # Website audit and redesign record
 
-## Current final refinement
+## Current requested design refinement
+
+Incremental changes on top of `77f3079`; no reset, revert or history rewrite. Both directory slideshows now share a 1,050px maximum width, 380px desktop height, 10px corners, 32px desktop captions and a 30px gap to the first cards. Their original timer, manual controls, focus/hover pauses, keyboard behavior and reduced-motion handling are preserved. Only the bottom overlay was lightened; no photograph was replaced.
+
+All twelve destination guides now share a warm-ivory heading with breadcrumbs, destination label, serif title and short contextual introduction. Introductions summarize existing guide/photographic subjects rather than introducing new distances, elevations, seasonal promises or opening rules. The main frame spans the 1,050px content area; seven scenic photos use 2.4–2.5:1 desktop cropping. The Khunjerab/Kalash groups, Mushkpuri livestock, Rakaposhi tents and Tolipeer visitors retain natural framing, as allowed for unsuitable wide crops. A two-thirds/one-third content/sidebar split stacks on phones; the compact beige sidebar has practical guidance and existing enquiry/related links. Saral's mountain/lake/reflection composition was reviewed at full desktop size.
+
+All nine package categories now use shared three/two/one-column grids. Cards have 200px photos, consistent borders/corners, aligned buttons and actual hover lift/shadow/zoom. Package card text was compared against HEAD on all nine routes and is unchanged. All inherited prices/durations/discounts remain unverified; the existing confirmation notice remains. Contact has tighter field spacing and retains its white form, green top accent, email-draft/copy behavior, real email, guidance and single green active navigation indicator. Homepage hero, About content and gallery markup were preserved; the homepage preview has three equal landscape frames.
+
+Actual QA: 954 references, 252 page/width cases and 108 guide frame/title checks; 161 design cases across all seven requested widths; 14 interaction groups; 21 guide/category animation checks plus two rapid/live-motion checks; 11 real recording/animation checks; 56 stable axe scans with zero detected violations. Seven requested widths plus 576/991px were covered. Landscape, zoom-equivalent reflow and doubled-text checks also passed. All 28 pages were visually reviewed in three viewport sheets; all twelve guides and nine categories were additionally reviewed in three-size sheets. Screenshot comparisons and real browser recordings are in [the current review](docs/DESIGN.md). Native zoom, physical devices, screen readers, other browsers and actual mail delivery remain untested.
+
+Image review covered the same 108 unique used originals (141 uses), all thumbnail sheets and the new rendered crops. No original files were modified. The inherited Safari package photographs show mountain roads, vehicles and bridges rather than confirming the advertised desert/wildlife/jungle experiences; pairing needs owner review. The Great Wall directory image is foreign and must not be represented as Pakistan. Gallery red-rock mesas, cacti and Joshua-tree imagery may be foreign. Precise locations, licenses and team portrait identities remain unverified. Watermarks are visible in several originals, including Saral, Khunjerab and safari photographs. Repetition between directories, previews and guides remains intentional; repeated category imagery such as Safari/Special Interest also needs editorial review.
+
+Source quality remains limited: some package images are only a few hundred pixels wide, and Hunza's existing guide photograph is 800px wide. The requested full-width presentation can expose softness; CSS cannot restore missing detail. Suitable verified higher-resolution replacements require owner-supplied provenance. Originals and their attributions are retained, with no invented replacements or location labels. Existing destination/history/access claims and Khunjerab's owner-supplied facts have not received independent verification.
+
+This newest refinement is provided on the existing development branch with explicit owner approval to commit and push. No merge into `main` or deployment was performed. Historical records below refer to previous approved iterations.
+
+## Previous final refinement
 
 Before changing code, README/AUDIT, the current modules, all 28 page inventories, 108 used image sources, and commits `6368d4f`/`026535a` were reviewed. The later 760px sliders and 520px grey `contain` frames were confirmed regressions. Prior package proportions were more compact, and motion observation covered only a few headings/frames.
 

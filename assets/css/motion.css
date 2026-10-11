@@ -81,6 +81,15 @@
   .package-page .card:hover .card-img-top {
     transform: scale(1.025);
   }
+  .package-page .card {
+    transition:
+      transform 0.22s ease,
+      box-shadow 0.22s ease;
+  }
+  .package-page .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px #24292714;
+  }
   .contact-form .form-control {
     transition:
       border-color 0.2s,

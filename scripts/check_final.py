@@ -32,7 +32,7 @@ def main():
             page.evaluate('window.slides=[];document.querySelector(".carousel").addEventListener("slid.bs.carousel",e=>slides.push({to:e.to,time:performance.now()}))')
             page.wait_for_function('slides.length>=3',timeout=24000)
             height=page.locator('.carousel-item.active img').evaluate('e=>e.clientHeight')
-            assert 500 <= height <= 520, height
+            assert 360 <= height <= 390, height
             page.get_by_role('button',name='Next photograph',exact=True).click();page.wait_for_timeout(950)
             page.mouse.move(0,0);page.evaluate('document.activeElement.blur()')
             before=page.evaluate('slides.length');page.wait_for_function('(n)=>slides.length>n',arg=before,timeout=7500)
@@ -55,9 +55,11 @@ def main():
         assert page.locator('.contact-scene').count()==0
         video=page.video;context.close();video.save_as(str(out/'desktop-motion.webm'))
         mobile=browser.new_context(viewport={'width':390,'height':844},has_touch=True,is_mobile=True,record_video_dir=str(out/'mobile-videos'),record_video_size={'width':390,'height':844})
+        mobile.add_init_script("window.menuAnimations=[];const originalAnimate=Element.prototype.animate;Element.prototype.animate=function(frames,options){const animation=originalAnimate.call(this,frames,options);if(this.matches('.site-nav'))menuAnimations.push({time:performance.now(),duration:animation.effect.getTiming().duration,frames:animation.effect.getKeyframes()});return animation;}")
         q=mobile.new_page();q.goto(args.base_url+'/tour.html')
         q.get_by_role('button',name='Menu').tap()
-        assert q.locator('.site-nav').evaluate('e=>e.getAnimations().length')>0
+        assert q.evaluate('menuAnimations.length')>0
+        assert q.evaluate('menuAnimations[0].duration')==200
         q.wait_for_timeout(300);q.get_by_role('button',name='Menu').tap();q.wait_for_timeout(300)
         assert q.locator('.site-nav').is_hidden()
         q.locator('.carousel-item.active img').tap()

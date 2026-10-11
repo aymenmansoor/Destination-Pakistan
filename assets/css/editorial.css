@@ -6,37 +6,56 @@
 .package-page .page-heading p {
   max-width: 58ch;
 }
+.package-page .row.g-4 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  gap: 24px;
+}
 .package-page .row.g-4 > div {
-  width: 100%;
+  width: auto;
+  padding: 0;
+  margin: 0;
 }
 .package-page .card {
-  display: grid;
-  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
-  align-items: center;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 3px 12px #24292708;
 }
 .package-page .card-img-top {
-  border-radius: 0;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  max-height: 280px;
-  min-height: 0;
+  height: 200px;
+  aspect-ratio: auto;
   object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0;
 }
 .package-page .card-body {
-  padding: 12px 28px;
+  flex: 1;
+  padding: 22px;
 }
 .package-page .card-title {
-  font-size: clamp(1.4rem, 2vw, 1.75rem);
+  font-size: 1.5rem;
 }
 .package-page .package-description {
   min-height: 0;
-  max-width: 54ch;
+}
+.package-page .package-meta {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+.package-page .card-body .btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.85rem;
+  padding: 12px 8px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .package-page .row.g-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 .package-page .price-note {
   background: transparent;
@@ -73,7 +92,7 @@
   align-items: stretch;
 }
 .mini-gallery img {
-  height: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   border-radius: 0;
 }
@@ -87,27 +106,21 @@
   border-radius: 0;
 }
 @media (max-width: 767px) {
-  .package-page .card {
+  .package-page .row.g-4 {
     grid-template-columns: 1fr;
   }
   .package-page .card-img-top {
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    aspect-ratio: 16 / 10;
-  }
-  .package-page .card-body {
-    padding: 22px 0 4px;
+    height: 200px;
   }
   .mini-gallery {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .mini-gallery img {
-    height: 100%;
-    aspect-ratio: 3 / 4;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
   .contact .contact-form {
-    padding: 24px 0;
+    padding: 24px;
   }
 }
 
@@ -132,4 +145,11 @@
   .contact-layout {
     grid-template-columns: 1fr;
   }
+}
+
+.contact-form .form-control {
+  margin-bottom: 16px;
+}
+.contact-form label {
+  margin-bottom: 6px;
 }
