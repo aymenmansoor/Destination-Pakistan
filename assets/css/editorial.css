@@ -1,0 +1,156 @@
+/* Editorial package, homepage, gallery and contact layouts. */
+.package-page .page-heading {
+  background: var(--beige);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+.package-page .page-heading p {
+  max-width: 58ch;
+}
+.package-page .row.g-4 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  gap: 24px;
+}
+.package-page .row.g-4 > div {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+.package-page .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--cream);
+  box-shadow: 0 3px 12px #24292708;
+}
+.package-page .card-img-top {
+  height: 200px;
+  aspect-ratio: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0;
+}
+.package-page .card-body {
+  flex: 1;
+  padding: 22px;
+}
+.package-page .card-title {
+  font-size: 1.5rem;
+}
+.package-page .package-description {
+  min-height: 0;
+}
+.package-page .package-meta {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+.package-page .card-body .btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.85rem;
+  padding: 12px 8px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .package-page .row.g-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.package-page .price-note {
+  background: var(--sand);
+  border-left: 2px solid var(--terra);
+  padding: 15px 20px;
+  margin: 0 0 28px;
+}
+.gallery .page-heading {
+  background: var(--beige);
+  margin-bottom: 32px;
+}
+.about .page-heading {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 36px;
+}
+.contact .page-heading {
+  padding-bottom: 24px;
+}
+.contact .contact-form {
+  border: 0;
+  border-top: 3px solid var(--forest);
+  border-radius: 0;
+}
+.contact .contact-info {
+  padding-top: 0;
+}
+.contact .contact-info > .eyebrow {
+  display: none;
+}
+.contact .contact-info h2 {
+  font-size: 1.5rem;
+}
+.mini-gallery {
+  align-items: stretch;
+}
+.mini-gallery img {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 0;
+}
+.home .intro-strip {
+  padding: 14px 0;
+}
+.home .destination-card {
+  border-radius: 0;
+}
+.home .overview-image {
+  border-radius: 0;
+}
+@media (max-width: 767px) {
+  .package-page .row.g-4 {
+    grid-template-columns: 1fr;
+  }
+  .package-page .card-img-top {
+    height: 200px;
+  }
+  .mini-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mini-gallery img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .contact .contact-form {
+    padding: 24px;
+  }
+}
+
+.contact-layout {
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
+  align-items: start;
+}
+.contact-info .enquiry-guidance {
+  border-top: 0;
+  margin-top: 0;
+}
+.enquiry-guidance h3 {
+  font:
+    1.25rem Georgia,
+    serif;
+  margin: 0 0 12px;
+}
+.enquiry-guidance h3:not(:first-child) {
+  margin-top: 24px;
+}
+@media (max-width: 767px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form .form-control {
+  margin-bottom: 16px;
+}
+.contact-form label {
+  margin-bottom: 6px;
+}

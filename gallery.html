@@ -1,121 +1,700 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styleh.css">
-    <link rel="stylesheet" href="style2.css">
-    <style>
-        body {
-       background-color:white;
-       background-size: 100%;
-          
-   }
-   
-               
-    </style>
-</head>
-<link rel="stylesheet" href="styleh.css">
-<body>
-    <header> 
-        <a href="#" class="logo" style="font-family: Broadway;font-size: 18px;">  Destination Pakistan. </a>
-   <nav>
-<a href="front.html">HOME</a>
-<a href="tour.html">TOUR PACKAGES</a>
-<a href="destination.html">DESTINATION</a>
-<a href="gallery.html">GALLERY</a>
-<a href="about.html">ABOUT US</a>
-<a href="contact.html">CONTACT US</a>
-    </nav>
-</header>
-<input type="radio" name="photos" id="check1" checked>
-<input type="radio" name="photos" id="check2">
-<input type="radio" name="photos" id="check3">
-<input type="radio" name="photos" id="check4">
-<div class="">
-<center><h1>OUR PHOTO GALLERY</h1></center>
-<div class="top-content">
-<h3>Photo Gallery</h3>
-<label for="check1">All Photos</label>
-<label for="check1">Mountains</label>
-<label for="check1">Desert</label>
-<label for="check1">Sea Side</label>
-</div>
-<div class="photo-gallery">
-    <div class="pic Mountain">
-    <img src="kashmir/k1.jpg">
-</div> 
-   <div class="pic Sea Side">
-   <img src="Sea Side/s1.jpg">
-</div> 
-   <div class="pic Desert">
-                <img src="desert/d1.jpg">
-            </div> 
-
-            <div class="pic Mountain">
-                <img src="kashmir/k2.jpg">
-            </div> 
-                  <div class="pic Sea Side">
-                    <img src="Sea Side/s2.jpg">
-                </div> 
-                           <div class="pic Desert">
-                        <img src="desert/d2.jpg">
-                    </div> 
-                    <div class="pic Mountain">
-                        <img src="kashmir/k3.jpg">
-                    </div> 
-                          <div class="pic Sea Side">
-                            <img src="Sea Side/s3.jpg">
-                        </div> 
-                                   <div class="pic Desert">
-                                <img src="desert/d3.jpg">
-                            </div> 
-                            <div class="pic Mountain">
-                                <img src="kashmir/k4.jpg">
-                            </div> 
-                                  <div class="pic Sea Side">
-                                    <img src="Sea Side/s4.jpg">
-                                </div> 
-                                           <div class="pic Desert">
-                                        <img src="desert/d4.jpg">
-                                    </div> 
-          <div class="pic Mountain">
-        <img src="kashmir/k5.jpg">
-    </div> 
-          <div class="pic Sea Side">
-            <img src="Sea Side/s5.jpg">
-        </div> 
-                   <div class="pic Desert">
-                <img src="desert/d5.jpg">
-            </div>   <div class="pic Mountain">
-                <img src="kashmir/k6.jpg">
-            </div> 
-                  <div class="pic Sea Side">
-                    <img src="Sea Side/s6.jpg">
-                </div> 
-                           <div class="pic Desert">
-                        <img src="desert/d6.jpg">
-                    </div> 
-                    <div class="pic Mountain">
-                        <img src="kashmir/k7.jpg">
-                    </div> 
-                          <div class="pic Sea Side">
-                            <img src="Sea Side/s7.jpg">
-                        </div> 
-                                   <div class="pic Desert">
-                                <img src="desert/d7.jpg">
-                            </div>   <div class="pic Mountain">
-                                <img src="kashmir/k8.jpg">
-                            </div> 
-                                  <div class="pic Sea Side">
-                                    <img src="Sea Side/s8.jpg">
-                                </div> 
-                                           <div class="pic Desert">
-                                        <img src="desert/d8.jpg">
-                                    </div> 
-</div>
-</div>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore mountain, desert, and coastal photography with Destination Pakistan."
+    />
+    <meta name="theme-color" content="#173f35" />
+    <title>Photo gallery | Destination Pakistan</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script
+      src="assets/vendor/bootstrap/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
+  </head>
+  <body class="gallery">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Destination Pakistan home"
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
+            <path
+              d="M3 36 19 10l8 13 6-9 12 22H3Z"
+              stroke="currentColor"
+              stroke-width="2"
+            ></path>
+            <path
+              d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+              stroke="currentColor"
+              stroke-width="2"
+            ></path></svg
+          ><span class="brand-name"
+            >Destination Pakistan<small
+              >Explore. Experience. Remember.</small
+            ></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="tour.html">Tour packages</a
+          ><a href="destination.html">Destinations</a
+          ><a href="gallery.html" aria-current="page">Gallery</a
+          ><a href="about.html">About us</a
+          ><a href="contact.html" class="nav-contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="page-heading">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span
+            ><span aria-current="page">A window into Pakistan.</span>
+          </nav>
+          <span class="eyebrow">The photo journal</span>
+          <h1 class="article-title">A window into Pakistan.</h1>
+          <p>Mountain, desert, and coastal landscapes through the lens.</p>
+        </div>
+      </div>
+      <div class="container page-content">
+        <div
+          class="gallery-filters"
+          role="group"
+          aria-label="Filter photographs"
+          data-js-only="true"
+        >
+          <button
+            class="gallery-filter"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All photos</button
+          ><button
+            class="gallery-filter"
+            type="button"
+            data-filter="mountains"
+            aria-pressed="false"
+          >
+            Mountains</button
+          ><button
+            class="gallery-filter"
+            type="button"
+            data-filter="desert"
+            aria-pressed="false"
+          >
+            Desert</button
+          ><button
+            class="gallery-filter"
+            type="button"
+            data-filter="coast"
+            aria-pressed="false"
+          >
+            Sea side
+          </button>
+          <p class="visually-hidden">
+            Filters require JavaScript. Without it, all photographs remain
+            visible.
+          </p>
+        </div>
+        <p class="gallery-instruction">
+          Select a photograph to view the full image.
+        </p>
+        <p
+          class="visually-hidden gallery-status"
+          aria-live="polite"
+          role="status"
+        >
+          All photos selected.
+        </p>
+        <div class="photo-gallery">
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k1.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A hiker overlooking mountains in warm evening light"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k1.jpg"
+                alt="A hiker overlooking mountains in warm evening light"
+                width="5680"
+                height="3787"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s1.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A turquoise wave breaking near the shore"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s1.jpg"
+                alt="A turquoise wave breaking near the shore"
+                width="5184"
+                height="3456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d1.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Red rock formations and cacti in an arid landscape"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d1.jpg"
+                alt="Red rock formations and cacti in an arid landscape"
+                width="4016"
+                height="6016"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k2.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Wooded hills beneath a blue sky and distant mountain peaks"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k2.jpg"
+                alt="Wooded hills beneath a blue sky and distant mountain peaks"
+                width="5184"
+                height="2916"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s2.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Friends sitting in deckchairs on a beach"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s2.jpg"
+                alt="Friends sitting in deckchairs on a beach"
+                width="3684"
+                height="2456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d2.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A traveller beneath a star-filled desert sky"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d2.jpg"
+                alt="A traveller beneath a star-filled desert sky"
+                width="4500"
+                height="3000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k3.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A hillside settlement among trees and mountain ridges"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k3.jpg"
+                alt="A hillside settlement among trees and mountain ridges"
+                width="5184"
+                height="2916"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s3.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Sunlight over a sandy shoreline and gentle waves"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s3.jpg"
+                alt="Sunlight over a sandy shoreline and gentle waves"
+                width="4928"
+                height="3280"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d3.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A winding trail among flat-topped red desert formations"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d3.jpg"
+                alt="A winding trail among flat-topped red desert formations"
+                width="4032"
+                height="3024"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k4.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Colourful hillside buildings surrounded by green mountains"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k4.jpg"
+                alt="Colourful hillside buildings surrounded by green mountains"
+                width="5184"
+                height="3456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s4.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Deckchairs arranged along a pebble beach"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s4.jpg"
+                alt="Deckchairs arranged along a pebble beach"
+                width="3840"
+                height="2160"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d4.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A lone walker among rolling sand dunes"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d4.jpg"
+                alt="A lone walker among rolling sand dunes"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k5.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Clouds around distant mountain peaks"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k5.jpg"
+                alt="Clouds around distant mountain peaks"
+                width="5184"
+                height="3456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s5.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Palm trees and rocks silhouetted against a coastal sunset"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s5.jpg"
+                alt="Palm trees and rocks silhouetted against a coastal sunset"
+                width="2048"
+                height="1536"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d5.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Red desert mesas beneath a pale blue sky"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d5.jpg"
+                alt="Red desert mesas beneath a pale blue sky"
+                width="4928"
+                height="3264"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k6.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Small boats on a lake surrounded by forested hills"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k6.jpg"
+                alt="Small boats on a lake surrounded by forested hills"
+                width="5184"
+                height="3215"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s6.jpg"
+              class="gallery-open"
+              aria-label="View photograph: The sun setting over ocean waves"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s6.jpg"
+                alt="The sun setting over ocean waves"
+                width="3840"
+                height="2160"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d6.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Cracked desert ground in warm evening light"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d6.jpg"
+                alt="Cracked desert ground in warm evening light"
+                width="3160"
+                height="4740"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k7.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A mountain lake beneath snow-covered peaks"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k7.jpg"
+                alt="A mountain lake beneath snow-covered peaks"
+                width="3240"
+                height="2160"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s7.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A quiet sandy beach beneath a clear sky"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s7.jpg"
+                alt="A quiet sandy beach beneath a clear sky"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d7.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Sparse desert trees in a dry, open landscape"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d7.jpg"
+                alt="Sparse desert trees in a dry, open landscape"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="mountains">
+            <a
+              href="kashmir/k8.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Rocky, snow-covered mountain summits"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k8.jpg"
+                alt="Rocky, snow-covered mountain summits"
+                width="4000"
+                height="6000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="coast">
+            <a
+              href="Sea%20Side/s8.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A pier stretching into the sea at dusk"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s8.jpg"
+                alt="A pier stretching into the sea at dusk"
+                width="3542"
+                height="4428"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+          <figure data-category="desert">
+            <a
+              href="desert/d8.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Golden sand dunes with rippled slopes"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d8.jpg"
+                alt="Golden sand dunes with rippled slopes"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a
+              class="brand"
+              href="index.html"
+              aria-label="Destination Pakistan home"
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
+                <path
+                  d="M3 36 19 10l8 13 6-9 12 22H3Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+                <path
+                  d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path></svg
+              ><span class="brand-name"
+                >Destination Pakistan<small
+                  >Explore. Experience. Remember.</small
+                ></span
+              ></a
+            >
+            <p>
+              Discover Pakistan’s landscapes, cultural heritage, and the places
+              that make every journey memorable.
+            </p>
+          </div>
+          <div>
+            <h2>Explore Pakistan</h2>
+            <div class="footer-links">
+              <a href="destination.html">All destinations</a
+              ><a href="tour.html">Tour packages</a
+              ><a href="gallery.html">Photo gallery</a
+              ><a href="about.html">Our story &amp; team</a>
+            </div>
+          </div>
+          <div>
+            <h2>Let’s talk travel</h2>
+            <div class="footer-links">
+              <a href="contact.html"
+                >Make an enquiry
+                <svg
+                  class="arrow-icon"
+                  viewbox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  ></path></svg></a
+              ><a href="mailto:destinationpakistan@gmail.com"
+                >destinationpakistan@gmail.com</a
+              ><a
+                href="https://www.instagram.com/destinationpakistan/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram
+                <svg
+                  class="arrow-icon"
+                  viewbox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  ></path></svg></a
+              ><a
+                href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook
+                <svg
+                  class="arrow-icon"
+                  viewbox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 11 11 3M3 3h8v8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Destination Pakistan. All rights reserved.</span
+          ><span>Mountains. Culture. Adventure.</span
+          ><a href="#main"
+            >Back to top
+            <svg
+              class="arrow-icon"
+              viewbox="0 0 14 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 12V2M2 7l5-5 5 5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      id="photo-dialog"
+      class="photo-dialog"
+      aria-label="Photograph viewer"
+    >
+      <button class="photo-close" type="button" aria-label="Close photograph">
+        Close ×
+      </button>
+      <figure>
+        <img
+          src="kashmir/k1.jpg"
+          alt="Mountain landscape"
+          loading="lazy"
+          class="lightbox-image"
+        />
+        <figcaption aria-live="polite"></figcaption>
+      </figure>
+      <div class="photo-navigation">
+        <button class="photo-prev" type="button">Previous photograph</button
+        ><button class="photo-next" type="button">Next photograph</button>
+      </div>
+    </dialog>
+  </body>
 </html>

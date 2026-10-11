@@ -1,0 +1,70 @@
+/* Responsive rules, grouped by breakpoint. */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+@media (max-width: 1199px) {
+  .nav-inner {
+    flex-wrap: wrap;
+    min-height: 76px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .site-nav {
+    width: 100%;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding-top: 12px;
+  }
+  .js .menu-toggle {
+    display: block;
+  }
+  .js .site-nav {
+    display: none;
+  }
+  .js .site-nav.is-open {
+    display: flex;
+  }
+  .hero {
+    min-height: 600px;
+  }
+  .overview-copy {
+    padding: 20px 0 0;
+  }
+  .overview-image {
+    height: auto;
+  }
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .article-sidebar {
+    max-width: none;
+  }
+  .article-sidebar a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .contact-layout {
+    gap: 25px;
+  }
+  .photo-gallery img {
+    height: auto;
+  }
+  .cta-panel {
+    padding: 35px;
+  }
+  .footer-grid {
+    gap: 30px;
+  }
+  .about-introduction {
+    gap: 24px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1199px) {
+  .container {
+    max-width: none;
+    width: 100%;
+  }
+}

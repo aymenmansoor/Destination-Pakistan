@@ -1,0 +1,193 @@
+/* Destination frames and cinematic directory slideshows. */
+/* Photographic layouts: breathing room around images, compact editorial headings. */
+.page-heading {
+  background: transparent;
+  border: 0;
+  margin-bottom: 0;
+  padding: 34px 0 30px;
+}
+.page-heading .eyebrow {
+  display: none;
+}
+.page-heading h1 {
+  margin-bottom: 12px;
+}
+.breadcrumbs {
+  margin-bottom: 24px;
+}
+.guide-visual {
+  width: 100%;
+  margin: 0 auto 32px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.guide-visual .article-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 2.4;
+  object-fit: cover;
+  object-position: var(--scenic-position, 50% 50%);
+  border-radius: 0;
+  margin: 0;
+}
+.article-layout {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 32px;
+}
+.article-sidebar {
+  background: var(--sand);
+  border: 1px solid #dfd1bb;
+  border-radius: 10px;
+  padding: 24px;
+  position: sticky;
+  top: 120px;
+}
+.article-sidebar h2 {
+  font-size: 1.35rem;
+}
+.article-sidebar .btn {
+  font-size: 0.85rem;
+  padding: 12px;
+}
+.cinema-band {
+  background: var(--deep);
+  margin: 0 auto 30px;
+  width: calc(100% - 48px);
+  max-width: 1050px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cinema-band .carousel {
+  margin: 0;
+  border-radius: 10px;
+}
+.cinema-band .carousel-item img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 380px;
+  object-position: 50% 45%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+.cinema-band .carousel-item::after {
+  background: linear-gradient(transparent, rgba(12, 24, 17, 0.68));
+}
+.slide-caption {
+  left: 72px;
+  bottom: 42px;
+}
+.slide-caption a {
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+}
+.carousel-item {
+  transition: transform 0.75s ease-in-out;
+}
+@media (max-width: 767px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .article-sidebar {
+    position: static;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 24px;
+  }
+  .article-sidebar a {
+    display: inline-block;
+  }
+  .cinema-band {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .page-heading {
+    padding: 24px 0;
+  }
+  .breadcrumbs {
+    margin-bottom: 18px;
+  }
+  .guide-visual {
+    margin-bottom: 26px;
+  }
+  .cinema-band .carousel-item img {
+    height: clamp(250px, 70vw, 340px);
+  }
+  .slide-caption {
+    left: 64px;
+    right: 64px;
+    bottom: 54px;
+  }
+  .slide-caption a {
+    font-size: 1.5rem;
+  }
+  .article-sidebar .btn {
+    display: inline-flex;
+    width: auto;
+  }
+}
+
+/* Shared guide heading, photograph and copy align on the same content axis. */
+.destination-guide main .container,
+.tour main .container,
+.destination main .container {
+  max-width: 1098px;
+}
+.destination-guide .page-heading {
+  background: var(--beige);
+  padding: 28px 0;
+  margin-bottom: 22px;
+}
+.destination-guide .page-heading .eyebrow {
+  display: block;
+  margin-bottom: 10px;
+}
+.destination-guide .page-heading h1 {
+  margin-bottom: 12px;
+}
+.destination-guide .page-heading p {
+  max-width: 65ch;
+}
+.article-sidebar .eyebrow {
+  margin-bottom: 10px;
+}
+.article-sidebar p {
+  margin-bottom: 14px;
+}
+@media (max-width: 767px) {
+  .cinema-band {
+    width: calc(100% - 24px);
+  }
+  .guide-visual .article-hero {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.tour .page-heading,
+.destination .page-heading {
+  background: var(--beige);
+  margin-bottom: 26px;
+}
+.tour .page-heading .eyebrow,
+.destination .page-heading .eyebrow,
+.package-page .page-heading .eyebrow {
+  display: block;
+}
+.tour .page-heading p,
+.destination .page-heading p {
+  max-width: 65ch;
+}
+.guide-visual a {
+  display: block;
+}
+.guide-visual:focus-within {
+  outline: 3px solid #bb7b23;
+  outline-offset: 4px;
+}
+.article-sidebar a {
+  display: block;
+  margin-right: 0;
+}
