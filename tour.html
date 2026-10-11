@@ -17,8 +17,9 @@
       defer
     ></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
   </head>
-  <body>
+  <body class="tour">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-inner">
@@ -26,17 +27,17 @@
           class="brand"
           href="index.html"
           aria-label="Destination Pakistan home"
-          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
             <path
               d="M3 36 19 10l8 13 6-9 12 22H3Z"
               stroke="currentColor"
               stroke-width="2"
-            />
+            ></path>
             <path
               d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
               stroke="currentColor"
               stroke-width="2"
-            /></svg
+            ></path></svg
           ><span class="brand-name"
             >Destination Pakistan<small
               >Explore. Experience. Remember.</small
@@ -79,6 +80,9 @@
           id="landscape-carousel"
           class="carousel slide"
           aria-label="Pakistan travel showcase"
+          role="region"
+          aria-roledescription="carousel"
+          data-autoplay="5000"
         >
           <div class="carousel-indicators">
             <button
@@ -87,139 +91,164 @@
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
-              aria-label="Slide 1"
+              aria-label="Show Trekking adventures"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="1"
-              aria-label="Slide 2"
+              aria-label="Show Northern landscapes"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="2"
-              aria-label="Slide 3"
+              aria-label="Show Fairy Meadows"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="3"
-              aria-label="Slide 4"
+              aria-label="Show Azad Kashmir"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="4"
-              aria-label="Slide 5"
+              aria-label="Show Mountain trails"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="5"
-              aria-label="Slide 6"
+              aria-label="Show Overland adventures"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="6"
-              aria-label="Slide 7"
+              aria-label="Show Shangrila Lake"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="7"
-              aria-label="Slide 8"
+              aria-label="Show Kalash &amp; Chitral Valley"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" aria-live="off">
             <div class="carousel-item active">
               <img
-                src="tour/q1.png"
-                alt="Pakistan travel showcase, photograph 1"
-                width="1920"
-                height="900"
+                src="tour/hiking.jpg"
+                alt="Hikers following a mountain trail"
+                width="4592"
+                height="3064"
                 class="d-block w-100"
                 fetchpriority="high"
                 decoding="async"
+                loading="eager"
               />
+              <div class="slide-caption">
+                <a href="treking.html">Trekking adventures</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q2.jpg"
-                alt="Pakistan travel showcase, photograph 2"
-                width="1920"
-                height="900"
+                src="destinations/Hunza-Valley-1200x797.webp"
+                alt="Autumn foliage in a mountain valley"
+                width="1200"
+                height="797"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="destination.html">Northern landscapes</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q3.png"
-                alt="Pakistan travel showcase, photograph 3"
-                width="1920"
-                height="900"
+                src="destinations/Fairy-Meadow-Akram-Attari.webp"
+                alt="Open meadows beneath snow-covered mountain peaks"
+                width="2048"
+                height="1536"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="Fairy.html">Fairy Meadows</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q4.png"
-                alt="Pakistan travel showcase, photograph 4"
-                width="1920"
-                height="900"
+                src="destinations/kashmir.jpg"
+                alt="A footbridge in a green valley"
+                width="1024"
+                height="683"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="AZAD%20KASHMIR.html">Azad Kashmir</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q5.png"
-                alt="Pakistan travel showcase, photograph 5"
-                width="1920"
-                height="900"
+                src="tour/treking.jpg"
+                alt="A group trekking along a rocky mountain path"
+                width="1140"
+                height="530"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="treking.html">Mountain trails</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q6.png"
-                alt="Pakistan travel showcase, photograph 6"
-                width="1920"
-                height="900"
+                src="tour/china.jpg"
+                alt="A stone walkway along the Great Wall"
+                width="580"
+                height="400"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="Overland%20Adventure.html">Overland adventures</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q7.png"
-                alt="Pakistan travel showcase, photograph 7"
-                width="1920"
-                height="900"
+                src="destinations/Shangri-la-Waleed.webp"
+                alt="Shangrila Lake and its surrounding landscape"
+                width="2048"
+                height="1365"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="Shangrila.html">Shangrila Lake</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="tour/q8.png"
-                alt="Pakistan travel showcase, photograph 8"
-                width="1920"
-                height="900"
+                src="destinations/Chitral-tour.webp"
+                alt="Landscape from the Chitral destination collection"
+                width="1024"
+                height="768"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="Kalash.html">Kalash &amp; Chitral Valley</a>
+              </div>
             </div>
           </div>
           <button
@@ -237,19 +266,17 @@
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span
-            ><span class="visually-hidden">Next photograph</span></button
-          ><button class="carousel-pause" type="button" aria-pressed="false">
-            Play slideshow
+            ><span class="visually-hidden">Next photograph</span>
           </button>
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <article class="card">
               <img
-                src="tour/cultural.jpg"
-                alt="Cultural Tours"
-                width="286"
-                height="176"
+                src="tour/heritage.jpg"
+                alt="Historic courtyard from the cultural tour collection"
+                width="720"
+                height="480"
                 class="card-img-top"
                 loading="lazy"
                 decoding="async"
@@ -262,7 +289,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -270,7 +297,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -294,7 +321,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -302,7 +329,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -326,7 +353,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -334,7 +361,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -358,7 +385,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -366,7 +393,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -390,7 +417,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -398,7 +425,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -422,7 +449,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -430,7 +457,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -454,7 +481,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -462,7 +489,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -482,13 +509,13 @@
                 <h2 class="card-title">Overland Adventure</h2>
                 <a
                   class="btn btn-outline-primary"
-                  href="Overland Adventure.html"
+                  href="Overland%20Adventure.html"
                   >Explore packages<span class="visually-hidden"
                     >: Overland Adventure</span
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -496,7 +523,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -516,13 +543,13 @@
                 <h2 class="card-title">Special Interest Adventure</h2>
                 <a
                   class="btn btn-outline-primary"
-                  href="Special Interest Adventure.html"
+                  href="Special%20Interest%20Adventure.html"
                   >Explore packages<span class="visually-hidden"
                     >: Special Interest Adventure</span
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -530,7 +557,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -546,17 +573,17 @@
               class="brand"
               href="index.html"
               aria-label="Destination Pakistan home"
-              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
                 <path
                   d="M3 36 19 10l8 13 6-9 12 22H3Z"
                   stroke="currentColor"
                   stroke-width="2"
-                />
+                ></path>
                 <path
                   d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
                   stroke="currentColor"
                   stroke-width="2"
-                /></svg
+                ></path></svg
               ><span class="brand-name"
                 >Destination Pakistan<small
                   >Explore. Experience. Remember.</small
@@ -584,7 +611,7 @@
                 >Make an enquiry
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -592,7 +619,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a href="mailto:destinationpakistan@gmail.com"
                 >destinationpakistan@gmail.com</a
               ><a
@@ -602,7 +629,7 @@
                 >Instagram
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -610,7 +637,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a
                 href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
                 target="_blank"
@@ -618,7 +645,7 @@
                 >Facebook
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -626,7 +653,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg
+                  ></path></svg
               ></a>
             </div>
           </div>
@@ -638,7 +665,7 @@
             >Back to top
             <svg
               class="arrow-icon"
-              viewBox="0 0 14 14"
+              viewbox="0 0 14 14"
               fill="none"
               aria-hidden="true"
             >
@@ -646,7 +673,7 @@
                 d="M7 12V2M2 7l5-5 5 5"
                 stroke="currentColor"
                 stroke-width="1.5"
-              /></svg
+              ></path></svg
           ></a>
         </div>
       </div>

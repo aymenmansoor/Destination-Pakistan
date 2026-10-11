@@ -17,8 +17,9 @@
       defer
     ></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
   </head>
-  <body>
+  <body class="contact">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-inner">
@@ -26,17 +27,17 @@
           class="brand"
           href="index.html"
           aria-label="Destination Pakistan home"
-          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
             <path
               d="M3 36 19 10l8 13 6-9 12 22H3Z"
               stroke="currentColor"
               stroke-width="2"
-            />
+            ></path>
             <path
               d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
               stroke="currentColor"
               stroke-width="2"
-            /></svg
+            ></path></svg
           ><span class="brand-name"
             >Destination Pakistan<small
               >Explore. Experience. Remember.</small
@@ -133,7 +134,7 @@
                 Prepare email
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -141,17 +142,23 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  />
+                  ></path>
                 </svg></button
               ><button
                 class="btn btn-outline-primary"
                 type="button"
                 id="copy-enquiry"
+                data-js-only="true"
               >
                 Copy enquiry
               </button>
             </div>
-            <a id="email-draft-link" class="btn btn-outline-primary mt-3" hidden
+            <a
+              id="email-draft-link"
+              class="btn btn-outline-primary mt-3"
+              hidden
+              target="_blank"
+              rel="noopener"
               >Open email draft</a
             >
             <p id="form-status" class="form-status" role="status"></p>
@@ -193,7 +200,7 @@
                   >Facebook
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -201,7 +208,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg></a
+                    ></path></svg></a
                 ><a
                   href="https://x.com/i/flow/login?redirect_after_login=%2Fdestinationpak"
                   target="_blank"
@@ -209,7 +216,7 @@
                   >X / Twitter
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -217,7 +224,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg></a
+                    ></path></svg></a
                 ><a
                   href="https://www.instagram.com/destinationpakistan/?hl=en"
                   target="_blank"
@@ -225,7 +232,7 @@
                   >Instagram
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -233,7 +240,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg></a
+                    ></path></svg></a
                 ><a
                   href="https://www.linkedin.com/company/destinationpakistan/?originalSubdomain=pk"
                   target="_blank"
@@ -241,7 +248,7 @@
                   >LinkedIn
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -249,7 +256,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </div>
@@ -265,17 +272,17 @@
               class="brand"
               href="index.html"
               aria-label="Destination Pakistan home"
-              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
                 <path
                   d="M3 36 19 10l8 13 6-9 12 22H3Z"
                   stroke="currentColor"
                   stroke-width="2"
-                />
+                ></path>
                 <path
                   d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
                   stroke="currentColor"
                   stroke-width="2"
-                /></svg
+                ></path></svg
               ><span class="brand-name"
                 >Destination Pakistan<small
                   >Explore. Experience. Remember.</small
@@ -303,7 +310,7 @@
                 >Make an enquiry
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -311,7 +318,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a href="mailto:destinationpakistan@gmail.com"
                 >destinationpakistan@gmail.com</a
               ><a
@@ -321,7 +328,7 @@
                 >Instagram
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -329,7 +336,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a
                 href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
                 target="_blank"
@@ -337,7 +344,7 @@
                 >Facebook
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -345,7 +352,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg
+                  ></path></svg
               ></a>
             </div>
           </div>
@@ -357,7 +364,7 @@
             >Back to top
             <svg
               class="arrow-icon"
-              viewBox="0 0 14 14"
+              viewbox="0 0 14 14"
               fill="none"
               aria-hidden="true"
             >
@@ -365,7 +372,7 @@
                 d="M7 12V2M2 7l5-5 5 5"
                 stroke="currentColor"
                 stroke-width="1.5"
-              /></svg
+              ></path></svg
           ></a>
         </div>
       </div>

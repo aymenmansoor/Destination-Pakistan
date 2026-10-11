@@ -1,0 +1,85 @@
+/* navigation: shared site styles. */
+.site-header {
+  background: #fdfbf6;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--line);
+  border-top: 3px solid var(--forest);
+}
+.nav-inner {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--forest);
+  line-height: 1.05;
+}
+.brand svg {
+  width: 40px;
+  height: 40px;
+}
+.brand-name {
+  font-family: Georgia, serif;
+  font-size: 1.35rem;
+}
+.brand-name small {
+  display: block;
+  font:
+    10px Arial,
+    sans-serif;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.site-nav a {
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 0;
+  position: relative;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.site-nav a[aria-current="page"] {
+  color: var(--forest);
+}
+.site-nav a[aria-current="page"]:after {
+  content: "";
+  height: 2px;
+  background: var(--forest);
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+}
+.site-nav .nav-contact {
+  padding: 10px 18px;
+  border: 1px solid var(--forest);
+  border-radius: 6px;
+}
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 7px 12px;
+  color: var(--forest);
+  min-height: 44px;
+  min-width: 70px;
+}

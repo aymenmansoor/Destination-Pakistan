@@ -1,0 +1,148 @@
+/* home: shared site styles. */
+.hero {
+  min-height: min(660px, 80svh);
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--deep);
+  color: white;
+}
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 53%;
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 27, 22, 0.82),
+    rgba(8, 27, 22, 0.43) 60%,
+    rgba(8, 27, 22, 0.13)
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.hero .eyebrow {
+  color: #f0d4a6;
+}
+.hero h1 {
+  color: white;
+  max-width: 740px;
+  font-size: clamp(3.2rem, 6.2vw, 5.5rem);
+  letter-spacing: -0.035em;
+  margin: 0 0 25px;
+}
+.hero h1 em {
+  font-weight: 400;
+  color: #f0d4a6;
+}
+.hero p {
+  max-width: 490px;
+  color: #e8eee8;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hero-bottom {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #e8eee8;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+.hero-bottom:before {
+  content: "";
+  height: 1px;
+  width: 42px;
+  background: #b7c4b7;
+}
+.intro-strip {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+  background: var(--sand);
+}
+.intro-strip .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.83rem;
+}
+.intro-strip span {
+  color: var(--muted);
+}
+.intro-strip strong {
+  color: var(--terra);
+  margin-right: 10px;
+}
+.overview-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius);
+  aspect-ratio: 4 / 5;
+  max-height: 490px;
+}
+.overview-copy {
+  padding: 0 0 0 24px;
+}
+.overview-copy p {
+  max-width: 65ch;
+  margin-bottom: 16px;
+}
+.overview-copy .btn {
+  margin-top: 10px;
+}
+.cta-panel {
+  padding: 36px;
+  background: var(--sand);
+  border-radius: var(--radius);
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid var(--terra);
+}
+.cta-panel h2 {
+  color: var(--ink);
+  margin-bottom: 15px;
+}
+.cta-panel p {
+  color: var(--muted);
+  max-width: 630px;
+  margin: 0;
+}
+.cta-panel .btn {
+  flex-shrink: 0;
+}
+.hero-bottom:hover {
+  color: white;
+}
+.home #overview {
+  background: #efe2cd;
+}
+.home .cta-panel .eyebrow {
+  color: var(--terra);
+}
+.home .cta-panel .btn-light {
+  background: var(--forest);
+  color: white;
+  border-color: var(--forest);
+}

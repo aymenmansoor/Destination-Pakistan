@@ -19,6 +19,7 @@ document.addEventListener("keydown", (event) => {
     menuButton.focus();
   }
 });
+window.matchMedia("(min-width: 1200px)").addEventListener("change", closeMenu);
 navigation
   ?.querySelectorAll("a")
   .forEach((link) => link.addEventListener("click", closeMenu));
@@ -37,24 +38,6 @@ document.querySelectorAll(".gallery-filter").forEach((button) => {
     });
     document.querySelector(".gallery-count").textContent =
       `${galleryItems.filter((item) => !item.hidden).length} photographs`;
-  });
-});
-
-/* Keep the original Bootstrap slideshow; visitors control playback. */
-document.querySelectorAll(".carousel").forEach((element) => {
-  if (!window.bootstrap) return;
-  const carousel = new bootstrap.Carousel(element, {
-    interval: 5000,
-    ride: false,
-  });
-  const button = element.querySelector(".carousel-pause");
-  let playing = false;
-  button?.addEventListener("click", () => {
-    playing = !playing;
-    if (playing) carousel.cycle();
-    else carousel.pause();
-    button.textContent = playing ? "Pause slideshow" : "Play slideshow";
-    button.setAttribute("aria-pressed", String(playing));
   });
 });
 

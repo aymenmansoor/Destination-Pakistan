@@ -17,8 +17,9 @@
       defer
     ></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
   </head>
-  <body>
+  <body class="about">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-inner">
@@ -26,17 +27,17 @@
           class="brand"
           href="index.html"
           aria-label="Destination Pakistan home"
-          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
             <path
               d="M3 36 19 10l8 13 6-9 12 22H3Z"
               stroke="currentColor"
               stroke-width="2"
-            />
+            ></path>
             <path
               d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
               stroke="currentColor"
               stroke-width="2"
-            /></svg
+            ></path></svg
           ><span class="brand-name"
             >Destination Pakistan<small
               >Explore. Experience. Remember.</small
@@ -76,26 +77,43 @@
       </div>
       <div class="container page-content">
         <div class="about-story">
-          <p>
-            Founded in 2010 by three local experts, Aymen Mansoor, Hassnain Daud
-            and Maryam Bibi, Destination Pakistan was created in the spirit of
-            entrepreneurship and a burning passion for travel. All of us at
-            Destination Pakistan have realized a common dream to explore the
-            unspoiled and less traveled areas and to visit and learn from the
-            diverse and wondrous culture of Pakistan. We are dedicated to work
-            as friends and guide to each traveler we assist. We are company of
-            choice if you are looking for local experts and want to experience
-            the diverse culture and hospitality in every corner of Pakistan.
-          </p>
-          <p>
-            Destination Pakistan focuses on diverse business in terms of market,
-            customer and travel service in inbound travel with an aim to become
-            one of the leading travel companies in the Pakistan. Adventure is
-            our passion so we aim to exert all our efforts to provide memorable
-            experience to our valued clients during their stay with us, through
-            our customized offerings, unique tour packages with long time desire
-            to delight our customers.
-          </p>
+          <div class="about-introduction">
+            <div class="about-intro-copy">
+              <p>
+                Founded in 2010 by three local experts, Aymen Mansoor, Hassnain
+                Daud and Maryam Bibi, Destination Pakistan was created in the
+                spirit of entrepreneurship and a burning passion for travel. All
+                of us at Destination Pakistan have realized a common dream to
+                explore the unspoiled and less traveled areas and to visit and
+                learn from the diverse and wondrous culture of Pakistan. We are
+                dedicated to work as friends and guide to each traveler we
+                assist. We are company of choice if you are looking for local
+                experts and want to experience the diverse culture and
+                hospitality in every corner of Pakistan.
+              </p>
+              <p>
+                Destination Pakistan focuses on diverse business in terms of
+                market, customer and travel service in inbound travel with an
+                aim to become one of the leading travel companies in the
+                Pakistan. Adventure is our passion so we aim to exert all our
+                efforts to provide memorable experience to our valued clients
+                during their stay with us, through our customized offerings,
+                unique tour packages with long time desire to delight our
+                customers.
+              </p>
+            </div>
+            <figure class="about-group">
+              <img
+                src="tour/about.jpg"
+                alt="Group photograph from the original Destination Pakistan website"
+                width="310"
+                height="163"
+                class="feature-image"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
           <p>
             At Destination Pakistan we work hard to provide a fun, informative
             vacation experience for our clients. We promise outstanding
@@ -115,16 +133,11 @@
             trips. They are good enough to make a reliable tour that will be
             alluring in all manners.
           </p>
+          <p class="content-note">
+            The original story and team profiles name different co-founders.
+            These details are preserved here and await confirmation.
+          </p>
         </div>
-        <img
-          src="tour/about.jpg"
-          alt="Landscape from the Destination Pakistan collection"
-          width="310"
-          height="163"
-          class="feature-image"
-          loading="lazy"
-          decoding="async"
-        />
         <section class="section team">
           <div class="section-heading">
             <div>
@@ -134,7 +147,7 @@
             </div>
           </div>
           <div class="row g-4">
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/girl1.webp"
@@ -151,7 +164,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/man.jpg"
@@ -168,7 +181,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/girl2.jpg"
@@ -185,7 +198,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/girl3.jpg"
@@ -202,7 +215,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/boy1.jpg"
@@ -219,7 +232,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/boy2.jpg"
@@ -236,7 +249,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
               <article class="card">
                 <img
                   src="tour/girl4.jpg"
@@ -265,17 +278,17 @@
               class="brand"
               href="index.html"
               aria-label="Destination Pakistan home"
-              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
                 <path
                   d="M3 36 19 10l8 13 6-9 12 22H3Z"
                   stroke="currentColor"
                   stroke-width="2"
-                />
+                ></path>
                 <path
                   d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
                   stroke="currentColor"
                   stroke-width="2"
-                /></svg
+                ></path></svg
               ><span class="brand-name"
                 >Destination Pakistan<small
                   >Explore. Experience. Remember.</small
@@ -303,7 +316,7 @@
                 >Make an enquiry
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -311,7 +324,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a href="mailto:destinationpakistan@gmail.com"
                 >destinationpakistan@gmail.com</a
               ><a
@@ -321,7 +334,7 @@
                 >Instagram
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -329,7 +342,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a
                 href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
                 target="_blank"
@@ -337,7 +350,7 @@
                 >Facebook
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -345,7 +358,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg
+                  ></path></svg
               ></a>
             </div>
           </div>
@@ -357,7 +370,7 @@
             >Back to top
             <svg
               class="arrow-icon"
-              viewBox="0 0 14 14"
+              viewbox="0 0 14 14"
               fill="none"
               aria-hidden="true"
             >
@@ -365,7 +378,7 @@
                 d="M7 12V2M2 7l5-5 5 5"
                 stroke="currentColor"
                 stroke-width="1.5"
-              /></svg
+              ></path></svg
           ></a>
         </div>
       </div>

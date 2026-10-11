@@ -1,6 +1,6 @@
 # Destination Pakistan
 
-A responsive travel website for exploring Pakistan’s destinations, landscapes, cultural heritage, and tour packages. The redesign keeps the original project’s identity, photographs, destination descriptions, package listings, and page filenames.
+A refined responsive travel website for exploring Pakistan’s destinations, landscapes, cultural heritage, and tour packages. The redesign keeps the original project’s identity, photographs, destination descriptions, package listings, and page filenames.
 
 ## What’s included
 
@@ -43,8 +43,10 @@ Destination-Pakistan/
 ├── [destination pages].html     # 12 existing guides
 ├── [tour category pages].html   # 9 existing package categories
 ├── assets/
-│   ├── css/site.css             # Shared layout, components, responsive styles
-│   ├── js/site.js               # Menu, gallery, slideshows, enquiry enhancement
+│   ├── css/site.css             # Entry point importing small CSS modules
+│   ├── js/site.js               # Menu, filtering and enquiry enhancement
+│   ├── js/carousels.js          # Automatic slideshows and motion preferences
+│   ├── js/gallery.js            # Keyboard-accessible photo dialog
 │   ├── favicon.svg
 │   └── vendor/bootstrap/        # Bootstrap 5.0.2 and its MIT license
 ├── destinations/               # Original destination photographs
@@ -55,6 +57,8 @@ Destination-Pakistan/
 ├── styleh.css                  # Legacy stylesheet compatibility path
 ├── style2.css                  # Legacy gallery stylesheet compatibility path
 ├── AUDIT.md                    # Findings, content issues, and review notes
+├── scripts/                    # Optional Python/Playwright QA tools
+├── docs/REFINEMENT.md           # Before/after evidence and current review
 └── .gitignore
 ```
 
@@ -62,9 +66,11 @@ Filenames containing spaces or capital letters remain unchanged to preserve exis
 
 ## Editing the website
 
-Edit HTML content directly. Shared colors and component styles are in `assets/css/site.css`; its `:root` variables define the palette. Common navigation and footer markup is present in each page so the site needs no templating runtime. When changing navigation, update every page consistently. Keep `index.html` and `front.html` synchronized.
+Edit HTML content directly. `assets/css/site.css` imports styles organized by responsibility: base, navigation, homepage, cards, pages, slideshows, gallery/contact, footer, and responsive layouts. Palette variables live in `assets/css/base.css`. Common navigation and footer markup is present in each page so the site needs no templating runtime. When changing navigation, update every page consistently. Keep `index.html` and `front.html` synchronized.
 
-Bootstrap’s responsive `.row`, `.col-*`, and `.g-*` classes arrange cards. The shared CSS controls typography, image cropping, buttons, and page spacing. `assets/js/site.js` adds small interactions; ordinary links and all content remain available when JavaScript is disabled. Gallery filtering and clipboard copying require JavaScript.
+Bootstrap’s responsive `.row`, `.col-*`, and `.g-*` classes arrange cards. The shared CSS controls typography, image cropping, buttons, and page spacing. `assets/js/site.js` adds small interactions; ordinary links and all content remain available when JavaScript is disabled. Gallery filtering, the photo dialog, and clipboard copying require JavaScript. Without JavaScript, every gallery thumbnail links directly to its original photograph.
+
+The directory slideshows advance approximately every five seconds. Hover, keyboard focus, active pointer interaction, and hidden tabs pause them; autoplay resumes when those conditions end. Reduced-motion preferences disable autoplay while keeping arrows available. The module uses one timer per carousel and suppresses controls for one-image sliders. Gallery photographs can be opened in a native dialog with previous/next controls, arrow-key navigation, Escape to close, and focus returned to the selected thumbnail.
 
 Bootstrap was downloaded from the project’s existing 5.0.2 URLs and checked against the original SHA-384 integrity hashes. The unmodified files are committed locally. Its license is included beside the files. No external font or icon library is required; social links have readable text labels.
 
@@ -86,15 +92,26 @@ Without a configured email app, copy the enquiry into an email manually. Without
 
 ## Validation
 
-The redesign was exercised in headless Chromium at 375, 768, and 1440 pixels across all 28 HTML pages (84 page/viewport combinations). Checks covered HTTP errors, loaded images, horizontal overflow, working navigation controls, gallery filters, slideshow controls, enquiry subject prefill, required-field validation, clipboard copying, and email-draft link preparation. Static checks verified local links, fragment targets, assets, unique IDs, and one main heading per page. Mobile navigation and full gallery content were also checked without JavaScript.
+The current refinement passed **924 local link/asset checks** and **252 Chromium page/width cases**: all 28 routes at 320, 375, 390, 576, 768, 991, 1024, 1440, and 1920 pixels. Checks include all heading levels, image loading/proportions, footer reachability, HTTP/JavaScript failures, and horizontal overflow. Additional checks cover 28 landscape layouts, 28 layouts with a viewport equivalent to 200% zoom reflow, and eight representative pages with 200% text size. This is not a test of Chromium's native browser-zoom UI.
 
-Preparing the email draft and its encoded mailto link was checked through the form handler; opening an external mail application and actual delivery were not tested. Social accounts were not tested. Physical devices, assistive technologies, and other browsers still need manual review. See `AUDIT.md` for the final review record.
+Fourteen interaction groups passed, including real five-second autoplay at phone/tablet/desktop sizes, manual navigation, hover/focus pause and resume, reduced motion, mobile navigation, filters, dialog keyboard behavior, validation, clipboard copying, and prepared email links. Separate checks verified duplicate initialization does not create duplicate slide transitions, dialog focus/scroll containment, and the prepared enquiry state. Axe-core 4.10.3 reported zero WCAG 2/2.1 A/AA violations in 56 page/width cases; automated accessibility checks do not establish full accessibility conformance.
 
-For future edits, serve the site and review the homepage, destination directory, a destination guide, tour packages, gallery, about, and contact pages at phone and desktop sizes. Check the page footer is reachable and that changed links or images load.
+Visual review used rendered phone, tablet, and desktop captures of all pages, with representative full-page inspection and before/after evidence in [the refinement review](docs/REFINEMENT.md). Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery, and social-account ownership remain untested.
+
+To reproduce the browser checks, install Playwright in a separate development environment (not required to run the website), keep the local server running, and use:
+
+```sh
+python3 -m pip install playwright
+python3 -m playwright install chromium
+python3 scripts/check_pages.py
+python3 scripts/check_interactions.py
+```
+
+The scripts use installed system Chromium when available, otherwise Playwright's browser. Results and screenshots go to ignored `.qa-output/`; `--base-url` and `--output` can override defaults. The axe scan was a separate QA run, not a runtime dependency.
 
 ## Upload to GitHub
 
-The redesign is provided on the `codex/destination-pakistan-redesign` branch for review. The `main` branch is unchanged; no website deployment has been performed.
+The redesign and latest refinement are provided on the `codex/destination-pakistan-redesign` branch with owner approval. The `main` branch is unchanged; no website deployment has been performed.
 
 To download from GitHub, select that branch on the repository page, then choose **Code → Download ZIP**. Extract the archive and follow the local run instructions above.
 

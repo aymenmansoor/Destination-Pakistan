@@ -17,8 +17,10 @@
       defer
     ></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
   </head>
-  <body>
+  <body class="gallery">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-inner">
@@ -26,17 +28,17 @@
           class="brand"
           href="index.html"
           aria-label="Destination Pakistan home"
-          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
             <path
               d="M3 36 19 10l8 13 6-9 12 22H3Z"
               stroke="currentColor"
               stroke-width="2"
-            />
+            ></path>
             <path
               d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
               stroke="currentColor"
               stroke-width="2"
-            /></svg
+            ></path></svg
           ><span class="brand-name"
             >Destination Pakistan<small
               >Explore. Experience. Remember.</small
@@ -79,6 +81,7 @@
           class="gallery-filters"
           role="group"
           aria-label="Filter photographs"
+          data-js-only="true"
         >
           <button
             class="gallery-filter"
@@ -114,295 +117,442 @@
             visible.
           </p>
         </div>
+        <p class="gallery-instruction">
+          Select a photograph to view the full image.
+        </p>
         <p class="gallery-count" aria-live="polite">24 photographs</p>
         <div class="photo-gallery">
           <figure data-category="mountains">
-            <img
-              src="kashmir/k1.jpg"
-              alt="Mountain scenery from the original gallery, photograph 1"
-              width="5680"
-              height="3787"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 01</figcaption>
+            <a
+              href="kashmir/k1.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A hiker overlooking mountains in warm evening light"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k1.jpg"
+                alt="A hiker overlooking mountains in warm evening light"
+                width="5680"
+                height="3787"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s1.jpg"
-              alt="Coastal scenery from the original gallery, photograph 1"
-              width="5184"
-              height="3456"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 01</figcaption>
+            <a
+              href="Sea%20Side/s1.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A turquoise wave breaking near the shore"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s1.jpg"
+                alt="A turquoise wave breaking near the shore"
+                width="5184"
+                height="3456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d1.jpg"
-              alt="Desert landscape from the original gallery, photograph 1"
-              width="4016"
-              height="6016"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 01</figcaption>
+            <a
+              href="desert/d1.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Red rock formations and cacti in an arid landscape"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d1.jpg"
+                alt="Red rock formations and cacti in an arid landscape"
+                width="4016"
+                height="6016"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k2.jpg"
-              alt="Mountain scenery from the original gallery, photograph 2"
-              width="5184"
-              height="2916"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 02</figcaption>
+            <a
+              href="kashmir/k2.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Wooded hills beneath a blue sky and distant mountain peaks"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k2.jpg"
+                alt="Wooded hills beneath a blue sky and distant mountain peaks"
+                width="5184"
+                height="2916"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s2.jpg"
-              alt="Coastal scenery from the original gallery, photograph 2"
-              width="3684"
-              height="2456"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 02</figcaption>
+            <a
+              href="Sea%20Side/s2.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Friends sitting in deckchairs on a beach"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s2.jpg"
+                alt="Friends sitting in deckchairs on a beach"
+                width="3684"
+                height="2456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d2.jpg"
-              alt="Desert landscape from the original gallery, photograph 2"
-              width="4500"
-              height="3000"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 02</figcaption>
+            <a
+              href="desert/d2.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A traveller beneath a star-filled desert sky"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d2.jpg"
+                alt="A traveller beneath a star-filled desert sky"
+                width="4500"
+                height="3000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k3.jpg"
-              alt="Mountain scenery from the original gallery, photograph 3"
-              width="5184"
-              height="2916"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 03</figcaption>
+            <a
+              href="kashmir/k3.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A hillside settlement among trees and mountain ridges"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k3.jpg"
+                alt="A hillside settlement among trees and mountain ridges"
+                width="5184"
+                height="2916"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s3.jpg"
-              alt="Coastal scenery from the original gallery, photograph 3"
-              width="4928"
-              height="3280"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 03</figcaption>
+            <a
+              href="Sea%20Side/s3.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Sunlight over a sandy shoreline and gentle waves"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s3.jpg"
+                alt="Sunlight over a sandy shoreline and gentle waves"
+                width="4928"
+                height="3280"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d3.jpg"
-              alt="Desert landscape from the original gallery, photograph 3"
-              width="4032"
-              height="3024"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 03</figcaption>
+            <a
+              href="desert/d3.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A winding trail among flat-topped red desert formations"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d3.jpg"
+                alt="A winding trail among flat-topped red desert formations"
+                width="4032"
+                height="3024"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k4.jpg"
-              alt="Mountain scenery from the original gallery, photograph 4"
-              width="5184"
-              height="3456"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 04</figcaption>
+            <a
+              href="kashmir/k4.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Colourful hillside buildings surrounded by green mountains"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k4.jpg"
+                alt="Colourful hillside buildings surrounded by green mountains"
+                width="5184"
+                height="3456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s4.jpg"
-              alt="Coastal scenery from the original gallery, photograph 4"
-              width="3840"
-              height="2160"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 04</figcaption>
+            <a
+              href="Sea%20Side/s4.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Deckchairs arranged along a pebble beach"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s4.jpg"
+                alt="Deckchairs arranged along a pebble beach"
+                width="3840"
+                height="2160"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d4.jpg"
-              alt="Desert landscape from the original gallery, photograph 4"
-              width="6000"
-              height="4000"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 04</figcaption>
+            <a
+              href="desert/d4.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A lone walker among rolling sand dunes"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d4.jpg"
+                alt="A lone walker among rolling sand dunes"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k5.jpg"
-              alt="Mountain scenery from the original gallery, photograph 5"
-              width="5184"
-              height="3456"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 05</figcaption>
+            <a
+              href="kashmir/k5.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Clouds around distant mountain peaks"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k5.jpg"
+                alt="Clouds around distant mountain peaks"
+                width="5184"
+                height="3456"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s5.jpg"
-              alt="Coastal scenery from the original gallery, photograph 5"
-              width="2048"
-              height="1536"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 05</figcaption>
+            <a
+              href="Sea%20Side/s5.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Palm trees and rocks silhouetted against a coastal sunset"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s5.jpg"
+                alt="Palm trees and rocks silhouetted against a coastal sunset"
+                width="2048"
+                height="1536"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d5.jpg"
-              alt="Desert landscape from the original gallery, photograph 5"
-              width="4928"
-              height="3264"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 05</figcaption>
+            <a
+              href="desert/d5.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Red desert mesas beneath a pale blue sky"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d5.jpg"
+                alt="Red desert mesas beneath a pale blue sky"
+                width="4928"
+                height="3264"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k6.jpg"
-              alt="Mountain scenery from the original gallery, photograph 6"
-              width="5184"
-              height="3215"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 06</figcaption>
+            <a
+              href="kashmir/k6.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Small boats on a lake surrounded by forested hills"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k6.jpg"
+                alt="Small boats on a lake surrounded by forested hills"
+                width="5184"
+                height="3215"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s6.jpg"
-              alt="Coastal scenery from the original gallery, photograph 6"
-              width="3840"
-              height="2160"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 06</figcaption>
+            <a
+              href="Sea%20Side/s6.jpg"
+              class="gallery-open"
+              aria-label="View photograph: The sun setting over ocean waves"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s6.jpg"
+                alt="The sun setting over ocean waves"
+                width="3840"
+                height="2160"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d6.jpg"
-              alt="Desert landscape from the original gallery, photograph 6"
-              width="3160"
-              height="4740"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 06</figcaption>
+            <a
+              href="desert/d6.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Cracked desert ground in warm evening light"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d6.jpg"
+                alt="Cracked desert ground in warm evening light"
+                width="3160"
+                height="4740"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k7.jpg"
-              alt="Mountain scenery from the original gallery, photograph 7"
-              width="3240"
-              height="2160"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 07</figcaption>
+            <a
+              href="kashmir/k7.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A mountain lake beneath snow-covered peaks"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k7.jpg"
+                alt="A mountain lake beneath snow-covered peaks"
+                width="3240"
+                height="2160"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s7.jpg"
-              alt="Coastal scenery from the original gallery, photograph 7"
-              width="6000"
-              height="4000"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 07</figcaption>
+            <a
+              href="Sea%20Side/s7.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A quiet sandy beach beneath a clear sky"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s7.jpg"
+                alt="A quiet sandy beach beneath a clear sky"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d7.jpg"
-              alt="Desert landscape from the original gallery, photograph 7"
-              width="6000"
-              height="4000"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 07</figcaption>
+            <a
+              href="desert/d7.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Sparse desert trees in a dry, open landscape"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d7.jpg"
+                alt="Sparse desert trees in a dry, open landscape"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="mountains">
-            <img
-              src="kashmir/k8.jpg"
-              alt="Mountain scenery from the original gallery, photograph 8"
-              width="4000"
-              height="6000"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Mountain scenery · 08</figcaption>
+            <a
+              href="kashmir/k8.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Rocky, snow-covered mountain summits"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="kashmir/k8.jpg"
+                alt="Rocky, snow-covered mountain summits"
+                width="4000"
+                height="6000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="coast">
-            <img
-              src="Sea Side/s8.jpg"
-              alt="Coastal scenery from the original gallery, photograph 8"
-              width="3542"
-              height="4428"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Coastal scenery · 08</figcaption>
+            <a
+              href="Sea%20Side/s8.jpg"
+              class="gallery-open"
+              aria-label="View photograph: A pier stretching into the sea at dusk"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="Sea%20Side/s8.jpg"
+                alt="A pier stretching into the sea at dusk"
+                width="3542"
+                height="4428"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
           <figure data-category="desert">
-            <img
-              src="desert/d8.jpg"
-              alt="Desert landscape from the original gallery, photograph 8"
-              width="6000"
-              height="4000"
-              class=""
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>Desert landscape · 08</figcaption>
+            <a
+              href="desert/d8.jpg"
+              class="gallery-open"
+              aria-label="View photograph: Golden sand dunes with rippled slopes"
+              target="_blank"
+              rel="noopener"
+              ><img
+                src="desert/d8.jpg"
+                alt="Golden sand dunes with rippled slopes"
+                width="6000"
+                height="4000"
+                class=""
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </figure>
         </div>
       </div>
@@ -415,17 +565,17 @@
               class="brand"
               href="index.html"
               aria-label="Destination Pakistan home"
-              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
                 <path
                   d="M3 36 19 10l8 13 6-9 12 22H3Z"
                   stroke="currentColor"
                   stroke-width="2"
-                />
+                ></path>
                 <path
                   d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
                   stroke="currentColor"
                   stroke-width="2"
-                /></svg
+                ></path></svg
               ><span class="brand-name"
                 >Destination Pakistan<small
                   >Explore. Experience. Remember.</small
@@ -453,7 +603,7 @@
                 >Make an enquiry
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -461,7 +611,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a href="mailto:destinationpakistan@gmail.com"
                 >destinationpakistan@gmail.com</a
               ><a
@@ -471,7 +621,7 @@
                 >Instagram
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -479,7 +629,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a
                 href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
                 target="_blank"
@@ -487,7 +637,7 @@
                 >Facebook
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -495,7 +645,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg
+                  ></path></svg
               ></a>
             </div>
           </div>
@@ -507,7 +657,7 @@
             >Back to top
             <svg
               class="arrow-icon"
-              viewBox="0 0 14 14"
+              viewbox="0 0 14 14"
               fill="none"
               aria-hidden="true"
             >
@@ -515,10 +665,32 @@
                 d="M7 12V2M2 7l5-5 5 5"
                 stroke="currentColor"
                 stroke-width="1.5"
-              /></svg
+              ></path></svg
           ></a>
         </div>
       </div>
     </footer>
+    <dialog
+      id="photo-dialog"
+      class="photo-dialog"
+      aria-label="Photograph viewer"
+    >
+      <button class="photo-close" type="button" aria-label="Close photograph">
+        Close ×
+      </button>
+      <figure>
+        <img
+          src="kashmir/k1.jpg"
+          alt="Mountain landscape"
+          loading="lazy"
+          class="lightbox-image"
+        />
+        <figcaption aria-live="polite"></figcaption>
+      </figure>
+      <div class="photo-navigation">
+        <button class="photo-prev" type="button">Previous photograph</button
+        ><button class="photo-next" type="button">Next photograph</button>
+      </div>
+    </dialog>
   </body>
 </html>

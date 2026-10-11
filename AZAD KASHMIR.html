@@ -17,8 +17,9 @@
       defer
     ></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
   </head>
-  <body>
+  <body class="destination-guide">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-inner">
@@ -26,17 +27,17 @@
           class="brand"
           href="index.html"
           aria-label="Destination Pakistan home"
-          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
             <path
               d="M3 36 19 10l8 13 6-9 12 22H3Z"
               stroke="currentColor"
               stroke-width="2"
-            />
+            ></path>
             <path
               d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
               stroke="currentColor"
               stroke-width="2"
-            /></svg
+            ></path></svg
           ><span class="brand-name"
             >Destination Pakistan<small
               >Explore. Experience. Remember.</small
@@ -109,9 +110,7 @@
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption>
-                Azad Kashmir · From our destination collection
-              </figcaption>
+              <figcaption>Azad Kashmir</figcaption>
             </figure>
             <p>
               Muzaffarabad has its own Supreme Court and High Court. It has a
@@ -136,9 +135,7 @@
                 loading="lazy"
                 decoding="async"
               />
-              <figcaption>
-                Azad Kashmir · From our destination collection
-              </figcaption>
+              <figcaption>Azad Kashmir</figcaption>
             </figure>
             <p>
               The Neelum Valley in Kashmir is full of traveling places that are
@@ -162,18 +159,21 @@
           </article>
           <aside class="article-sidebar">
             <span class="eyebrow">Keep exploring</span>
-            <h2>A journey starts here.</h2>
+            <h2>Plan your visit</h2>
             <p>
               Browse more places or ask about travelling to this destination.
             </p>
-            <a href="contact.html?tour=Azad%20Kashmir" class="btn btn-primary"
-              >Enquire about Azad Kashmir</a
+            <a
+              href="contact.html?tour=Azad%20Kashmir"
+              class="btn btn-primary"
+              aria-label="Enquire about Azad Kashmir"
+              >Enquire about this place</a
             ><a href="destination.html">← All destinations</a
             ><a href="tour.html"
               >Browse tour packages
               <svg
                 class="arrow-icon"
-                viewBox="0 0 14 14"
+                viewbox="0 0 14 14"
                 fill="none"
                 aria-hidden="true"
               >
@@ -181,7 +181,7 @@
                   d="M3 11 11 3M3 3h8v8"
                   stroke="currentColor"
                   stroke-width="1.5"
-                /></svg
+                ></path></svg
             ></a>
           </aside>
         </div>
@@ -195,17 +195,17 @@
               class="brand"
               href="index.html"
               aria-label="Destination Pakistan home"
-              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
                 <path
                   d="M3 36 19 10l8 13 6-9 12 22H3Z"
                   stroke="currentColor"
                   stroke-width="2"
-                />
+                ></path>
                 <path
                   d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
                   stroke="currentColor"
                   stroke-width="2"
-                /></svg
+                ></path></svg
               ><span class="brand-name"
                 >Destination Pakistan<small
                   >Explore. Experience. Remember.</small
@@ -233,7 +233,7 @@
                 >Make an enquiry
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -241,7 +241,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a href="mailto:destinationpakistan@gmail.com"
                 >destinationpakistan@gmail.com</a
               ><a
@@ -251,7 +251,7 @@
                 >Instagram
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -259,7 +259,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a
                 href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
                 target="_blank"
@@ -267,7 +267,7 @@
                 >Facebook
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -275,7 +275,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg
+                  ></path></svg
               ></a>
             </div>
           </div>
@@ -287,7 +287,7 @@
             >Back to top
             <svg
               class="arrow-icon"
-              viewBox="0 0 14 14"
+              viewbox="0 0 14 14"
               fill="none"
               aria-hidden="true"
             >
@@ -295,7 +295,7 @@
                 d="M7 12V2M2 7l5-5 5 5"
                 stroke="currentColor"
                 stroke-width="1.5"
-              /></svg
+              ></path></svg
           ></a>
         </div>
       </div>

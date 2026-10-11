@@ -36,7 +36,7 @@ The initial local link/asset inspection found no missing files. The redesign cor
 - Package categories: `culture.html`, `treking.html`, `safarie.html`, `festivals.html`, `bike.html`, `wild.html`, `ski.html`, `Overland Adventure.html`, `Special Interest Adventure.html`.
 - Other pages: `gallery.html`, `about.html`, `contact.html`.
 
-Every page loads local Bootstrap CSS, the shared site CSS, local Bootstrap JavaScript, and shared site JavaScript. The JavaScript adds menu interaction, gallery filtering, carousel playback, and contact enhancements only where the relevant elements exist. The original tour directory’s eight-slide carousel and destination directory’s three-slide carousel are retained. Playback starts only when requested by the visitor.
+Every page loads local Bootstrap CSS, the shared site CSS, local Bootstrap JavaScript, and shared site JavaScript. The JavaScript adds menu interaction, gallery filtering, carousel playback, and contact enhancements only where the relevant elements exist. The original tour directory’s eight-slide carousel and destination directory’s three-slide carousel are retained. The current refinement starts playback automatically when motion preferences permit; hover/focus/pointer interaction and hidden tabs pause it. Reduced motion disables autoplay while preserving manual controls.
 
 ## Information requiring owner confirmation
 
@@ -53,10 +53,14 @@ No testimonials, customer counts, verified ratings, new tour offerings, or new c
 
 ## Review and testing
 
-Automated Chromium checks exercised every page at 375px, 768px, and 1440px. Local link and fragment validation checked all page references, including filenames with spaces. Browser checks assessed loaded images, HTTP failures, horizontal overflow, and uncaught JavaScript exceptions. Interactive checks exercised the mobile menu and Escape key, each gallery filter, next-slide control, play/pause, package-to-contact navigation, subject prefill, invalid and valid contact fields, clipboard copying, and email-draft link preparation. JavaScript-disabled checks covered mobile navigation and the complete gallery.
+The latest refinement passed 924 local references and 252 browser page/width combinations (28 pages × nine requested widths). All heading levels were measured for clipping/wrapping; images, footers, HTTP responses, JavaScript errors, and horizontal overflow were checked. Additional runs passed 28 landscape layouts, 28 layouts equivalent to 200% zoom reflow, and eight representative 200% text-size layouts. Native browser zoom was not automated.
 
-Representative homepage, gallery, contact, and destination pages were also captured for visual review. Actual sending through a desktop email client, external social pages, physical-device behavior, screen-reader operation, and non-Chromium browsers require manual testing. Automated checks are useful evidence, not a guarantee that current travel information is accurate.
+Fourteen focused interaction groups passed, including actual timed autoplay on both directories at 375, 768, and 1440 pixels; manual arrows; hover/focus pause and resume; reduced motion and preference changes; one-image control suppression; gallery filters/dialog keyboard navigation; mobile menu; skip link; enquiry prefill/validation/email preparation/copy/reset; and no-JavaScript fallbacks. A repeated-initialization test observed exactly one slide transition rather than duplicate timers. Open-dialog and prepared-enquiry states were checked separately. Axe-core 4.10.3 found zero WCAG 2/2.1 A/AA violations across 56 cases (all pages at 375 and 1440).
+
+All 28 rendered pages were visually reviewed in phone/tablet/desktop contact sheets; representative full-page captures were inspected at larger size. Fixes discovered during QA included contact-email overflow with enlarged text, ragged homepage gallery alignment, and dialog Tab focus containment. See [before/after evidence and the severity inventory](docs/REFINEMENT.md).
+
+External mail applications and actual sending, external social pages, physical devices, screen-reader operation, native browser-zoom controls, and non-Chromium browsers remain untested. Automated accessibility scans do not prove conformance. Original source-photo resolution and uncertain locations limit image quality and specificity; no new geographic claims were added.
 
 ## Review scope and publishing
 
-The redesign is provided for review on the `codex/destination-pakistan-redesign` branch. No merge into `main`, website deployment, or cloud-environment publication was performed. The complete project is ready for review, with the content limitations above clearly identified.
+The redesign and subsequent refinement are provided on `codex/destination-pakistan-redesign` with explicit owner approval. No merge into `main`, deployment, or cloud-environment publication was performed. The review includes source changes, reproducible browser checks, updated documentation, and representative before/after screenshots.

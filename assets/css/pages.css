@@ -1,0 +1,139 @@
+/* Destination guides and story layouts. */
+.breadcrumbs {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.page-heading {
+  padding: 34px 0 26px;
+  background: #eee9dd;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 30px;
+}
+.page-heading h1 {
+  margin-bottom: 12px;
+}
+.page-heading p {
+  max-width: 72ch;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.page-content {
+  padding-bottom: 56px;
+}
+.feature-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  max-width: 420px;
+}
+.article-title {
+  max-width: none;
+}
+.article-hero {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+  height: auto;
+  aspect-ratio: 16 / 6;
+}
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 245px;
+  gap: 40px;
+  align-items: start;
+}
+.article-copy {
+  font-size: 1rem;
+  max-width: 78ch;
+}
+.article-copy p {
+  margin-bottom: 22px;
+  color: var(--muted);
+}
+.article-copy figure {
+  margin: 26px 0;
+}
+.article-copy figure img {
+  width: 100%;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 12px;
+  height: auto;
+}
+.article-copy figcaption {
+  font-size: 0.8rem;
+  padding-top: 9px;
+  color: var(--muted);
+}
+.article-sidebar {
+  background: var(--sand);
+  padding: 22px;
+  border-radius: 12px;
+  border-top: 3px solid var(--terra);
+}
+.article-sidebar h2 {
+  font:
+    1.5rem Georgia,
+    serif;
+}
+.article-sidebar p {
+  font-size: 0.88rem;
+}
+.article-sidebar a {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+.about-story {
+  max-width: none;
+}
+.team .card-img-top {
+  height: auto;
+  object-position: 50% 30%;
+  aspect-ratio: 4 / 5;
+}
+.team .card-body p {
+  margin: 0;
+}
+.team .card-title {
+  font-size: 1.25rem;
+}
+.content-note {
+  font-size: 0.9rem;
+  padding: 18px;
+  background: var(--sand);
+  border-radius: 8px;
+  margin: 24px 0;
+}
+.about-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.about-intro-copy p,
+.about-story > p {
+  max-width: 76ch;
+  margin-bottom: 20px;
+}
+.about-group {
+  margin: 0;
+  justify-self: center;
+  width: 100%;
+  max-width: 420px;
+}
+.team .card {
+  box-shadow: none;
+  background: transparent;
+}
+.team .card-body {
+  padding: 16px 0;
+}

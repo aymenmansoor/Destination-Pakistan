@@ -17,8 +17,9 @@
       defer
     ></script>
     <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/carousels.js" defer></script>
   </head>
-  <body>
+  <body class="destination">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container nav-inner">
@@ -26,17 +27,17 @@
           class="brand"
           href="index.html"
           aria-label="Destination Pakistan home"
-          ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
             <path
               d="M3 36 19 10l8 13 6-9 12 22H3Z"
               stroke="currentColor"
               stroke-width="2"
-            />
+            ></path>
             <path
               d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
               stroke="currentColor"
               stroke-width="2"
-            /></svg
+            ></path></svg
           ><span class="brand-name"
             >Destination Pakistan<small
               >Explore. Experience. Remember.</small
@@ -78,6 +79,9 @@
           id="landscape-carousel"
           class="carousel slide"
           aria-label="Pakistan travel showcase"
+          role="region"
+          aria-roledescription="carousel"
+          data-autoplay="5000"
         >
           <div class="carousel-indicators">
             <button
@@ -86,54 +90,64 @@
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
-              aria-label="Slide 1"
+              aria-label="Show Hunza Valley"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="1"
-              aria-label="Slide 2"
+              aria-label="Show Fairy Meadows &amp; Nanga Parbat"
             ></button
             ><button
               type="button"
               data-bs-target="#landscape-carousel"
               data-bs-slide-to="2"
-              aria-label="Slide 3"
+              aria-label="Show Azad Kashmir"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" aria-live="off">
             <div class="carousel-item active">
               <img
-                src="destinations/img1.png"
-                alt="Pakistan travel showcase, photograph 1"
-                width="1519"
-                height="350"
+                src="destinations/Hunza-Valley-1200x797.webp"
+                alt="Autumn colours in Hunza Valley"
+                width="1200"
+                height="797"
                 class="d-block w-100"
                 fetchpriority="high"
                 decoding="async"
+                loading="eager"
               />
+              <div class="slide-caption">
+                <a href="Hunza.html">Hunza Valley</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="destinations/img2.jpg"
-                alt="Pakistan travel showcase, photograph 2"
-                width="1180"
-                height="400"
+                src="destinations/Fairy-Meadow-Akram-Attari.webp"
+                alt="Green meadows below Nanga Parbat"
+                width="2048"
+                height="1536"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="Fairy.html">Fairy Meadows &amp; Nanga Parbat</a>
+              </div>
             </div>
             <div class="carousel-item">
               <img
-                src="destinations/img3.png"
-                alt="Pakistan travel showcase, photograph 3"
-                width="870"
-                height="342"
+                src="destinations/Neelum_Valley_Kashmir_Pakistan_3-1613x1080.webp"
+                alt="A settlement in the mountain landscape of Neelum Valley"
+                width="1613"
+                height="1080"
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
               />
+              <div class="slide-caption">
+                <a href="AZAD%20KASHMIR.html">Azad Kashmir</a>
+              </div>
             </div>
           </div>
           <button
@@ -151,9 +165,7 @@
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span
-            ><span class="visually-hidden">Next photograph</span></button
-          ><button class="carousel-pause" type="button" aria-pressed="false">
-            Play slideshow
+            ><span class="visually-hidden">Next photograph</span>
           </button>
         </div>
         <div class="row g-4">
@@ -176,7 +188,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -184,7 +196,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -208,7 +220,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -216,7 +228,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -240,7 +252,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -248,7 +260,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -272,7 +284,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -280,7 +292,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -288,7 +300,7 @@
           <div class="col-md-6 col-lg-4">
             <article class="card">
               <img
-                src="destinations/toli peer.jpg"
+                src="destinations/toli%20peer.jpg"
                 alt="Tolipeer And Banjosa Lake"
                 width="279"
                 height="181"
@@ -304,7 +316,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -312,7 +324,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -336,7 +348,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -344,7 +356,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -368,7 +380,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -376,7 +388,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -400,7 +412,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -408,7 +420,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -426,13 +438,13 @@
               />
               <div class="card-body">
                 <h2 class="card-title">Siri Paye</h2>
-                <a class="btn btn-outline-primary" href="SIRI PAYE.html"
+                <a class="btn btn-outline-primary" href="SIRI%20PAYE.html"
                   >Explore destination<span class="visually-hidden"
                     >: Siri Paye</span
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -440,7 +452,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -458,13 +470,13 @@
               />
               <div class="card-body">
                 <h2 class="card-title">Azad Kashmir</h2>
-                <a class="btn btn-outline-primary" href="AZAD KASHMIR.html"
+                <a class="btn btn-outline-primary" href="AZAD%20KASHMIR.html"
                   >Explore destination<span class="visually-hidden"
                     >: Azad Kashmir</span
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -472,7 +484,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -496,7 +508,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -504,7 +516,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -528,7 +540,7 @@
                   >
                   <svg
                     class="arrow-icon"
-                    viewBox="0 0 14 14"
+                    viewbox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
                   >
@@ -536,7 +548,7 @@
                       d="M3 11 11 3M3 3h8v8"
                       stroke="currentColor"
                       stroke-width="1.5"
-                    /></svg
+                    ></path></svg
                 ></a>
               </div>
             </article>
@@ -552,17 +564,17 @@
               class="brand"
               href="index.html"
               aria-label="Destination Pakistan home"
-              ><svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              ><svg viewbox="0 0 48 48" fill="none" aria-hidden="true">
                 <path
                   d="M3 36 19 10l8 13 6-9 12 22H3Z"
                   stroke="currentColor"
                   stroke-width="2"
-                />
+                ></path>
                 <path
                   d="m13 20 6 3 5-4M28 23l5 3 4-4M4 42h40"
                   stroke="currentColor"
                   stroke-width="2"
-                /></svg
+                ></path></svg
               ><span class="brand-name"
                 >Destination Pakistan<small
                   >Explore. Experience. Remember.</small
@@ -590,7 +602,7 @@
                 >Make an enquiry
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -598,7 +610,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a href="mailto:destinationpakistan@gmail.com"
                 >destinationpakistan@gmail.com</a
               ><a
@@ -608,7 +620,7 @@
                 >Instagram
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -616,7 +628,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg></a
+                  ></path></svg></a
               ><a
                 href="https://web.facebook.com/destinationispakistan/?_rdc=1&amp;_rdr"
                 target="_blank"
@@ -624,7 +636,7 @@
                 >Facebook
                 <svg
                   class="arrow-icon"
-                  viewBox="0 0 14 14"
+                  viewbox="0 0 14 14"
                   fill="none"
                   aria-hidden="true"
                 >
@@ -632,7 +644,7 @@
                     d="M3 11 11 3M3 3h8v8"
                     stroke="currentColor"
                     stroke-width="1.5"
-                  /></svg
+                  ></path></svg
               ></a>
             </div>
           </div>
@@ -644,7 +656,7 @@
             >Back to top
             <svg
               class="arrow-icon"
-              viewBox="0 0 14 14"
+              viewbox="0 0 14 14"
               fill="none"
               aria-hidden="true"
             >
@@ -652,7 +664,7 @@
                 d="M7 12V2M2 7l5-5 5 5"
                 stroke="currentColor"
                 stroke-width="1.5"
-              /></svg
+              ></path></svg
           ></a>
         </div>
       </div>
