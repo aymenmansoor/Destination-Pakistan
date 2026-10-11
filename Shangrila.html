@@ -18,6 +18,7 @@
     ></script>
     <script src="assets/js/site.js" defer></script>
     <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
   </head>
   <body class="destination-guide">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -68,24 +69,22 @@
             ><span aria-hidden="true">/</span
             ><span aria-current="page">Shangrila Lake</span>
           </nav>
-          <span class="eyebrow">Destination guide</span>
           <h1 class="article-title">Shangrila Lake</h1>
-          <p>
-            Discover the landscapes and places featured in our Shangrila Lake
-            guide.
-          </p>
         </div>
       </div>
       <div class="container page-content">
-        <img
-          src="destinations/Shangri-la-Waleed.webp"
-          alt="Shangrila Lake"
-          width="2048"
-          height="1365"
-          class="article-hero"
-          fetchpriority="high"
-          decoding="async"
-        />
+        <div class="guide-visual">
+          <img
+            src="destinations/Shangri-la-Waleed.webp"
+            alt="Shangrila Lake"
+            width="2048"
+            height="1365"
+            class="article-hero"
+            fetchpriority="high"
+            decoding="async"
+            style="--source-width: 2048px"
+          />
+        </div>
         <div class="article-layout">
           <article class="article-copy" aria-label="Destination guide">
             <p>
@@ -132,11 +131,7 @@
             </p>
           </article>
           <aside class="article-sidebar">
-            <span class="eyebrow">Keep exploring</span>
             <h2>Plan your visit</h2>
-            <p>
-              Browse more places or ask about travelling to this destination.
-            </p>
             <a
               href="contact.html?tour=Shangrila%20Lake"
               class="btn btn-primary"

@@ -36,8 +36,9 @@ document.querySelectorAll(".gallery-filter").forEach((button) => {
     galleryItems.forEach((item) => {
       item.hidden = category !== "all" && item.dataset.category !== category;
     });
-    document.querySelector(".gallery-count").textContent =
-      `${galleryItems.filter((item) => !item.hidden).length} photographs`;
+    document.querySelector(".gallery-status").textContent =
+      `${button.textContent.trim()} selected.`;
+    window.revealGallery?.(galleryItems.filter((item) => !item.hidden));
   });
 });
 

@@ -47,6 +47,7 @@ Destination-Pakistan/
 │   ├── js/site.js               # Menu, filtering and enquiry enhancement
 │   ├── js/carousels.js          # Automatic slideshows and motion preferences
 │   ├── js/gallery.js            # Keyboard-accessible photo dialog
+│   ├── js/motion.js             # Progressive scroll/filter animation
 │   ├── favicon.svg
 │   └── vendor/bootstrap/        # Bootstrap 5.0.2 and its MIT license
 ├── destinations/               # Original destination photographs
@@ -58,7 +59,8 @@ Destination-Pakistan/
 ├── style2.css                  # Legacy gallery stylesheet compatibility path
 ├── AUDIT.md                    # Findings, content issues, and review notes
 ├── scripts/                    # Optional Python/Playwright QA tools
-├── docs/REFINEMENT.md           # Before/after evidence and current review
+├── docs/PREMIUM.md              # Current before/after evidence
+├── docs/REFINEMENT.md           # Earlier refinement review
 └── .gitignore
 ```
 
@@ -66,11 +68,11 @@ Filenames containing spaces or capital letters remain unchanged to preserve exis
 
 ## Editing the website
 
-Edit HTML content directly. `assets/css/site.css` imports styles organized by responsibility: base, navigation, homepage, cards, pages, slideshows, gallery/contact, footer, and responsive layouts. Palette variables live in `assets/css/base.css`. Common navigation and footer markup is present in each page so the site needs no templating runtime. When changing navigation, update every page consistently. Keep `index.html` and `front.html` synchronized.
+Edit HTML content directly. `assets/css/site.css` imports styles organized by responsibility: base, navigation, homepage, cards, pages, slideshows, gallery/contact, footer, and responsive layouts. Palette variables live in `assets/css/base.css`. `photography.css` controls cinematic directories and shared destination frames; `editorial.css` controls package rows, homepage details, and Contact; `motion.css` defines restrained animations. Common navigation and footer markup is present in each page so the site needs no templating runtime. When changing navigation, update every page consistently. Keep `index.html` and `front.html` synchronized.
 
 Bootstrap’s responsive `.row`, `.col-*`, and `.g-*` classes arrange cards. The shared CSS controls typography, image cropping, buttons, and page spacing. `assets/js/site.js` adds small interactions; ordinary links and all content remain available when JavaScript is disabled. Gallery filtering, the photo dialog, and clipboard copying require JavaScript. Without JavaScript, every gallery thumbnail links directly to its original photograph.
 
-The directory slideshows advance approximately every five seconds. Hover, keyboard focus, active pointer interaction, and hidden tabs pause them; autoplay resumes when those conditions end. Reduced-motion preferences disable autoplay while keeping arrows available. The module uses one timer per carousel and suppresses controls for one-image sliders. Gallery photographs can be opened in a native dialog with previous/next controls, arrow-key navigation, Escape to close, and focus returned to the selected thumbnail.
+The directory slideshows advance approximately every five seconds. Hover over controls, visible keyboard focus, active pointer interaction, and hidden tabs pause them; autoplay resumes when those conditions end. Reduced-motion preferences disable autoplay while keeping arrows available. Passive pointer placement on photographs keeps playback running. Touching an arrow does not leave an indefinite focus pause. The module uses one timer per carousel and suppresses controls for one-image sliders. Gallery photographs can be opened in a native dialog with previous/next controls, arrow-key navigation, Escape to close, and focus returned to the selected thumbnail.
 
 Bootstrap was downloaded from the project’s existing 5.0.2 URLs and checked against the original SHA-384 integrity hashes. The unmodified files are committed locally. Its license is included beside the files. No external font or icon library is required; social links have readable text labels.
 
@@ -82,21 +84,27 @@ Without a configured email app, copy the enquiry into an email manually. Without
 
 ## Known content limitations
 
-- The original Khunjerab page incorrectly duplicated Mushkpuri’s description and pictures. The Mushkpuri guide is preserved on its correct page; Khunjerab now uses an existing Khunjerab photograph and openly states that a verified guide is needed.
-- The original phone number `+1234567890` appears to be a placeholder. It is retained with a warning; use the existing email address until the owner confirms a valid number.
+- Khunjerab now has a visitor guide based on owner-supplied copy, with qualified seasonal/access advice. Independent source verification was blocked by the environment’s network policy (403 responses); no current crossing schedule, road condition, pricing, or availability is asserted.
+- The placeholder phone number has been removed from Contact. The existing email and social links remain; a verified phone number can be added when supplied by the owner.
 - Package prices, discounts, durations, and availability have not been independently verified. A notice asks visitors to confirm them before planning travel.
 - The about page’s founder names and team co-founder names conflict. Original names and roles are preserved for owner review, rather than inventing replacements. See `AUDIT.md`.
 - The original homepage’s “over two decades” experience claim is not corroborated by the about page; it is no longer promoted. The rest of the overview remains.
 - Destination descriptions contain inherited historical, seasonal, access, and safety claims. They need editorial review before being relied on for current travel decisions.
 - Social account ownership, responses from the listed email address, actual email delivery, and the rights to original photographs have not been verified.
 
+## Premium refinement
+
+The homepage preview uses an equal-height photographic triptych across phone/tablet/desktop. Directory slideshows occupy a wider cinematic band, with larger original photographs substituted where needed. All destination guides use the same prominent opening frame, including Mushkpuri, while source-width limits avoid enlarging low-resolution images. Package categories use image-led editorial rows; repeated beige headings/sidebar boxes were removed. Contact has one clear active indicator, a scenic image, and a professional email-draft workflow.
+
+Selected section reveals, photograph hover zoom, and filter arrivals use CSS/vanilla JavaScript. Text remains at full opacity for contrast; content is visible before or without JavaScript; reduced motion suppresses animations. Gallery counts are no longer displayed, while a screen-reader status announces the selected category.
+
 ## Validation
 
-The current refinement passed **924 local link/asset checks** and **252 Chromium page/width cases**: all 28 routes at 320, 375, 390, 576, 768, 991, 1024, 1440, and 1920 pixels. Checks include all heading levels, image loading/proportions, footer reachability, HTTP/JavaScript failures, and horizontal overflow. Additional checks cover 28 landscape layouts, 28 layouts with a viewport equivalent to 200% zoom reflow, and eight representative pages with 200% text size. This is not a test of Chromium's native browser-zoom UI.
+The current refinement passed **955 local link/asset checks** and **252 Chromium page/width cases**: all 28 routes at 320, 375, 390, 576, 768, 991, 1024, 1440, and 1920 pixels. Checks include all heading levels, image loading/proportions, footer reachability, HTTP/JavaScript failures, and horizontal overflow. A final frame-height adjustment was followed by 36 guide-frame checks and refreshed captures. Additional checks cover 28 landscape layouts, 28 layouts with a viewport equivalent to 200% zoom reflow, and eight representative pages with 200% text size. This is not a test of Chromium's native browser-zoom UI.
 
-Fourteen interaction groups passed, including real five-second autoplay at phone/tablet/desktop sizes, manual navigation, hover/focus pause and resume, reduced motion, mobile navigation, filters, dialog keyboard behavior, validation, clipboard copying, and prepared email links. Separate checks verified duplicate initialization does not create duplicate slide transitions, dialog focus/scroll containment, and the prepared enquiry state. Axe-core 4.10.3 reported zero WCAG 2/2.1 A/AA violations in 56 page/width cases; automated accessibility checks do not establish full accessibility conformance.
+Multiple-transition tests now observe three automatic transitions and two resumed transitions after manual navigation on both directories at phone, tablet, and desktop sizes, including real touch emulation. Additional checks cover equal-height previews, repeated initialization, active navigation, and normal/reduced-motion animations. Fourteen interaction groups passed, including real five-second autoplay at phone/tablet/desktop sizes, manual navigation, hover/focus pause and resume, reduced motion, mobile navigation, filters, dialog keyboard behavior, validation, clipboard copying, and prepared email links. Separate checks verified duplicate initialization does not create duplicate slide transitions, dialog focus/scroll containment, and the prepared enquiry state. Axe-core 4.10.3 reported zero WCAG 2/2.1 A/AA violations in 56 page/width cases; automated accessibility checks do not establish full accessibility conformance.
 
-Visual review used rendered phone, tablet, and desktop captures of all pages, with representative full-page inspection and before/after evidence in [the refinement review](docs/REFINEMENT.md). Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery, and social-account ownership remain untested.
+Visual review used rendered phone, tablet, and desktop captures of all pages, with representative full-page inspection and before/after evidence in [the premium refinement review](docs/PREMIUM.md). Physical devices, screen readers, other browsers, native browser zoom, external mail applications, actual email delivery, and social-account ownership remain untested.
 
 To reproduce the browser checks, install Playwright in a separate development environment (not required to run the website), keep the local server running, and use:
 
@@ -105,13 +113,14 @@ python3 -m pip install playwright
 python3 -m playwright install chromium
 python3 scripts/check_pages.py
 python3 scripts/check_interactions.py
+python3 scripts/check_premium.py
 ```
 
 The scripts use installed system Chromium when available, otherwise Playwright's browser. Results and screenshots go to ignored `.qa-output/`; `--base-url` and `--output` can override defaults. The axe scan was a separate QA run, not a runtime dependency.
 
 ## Upload to GitHub
 
-The redesign and latest refinement are provided on the `codex/destination-pakistan-redesign` branch with owner approval. The `main` branch is unchanged; no website deployment has been performed.
+The latest premium refinement is provided on `codex/destination-pakistan-redesign` with explicit owner approval to commit and push. Download that branch for the updated project and review evidence. `main` is unchanged; no deployment has been performed.
 
 To download from GitHub, select that branch on the repository page, then choose **Code → Download ZIP**. Extract the archive and follow the local run instructions above.
 

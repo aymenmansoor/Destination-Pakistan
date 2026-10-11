@@ -83,3 +83,17 @@
   min-height: 44px;
   min-width: 70px;
 }
+.site-nav .nav-contact[aria-current="page"] {
+  color: white;
+  background: var(--forest);
+}
+.site-nav .nav-contact[aria-current="page"]::after {
+  content: none;
+}
+.site-nav a:hover {
+  color: var(--terra);
+}
+.site-nav .nav-contact:hover {
+  color: white;
+  background: var(--forest);
+}

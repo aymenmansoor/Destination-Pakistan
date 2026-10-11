@@ -18,6 +18,7 @@
     ></script>
     <script src="assets/js/site.js" defer></script>
     <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
   </head>
   <body class="destination">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -74,7 +75,7 @@
           </p>
         </div>
       </div>
-      <div class="container page-content">
+      <section class="cinema-band" aria-label="Featured destinations">
         <div
           id="landscape-carousel"
           class="carousel slide"
@@ -108,14 +109,15 @@
           <div class="carousel-inner" aria-live="off">
             <div class="carousel-item active">
               <img
-                src="destinations/Hunza-Valley-1200x797.webp"
-                alt="Autumn colours in Hunza Valley"
-                width="1200"
-                height="797"
+                src="destinations/Hunza-PTP.webp"
+                alt="Mountain slopes above Hunza at dusk"
+                width="1920"
+                height="1280"
                 class="d-block w-100"
                 fetchpriority="high"
                 decoding="async"
                 loading="eager"
+                style="--source-width: 1920px"
               />
               <div class="slide-caption">
                 <a href="Hunza.html">Hunza Valley</a>
@@ -130,6 +132,7 @@
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
+                style="--source-width: 2048px"
               />
               <div class="slide-caption">
                 <a href="Fairy.html">Fairy Meadows &amp; Nanga Parbat</a>
@@ -144,6 +147,7 @@
                 class="d-block w-100"
                 loading="lazy"
                 decoding="async"
+                style="--source-width: 1613px"
               />
               <div class="slide-caption">
                 <a href="AZAD%20KASHMIR.html">Azad Kashmir</a>
@@ -168,6 +172,8 @@
             ><span class="visually-hidden">Next photograph</span>
           </button>
         </div>
+      </section>
+      <div class="container page-content">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <article class="card">

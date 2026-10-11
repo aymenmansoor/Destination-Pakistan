@@ -17,7 +17,7 @@ def leave_slider(page):
 
 def advance(page):
     before = active(page)
-    page.wait_for_timeout(5700)
+    page.wait_for_function("(before) => document.querySelector('.carousel-item.active img').getAttribute('src') !== before", arg=before, timeout=7500)
     assert active(page) != before, ('autoplay did not advance', before)
 
 
@@ -45,29 +45,30 @@ def main():
                 advance(page)
                 before = active(page)
                 page.get_by_role('button',name='Next photograph',exact=True).click()
-                page.wait_for_timeout(700)
+                page.wait_for_timeout(950)
                 assert before != active(page)
                 leave_slider(page)
                 advance(page)
                 results.append(f'{name} {width}px: timed autoplay, next arrow and automatic resume')
                 print(results[-1], flush=True)
         page.goto(args.base_url+'/destination.html', wait_until='load')
-        page.locator('.carousel').hover()
+        page.locator('.carousel-control-next').hover()
         before = active(page)
         page.wait_for_timeout(5700)
         assert active(page) == before
         leave_slider(page)
         advance(page)
+        page.keyboard.press('Tab')
         page.get_by_role('button',name='Next photograph',exact=True).focus()
         before = active(page)
         page.wait_for_timeout(5700)
         assert active(page) == before
         page.keyboard.press('ArrowLeft')
-        page.wait_for_timeout(700)
+        page.wait_for_timeout(950)
         assert active(page) != before
         leave_slider(page)
         advance(page)
-        results.append('Hover/focus pause, left keyboard arrow, and resume after both interactions')
+        results.append('Control-hover/focus pause, left keyboard arrow, and resume after both interactions')
         for name in ['destination.html', 'tour.html']:
             page.emulate_media(reduced_motion='reduce')
             page.goto(args.base_url+'/'+name,wait_until='load')

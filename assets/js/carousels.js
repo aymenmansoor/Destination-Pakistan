@@ -64,13 +64,36 @@
       sliding = false;
       reconcile();
     });
-    element.addEventListener("mouseenter", () => pause("hover"));
-    element.addEventListener("mouseleave", () => resume("hover"));
-    element.addEventListener("focusin", () => pause("focus"));
+    // Passive pointer placement on the photograph should not freeze playback.
+    // Pause over actionable controls only; touch does not create sticky hover.
+    const controlSelector = "button, .slide-caption a";
+    element.addEventListener("pointerover", (event) => {
+      if (
+        event.pointerType === "mouse" &&
+        event.target.closest(controlSelector)
+      ) {
+        pause("control-hover");
+      }
+    });
+    element.addEventListener("pointerout", (event) => {
+      if (
+        !event.relatedTarget ||
+        !element.contains(event.relatedTarget) ||
+        !event.relatedTarget.closest(controlSelector)
+      )
+        resume("control-hover");
+    });
+    element.addEventListener("focusin", (event) => {
+      if (event.target.matches(":focus-visible")) pause("focus");
+    });
+    element.addEventListener("keydown", () => pause("focus"));
     element.addEventListener("focusout", (event) => {
       if (!element.contains(event.relatedTarget)) resume("focus");
     });
-    element.addEventListener("pointerdown", () => pause("pointer"));
+    element.addEventListener("pointerdown", () => {
+      resume("focus");
+      pause("pointer");
+    });
     // A drag can finish outside the image: clear only an active pointer pause.
     const release = () => {
       if (reasons.has("pointer")) resume("pointer");
@@ -82,11 +105,11 @@
   });
 
   if (controllers.length) {
-  document.addEventListener("visibilitychange", () =>
-    controllers.forEach((update) => update()),
-  );
-  motion.addEventListener("change", () =>
-    controllers.forEach((update) => update()),
-  );
+    document.addEventListener("visibilitychange", () =>
+      controllers.forEach((update) => update()),
+    );
+    motion.addEventListener("change", () =>
+      controllers.forEach((update) => update()),
+    );
   }
 })();

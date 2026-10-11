@@ -137,3 +137,19 @@
 .team .card-body {
   padding: 16px 0;
 }
+.guide-lead {
+  font-size: 1.15rem;
+  color: var(--ink) !important;
+}
+.article-copy h2 {
+  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
+  margin: 32px 0 16px;
+}
+.guide-related {
+  border-top: 1px solid var(--line);
+  margin-top: 32px;
+}
+.guide-related a {
+  display: block;
+  margin-bottom: 14px;
+}

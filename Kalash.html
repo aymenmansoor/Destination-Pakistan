@@ -18,6 +18,7 @@
     ></script>
     <script src="assets/js/site.js" defer></script>
     <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
   </head>
   <body class="destination-guide">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -68,24 +69,22 @@
             ><span aria-hidden="true">/</span
             ><span aria-current="page">Kalash &amp; Chitral Valley</span>
           </nav>
-          <span class="eyebrow">Destination guide</span>
           <h1 class="article-title">Kalash &amp; Chitral Valley</h1>
-          <p>
-            Discover the landscapes and places featured in our Kalash &amp;
-            Chitral Valley guide.
-          </p>
         </div>
       </div>
       <div class="container page-content">
-        <img
-          src="destinations/Chitral-packige.webp"
-          alt="Kalash &amp; Chitral Valley"
-          width="1024"
-          height="768"
-          class="article-hero"
-          fetchpriority="high"
-          decoding="async"
-        />
+        <div class="guide-visual">
+          <img
+            src="destinations/Chitral-packige.webp"
+            alt="Kalash &amp; Chitral Valley"
+            width="1024"
+            height="768"
+            class="article-hero"
+            fetchpriority="high"
+            decoding="async"
+            style="--source-width: 1024px"
+          />
+        </div>
         <div class="article-layout">
           <article class="article-copy" aria-label="Destination guide">
             <p>
@@ -161,11 +160,7 @@
             </p>
           </article>
           <aside class="article-sidebar">
-            <span class="eyebrow">Keep exploring</span>
             <h2>Plan your visit</h2>
-            <p>
-              Browse more places or ask about travelling to this destination.
-            </p>
             <a
               href="contact.html?tour=Kalash%20%26%20Chitral%20Valley"
               class="btn btn-primary"

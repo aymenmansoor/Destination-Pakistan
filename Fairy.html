@@ -18,6 +18,7 @@
     ></script>
     <script src="assets/js/site.js" defer></script>
     <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/motion.js" defer></script>
   </head>
   <body class="destination-guide">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -68,24 +69,22 @@
             ><span aria-hidden="true">/</span
             ><span aria-current="page">Fairy Meadows &amp; Nanga Parbat</span>
           </nav>
-          <span class="eyebrow">Destination guide</span>
           <h1 class="article-title">Fairy Meadows &amp; Nanga Parbat</h1>
-          <p>
-            Discover the landscapes and places featured in our Fairy Meadows
-            &amp; Nanga Parbat guide.
-          </p>
         </div>
       </div>
       <div class="container page-content">
-        <img
-          src="destinations/fairy-medows.webp"
-          alt="Fairy Meadows &amp; Nanga Parbat"
-          width="1024"
-          height="576"
-          class="article-hero"
-          fetchpriority="high"
-          decoding="async"
-        />
+        <div class="guide-visual">
+          <img
+            src="destinations/fairy-medows.webp"
+            alt="Fairy Meadows &amp; Nanga Parbat"
+            width="1024"
+            height="576"
+            class="article-hero"
+            fetchpriority="high"
+            decoding="async"
+            style="--source-width: 1024px"
+          />
+        </div>
         <div class="article-layout">
           <article class="article-copy" aria-label="Destination guide">
             <p>
@@ -137,11 +136,7 @@
             </p>
           </article>
           <aside class="article-sidebar">
-            <span class="eyebrow">Keep exploring</span>
             <h2>Plan your visit</h2>
-            <p>
-              Browse more places or ask about travelling to this destination.
-            </p>
             <a
               href="contact.html?tour=Fairy%20Meadows%20%26%20Nanga%20Parbat"
               class="btn btn-primary"

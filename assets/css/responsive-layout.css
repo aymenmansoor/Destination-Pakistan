@@ -68,9 +68,3 @@
     width: 100%;
   }
 }
-@media (min-width: 992px) {
-  .guide-short .article-hero {
-    aspect-ratio: 16 / 9;
-    max-height: 420px;
-  }
-}

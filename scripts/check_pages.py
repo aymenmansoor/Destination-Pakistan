@@ -10,7 +10,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 WIDTHS = [320, 375, 390, 576, 768, 991, 1024, 1440, 1920]
 REPRESENTATIVE = ['index.html', 'destination.html', 'tour.html', 'Fairy.html',
-                  'gallery.html', 'about.html', 'culture.html', 'contact.html']
+                  'gallery.html', 'about.html', 'culture.html', 'contact.html', 'Mushkpuri.html', 'khunjerab.html']
 
 class Inventory(HTMLParser):
     def __init__(self):

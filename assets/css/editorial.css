@@ -1,0 +1,119 @@
+/* Editorial package, homepage, gallery and contact layouts. */
+.package-page .page-heading {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+.package-page .page-heading p {
+  max-width: 58ch;
+}
+.package-page .row.g-4 > div {
+  width: 100%;
+}
+.package-page .card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+}
+.package-page .card-img-top {
+  border-radius: 0;
+  height: 100%;
+  max-height: 360px;
+  min-height: 280px;
+  object-fit: cover;
+}
+.package-page .card-body {
+  padding: 20px 36px;
+}
+.package-page .card-title {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+.package-page .package-description {
+  min-height: 0;
+  max-width: 54ch;
+}
+.package-page .price-note {
+  background: transparent;
+  border-left: 2px solid var(--terra);
+  padding: 8px 18px;
+  margin: 0 0 28px;
+}
+.gallery .page-heading {
+  background: #e7eee7;
+  margin-bottom: 32px;
+}
+.about .page-heading {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 36px;
+}
+.contact .page-heading {
+  padding-bottom: 24px;
+}
+.contact .contact-form {
+  border: 0;
+  border-top: 3px solid var(--forest);
+  border-radius: 0;
+}
+.contact .contact-info {
+  padding-top: 0;
+}
+.contact-scene {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 28px;
+}
+.contact .contact-info > .eyebrow {
+  display: none;
+}
+.contact .contact-info h2 {
+  font-size: 1.5rem;
+}
+.mini-gallery {
+  align-items: stretch;
+}
+.mini-gallery img {
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 0;
+}
+.home .intro-strip {
+  padding: 14px 0;
+}
+.home .destination-card {
+  border-radius: 0;
+}
+.home .overview-image {
+  border-radius: 0;
+}
+@media (max-width: 767px) {
+  .package-page .card {
+    grid-template-columns: 1fr;
+  }
+  .package-page .card-img-top {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 16 / 10;
+  }
+  .package-page .card-body {
+    padding: 22px 0 4px;
+  }
+  .mini-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .mini-gallery img {
+    height: 100%;
+    aspect-ratio: 3 / 4;
+  }
+  .contact .contact-form {
+    padding: 24px 0;
+  }
+  .contact-scene {
+    height: 200px;
+  }
+}
